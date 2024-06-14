@@ -38,7 +38,7 @@ function HeroSection() {
               </code>
             </div>
 
-            <div className=" hidden lg:h-[400px]  lg:w-[600px] md:h-[90px] sm:w-[100px] p-5">
+            <div className=" hidden lg:h-[400px] lg:flex  lg:w-[600px] md:h-[90px] sm:w-[100px] p-5">
                 <ContentSlider />
             </div>
           </div>
