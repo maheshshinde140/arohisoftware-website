@@ -1,0 +1,17 @@
+.cardImag{
+    width: 25rem;
+}
+.card{
+    /* border: 1px solid black; */
+    width: 23rem;
+    margin-top: 2rem;
+}
+.card h3{
+    font-size: 1.5rem ;
+    font-weight: bolder;
+    margin: 1rem 0;
+}
+.card h4{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
