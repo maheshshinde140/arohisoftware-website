@@ -95,7 +95,7 @@ function Navbar({ className }: { className?: string }) {
                         Media Relations
                       </span>
                     </HoveredLink>
-                    <HoveredLink href="/courses">
+                    <HoveredLink href="/investor">
                       <span className="hover:border-b-4 hover:text-blue-400">Investor Relations</span>
                     </HoveredLink>
                   </div>

@@ -1,6 +1,9 @@
 
 "use client";
 import Image from "next/image";
+import ServiceCard from "../components/ServicesCard";
+import IndustrySelection from "../components/IndustrySelectionCard";
+import Footer from "../components/Footer";
 
 function Service() {
   return (
@@ -67,7 +70,15 @@ function Service() {
             />
           </div>
         </div>
+        <div>
+        <IndustrySelection/>
+          
+         
+        </div>
       </div>
+      <ServiceCard/>
+      <Footer/>
+          
     </div>
   );
 }
