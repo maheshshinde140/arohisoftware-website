@@ -4,6 +4,10 @@ const nextConfig = {
     images: {
       domains: ['www.xoriant.com'],
     },
+    images: {
+      domains: ['dynamicmedia.accenture.com'],
+    }
+    
 };
 
 export default nextConfig;
