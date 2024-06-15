@@ -46,7 +46,19 @@ function Navbar({ className }: { className?: string }) {
                       </span>
                     </HoveredLink>
                   </div>
-                
+                  <div className="flex flex-col space-y-4 pt-7">
+                    <HoveredLink href="">
+                      <span className="text-sm text-slate-400"></span>
+                    </HoveredLink>
+                    <HoveredLink href="/courses">
+                      <span className="hover:border-b-4 animate-in border-neutral-100 border-y-gray-400 hover:text-blue-400">
+                       Learning
+                      </span>
+                    </HoveredLink>
+                    <HoveredLink href="/courses">
+                      <span className="hover:border-b-4 hover:text-blue-400">Marketing and Experience</span>
+                    </HoveredLink>
+                  </div>
                 </div>
               </MenuItem>
               <Link href={"/whatweThink"}>
@@ -198,7 +210,7 @@ function Navbar({ className }: { className?: string }) {
           <div className="lg:hidden">
             <Menu setActive={setActive} className={isMenuOpen ? "block" : "hidden lg:flex"}>
               <MenuItem setActive={setActive} active={active} item="What we do >">
-                <div className="flex flex-col space-y-4 py-7">
+                <div className="flex pl-20 flex-col space-y-4 py-7">
                   <HoveredLink href="/service">
                     <span className="text-sm text-slate-400">Services</span>
                   </HoveredLink>
@@ -212,17 +224,12 @@ function Navbar({ className }: { className?: string }) {
                   </HoveredLink>
                   <HoveredLink href="/courses">
                     <span className="text-sm text-slate-400">
-                      Media & Investors
+                      Learning
                     </span>
                   </HoveredLink>
                   <HoveredLink href="/courses">
                     <span className="text-sm text-slate-400">
-                      Media Relations
-                    </span>
-                  </HoveredLink>
-                  <HoveredLink href="/courses">
-                    <span className="text-sm text-slate-400">
-                      Investor Relations
+                      Marketing and Experience
                     </span>
                   </HoveredLink>
                 </div>
@@ -275,7 +282,7 @@ function Navbar({ className }: { className?: string }) {
                 </div>
               </MenuItem>
               <MenuItem setActive={setActive} active={active} item="Careers >">
-                <div className="flex flex-col space-y-4 py-7">
+                <div className="flex flex-col space-y-4 py-7 pr-20">
                   <HoveredLink href="">
                     <span className="text-sm text-slate-400 cursor-text">
                       Find Jobs
