@@ -32,6 +32,10 @@ export default function Home() {
         <CareersComponent />
         <TestimonialCards />
         <Footer />
+
+
+
+       
     </div>
   );
 }
