@@ -46,19 +46,7 @@ function Navbar({ className }: { className?: string }) {
                       </span>
                     </HoveredLink>
                   </div>
-                  <div className="flex flex-col space-y-4 py-7">
-                    <HoveredLink href="/courses">
-                      <span className="text-sm text-slate-400">Media & Investors</span>
-                    </HoveredLink>
-                    <HoveredLink href="/courses">
-                      <span className="hover:border-b-4 animate-in hover:text-blue-400 border-neutral-100 border-y-gray-400">
-                        Media Relations
-                      </span>
-                    </HoveredLink>
-                    <HoveredLink href="/courses">
-                      <span className="hover:border-b-4 hover:text-blue-400">Investor Relations</span>
-                    </HoveredLink>
-                  </div>
+                
                 </div>
               </MenuItem>
               <Link href={"/whatweThink"}>
@@ -95,7 +83,7 @@ function Navbar({ className }: { className?: string }) {
                         Media Relations
                       </span>
                     </HoveredLink>
-                    <HoveredLink href="/courses">
+                    <HoveredLink href="/investor">
                       <span className="hover:border-b-4 hover:text-blue-400">Investor Relations</span>
                     </HoveredLink>
                   </div>

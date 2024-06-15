@@ -62,9 +62,9 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
-    )
-}
+    );
+};
 
-export default page
+export default page;

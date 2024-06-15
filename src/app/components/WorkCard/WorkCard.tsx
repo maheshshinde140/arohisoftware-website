@@ -1,6 +1,6 @@
-import React from 'react'
-import Image from 'next/image'
-import './WorkCard.css'
+import React from 'react';
+import Image from 'next/image';
+import './WorkCard.css';
 
 
 const WorkCard = ({ images, altText, text, title }) => {
