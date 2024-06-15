@@ -4,7 +4,7 @@ import pic from '../../../public/career.png';
 
 const CareersPage: React.FC = () => {
   return (
-    <div className="bg-black text-white  p-16 lg:min-h-screen">
+    <div className="bg-black text-white  p-12 lg:min-h-screen">
       <h1 className="text-3xl font-bold mb-8">Careers</h1>
       <div className="bg-gradient-to-r from-blue-300 to-purple-300 p-6 rounded-md flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-4 md:mb-0">
