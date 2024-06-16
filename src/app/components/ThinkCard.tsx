@@ -1,7 +1,7 @@
-import React from 'react'
-import Image from 'next/image';
+import React from 'react';
+import Image, { StaticImageData } from 'next/image';
+import './ThinkCard.css';
 
-import './ThinkCard.css'
 interface thinkCardProps {
     images:String,
     altText: String,
@@ -18,13 +18,6 @@ const ThinkCard: React.FC<thinkCardProps> = ({images,altText,title,text}) => {
       <p>{title}</p>
       </div>
 
-      <div className='overlay'>
-      
-      <h2>{text}</h2>
-      </div>
-     
-    </div>
-  )
 }
 
-export default ThinkCard
+export default ThinkCard;
