@@ -23,7 +23,7 @@ const page = () => {
                 <div className='container my-5 pt-8 m-auto'>
                     <h1 className='text-black font-bold text-3xl lg:text-5xl'>Chart your course</h1>
                     <p className='mb-5 mt-5 lg:max-w-[60%]'>Get to know Arohi Softwares and find your fit. If you want to contribute across a range of industries and make a real difference, here’s where your experience could be put to work:</p>
-                    <div className='grid lg:grid-cols-3 gap-5'>
+                    <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-5'>
                         <WorkCard 
                             images='https://dynamicmedia.accenture.com/is/image/accenture/Group-Discussions:16x9?ts=1710823877471&fit=constrain&dpr=off&wid=480' 
                             altText='this is img' 
@@ -31,34 +31,28 @@ const page = () => {
                             title="Flexible Schedules" 
                         />
                         <WorkCard 
-                            images='https://dynamicmedia.accenture.com/is/image/accenture/Accenture-work-environment1-768x432?qlt=85&wid=480&ts=1704397328444&fit=constrain&dpr=off' 
+                            images='https://dynamicmedia.accenture.com/is/image/accenture/Accenture-Careers-Consulting-Marquee:16x9?ts=1697128696930&fit=constrain&dpr=off&wid=480' 
                             altText='this is img' 
                             text='We provide several voluntary options, including job-sharing opportunities, part-time and flex-time schedules.' 
-                            title="Flexible Schedules" 
+                            title="Consulting Careers" 
                         />
                         <WorkCard 
-                            images='https://dynamicmedia.accenture.com/is/image/accenture/Accenture-work-environment1-768x432?qlt=85&wid=480&ts=1704397328444&fit=constrain&dpr=off' 
+                            images='https://dynamicmedia.accenture.com/is/image/accenture/Lady-Smiling-While-Wearing-Eye-Glasses:16x9?ts=1685437177158&fit=constrain&dpr=off&wid=480' 
                             altText='this is img' 
                             text='We provide several voluntary options, including job-sharing opportunities, part-time and flex-time schedules.' 
-                            title="Flexible Schedules" 
+                            title="Technology Careers"
                         />
                         <WorkCard 
-                            images='https://dynamicmedia.accenture.com/is/image/accenture/Accenture-work-environment1-768x432?qlt=85&wid=480&ts=1704397328444&fit=constrain&dpr=off' 
+                            images='https://dynamicmedia.accenture.com/is/image/accenture/Team-Having-Group-Discussions:16x9?ts=1685437177272&fit=constrain&dpr=off&wid=480' 
                             altText='this is img' 
-                            text='We provide several voluntary options, including job-sharing opportunities, part-time and flex-time schedules.' 
-                            title="Flexible Schedules" 
+                            text='Innovate security solutions by working with the sector’s brightest, using the coolest tech.' 
+                            title="Security Careers"
                         />
-                        <WorkCard 
-                            images='https://dynamicmedia.accenture.com/is/image/accenture/Accenture-work-environment1-768x432?qlt=85&wid=480&ts=1704397328444&fit=constrain&dpr=off' 
+                 <WorkCard 
+                            images='https://dynamicmedia.accenture.com/is/image/accenture/Man-Wearing-Eye-Glasses:16x9?ts=1685437177220&fit=constrain&dpr=off&wid=480' 
                             altText='this is img' 
-                            text='We provide several voluntary options, including job-sharing opportunities, part-time and flex-time schedules.' 
-                            title="Flexible Schedules" 
-                        />
-                        <WorkCard 
-                            images='https://dynamicmedia.accenture.com/is/image/accenture/Accenture-work-environment1-768x432?qlt=85&wid=480&ts=1704397328444&fit=constrain&dpr=off' 
-                            altText='this is img' 
-                            text='We provide several voluntary options, including job-sharing opportunities, part-time and flex-time schedules.' 
-                            title="Flexible Schedules" 
+                            text='Innovate security solutions by working with the sector’s brightest, using the coolest tech.' 
+                            title="Operations Careers"
                         />
                     </div>
                 </div>

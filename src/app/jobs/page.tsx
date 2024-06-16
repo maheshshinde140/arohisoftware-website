@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 import Footer from '../components/Footer';
 import StayConnected from '../components/StayConnected';
-
+import CareersPage from '../components/CareersComponent';
 const sharedButtonClasses = "py-2 bg-purple-800 text-white hover:bg-violet-800 rounded-lg transition duration-300";
 const sharedInputClasses = "w-full max-w-md p-2 border border-zinc-700 rounded-lg";
 const sharedTextClasses = "text-black";
@@ -73,8 +73,8 @@ const Jobs: React.FC = () => {
   );
 
   return (
-    <div className="min-h-screen bg-white p-4 mt-20">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-white p-4 mt-20 ">
+      <div className="max-w-7xl mx-auto mb-10">
         <div className="text-center my-14">
           <h1 className="text-xl lg:text-4xl font-bold text-black">Search Jobs at Arohi Software</h1>
           <div className="mt-4 flex text-black flex-row justify-center items-center">
@@ -125,9 +125,11 @@ const Jobs: React.FC = () => {
           </div>
           <button className={`${sharedButtonClasses} w-20 mt-4 sm:mt-0`}>Next</button>
         </div>
-        <StayConnected />
+
       </div>
-      <Footer />
+      <CareersPage/>
+      <StayConnected/>
+      <Footer/>
     </div>
   );
 };
