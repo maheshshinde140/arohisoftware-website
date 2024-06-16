@@ -1,23 +1,29 @@
 import React from 'react';
-import Image from 'next/image';
-import pic from '../../../public/career.png';
 
-const CareersPage: React.FC = () => {
+const CareerComponent: React.FC = () => {
   return (
-    <div className="bg-black text-white  p-12 lg:min-h-screen">
-      <h1 className="text-3xl font-bold mb-8">Careers</h1>
-      <div className="bg-gradient-to-r from-blue-300 to-purple-300 p-6 rounded-md flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2 mb-4 md:mb-0">
-          <h2 className="text-black text-2xl font-bold mb-2">Careers at Arohi Software</h2>
-          <p className="text-black mb-4">We invite you to supercharge your potential. Find what inspires and drives you. Find your spark.</p>
-          <a href="#" className="inline-block bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors">Visit our careers page →</a>
-        </div>
-        <div className="md:w-1/2">
-          <Image src={pic} alt="Person smiling" className="rounded-lg w-400 h-400 hidden lg:flex " />
-        </div>
+    <div className="relative bg-cover bg-center h-[600px]  " style={{ backgroundImage:`url('https://images.unsplash.com/photo-1551135049-8a33b5883817?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')` }}>
+      <div className="absolute inset-0 bg-black opacity-75"></div>
+      <div className="relative z-10 flex flex-col justify-center items-start h-full p-8 md:p-16 lg:p-24">
+        <p className="text-white text-sm md:text-base lg:text-lg">careers</p>
+        <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold">
+          The X-Factor <br />
+          <span className="text-purple-600">At Arohi Software</span>
+        </h1>
+        <p className="text-white text-lg md:text-xl lg:text-2xl mt-4">Join the team</p>
+        <button className="mt-6 px-6 py-3 bg-purple-600 text-white text-lg font-semibold rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out transform hover:scale-105">
+          Apply Now
+        </button>
       </div>
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .h-screen {
+            height: 75vh;
+          }
+        }
+      `}</style>
     </div>
   );
 };
 
-export default CareersPage;
+export default CareerComponent;

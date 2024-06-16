@@ -21,7 +21,7 @@ function Navbar({ className }: { className?: string }) {
           </div>
 
           <div className="hidden lg:flex items-center  justify-center flex-grow">
-            <Menu setActive={setActive} className={isMenuOpen ? "block" : "hidden lg:flex"}>
+            <Menu setActive={setActive} className="hidden lg:flex">
               <MenuItem setActive={setActive} active={active} item="What we do >">
                 <div className="flex justify-around space-y-6 space-x-10 p-10 rounded">
                   <div className="flex flex-col space-y-4 py-7">
