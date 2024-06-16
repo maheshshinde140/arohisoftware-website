@@ -1,6 +1,9 @@
+
 import React from 'react'
 import WorkCard from '@/app/components/WorkCard/WorkCard'
-import Footer from '@/app/components/Footer'
+import Footer from '@/app/components/Footer';
+
+import CareersPage from "../components/CareersComponent";
 import StayConnected from '../components/StayConnected';
 
 const page = () => {
