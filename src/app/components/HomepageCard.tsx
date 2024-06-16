@@ -1,14 +1,31 @@
 import React from 'react';
+import home1 from '../../../public/assets/Homepage/home1.avif';
+import home2 from '../../../public/assets/Homepage/home2.avif';
+import home3 from '../../../public/assets/Homepage/home3.avif';
+import home4 from '../../../public/assets/Homepage/home4.avif';
+import home5 from '../../../public/assets/Homepage/home5.avif';
+import home6 from '../../../public/assets/Homepage/home6.avif';
+import home7 from '../../../public/assets/Homepage/home7.avif';
+import home8 from '../../../public/assets/Homepage/home8.avif';
+import { StaticImageData } from 'next/image';
 
 const cardClasses = 'relative group';
 const overlayClasses = 'absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300';
 const textClasses = 'text-sm font-bold';
 const titleClasses = 'text-lg font-semibold';
 
-const Card: React.FC<{ imageUrl: string, altText: string, category: string, title: string, description?: string }> = ({ imageUrl, altText, category, title, description }) => {
+interface CardProps {
+  imageUrl: StaticImageData | string; // Allow both StaticImageData and string
+  altText: string;
+  category: string;
+  title: string;
+  description?: string;
+}
+
+const Card: React.FC<CardProps> = ({ imageUrl, altText, category, title, description }) => {
   return (
     <div className={cardClasses}>
-      <img src={imageUrl} alt={altText} className="w-full h-full object-cover" />
+      <img src={typeof imageUrl === 'string' ? imageUrl : imageUrl.src} alt={altText} className="w-full h-full object-cover" />
       <div className={overlayClasses}>
         <p className={textClasses}>{category}</p>
         <h3 className={titleClasses}>{title}</h3>
@@ -21,52 +38,52 @@ const Card: React.FC<{ imageUrl: string, altText: string, category: string, titl
 
 const HomepageCard: React.FC = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black text-white mb-8">
+    <div className="flex justify-center items-center px-6 min-h-screen bg-black text-white mb-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <Card
-          imageUrl="https://source.unsplash.com/random/300x400"
+          imageUrl={home1}
           altText="Card Image"
           category="CASE STUDY"
           title="Fighting poverty with technology and humanity: Gerando Falcões"
         />
         <Card
-          imageUrl="https://source.unsplash.com/random/301x401"
+         imageUrl={home2}
           altText="Card Image"
           category="RESEARCH REPORT"
           title="Tap into new value with advanced supply chain capabilities"
         />
         <Card
-          imageUrl="https://source.unsplash.com/random/302x402"
+          imageUrl={home3}
           altText="Card Image"
           category="CASE STUDY"
           title="Generative AI in the driver's seat: BMW"
         />
         <Card
-          imageUrl="https://source.unsplash.com/random/303x403"
+          imageUrl={home4}
           altText="Card Image"
           category="RESEARCH REPORT"
           title="Reinventing M&A with generative AI"
         />
         <Card
-          imageUrl="https://source.unsplash.com/random/304x404"
+          imageUrl={home5}
           altText="Card Image"
           category="RESEARCH REPORT"
           title="Turn disruption into value creation"
         />
         <Card
-          imageUrl="https://source.unsplash.com/random/305x405"
+         imageUrl={home6}
           altText="Card Image"
           category="CASE STUDY"
           title="Banking on happy customers: BBVA"
         />
         <Card
-          imageUrl="https://source.unsplash.com/random/306x406"
+          imageUrl={home7}
           altText="Card Image"
           category="ANNOUNCEMENT"
           title="Accenture takes new steps to help clients scale generative AI responsibly"
         />
         <Card
-          imageUrl="https://source.unsplash.com/random/307x407"
+          imageUrl={home8}
           altText="Card Image"
           category="CASE STUDY"
           title="Travel to the metaverse: Changi Airport Group"
