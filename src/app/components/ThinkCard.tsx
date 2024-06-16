@@ -4,7 +4,7 @@ import Image from 'next/image';
 import './ThinkCard.css'
 interface thinkCardProps {
     images:String,
-    altText: string,
+    altText: String,
     title:String,
     text:String
    }
