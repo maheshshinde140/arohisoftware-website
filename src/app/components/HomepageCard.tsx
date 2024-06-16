@@ -4,7 +4,7 @@ import home2 from '../../../public/assets/Homepage/home2.avif';
 import home3 from '../../../public/assets/Homepage/home3.avif';
 import home4 from '../../../public/assets/Homepage/home4.avif';
 import home5 from '../../../public/assets/Homepage/home5.avif';
-import home6 from '../../../public/assets/Homepage/home6.avif';
+import home6 from '../../../public/assets/Homepage/Home6.avif';
 import home7 from '../../../public/assets/Homepage/home7.avif';
 import home8 from '../../../public/assets/Homepage/home8.avif';
 import { StaticImageData } from 'next/image';
