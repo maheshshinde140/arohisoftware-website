@@ -16,7 +16,7 @@ import WhyChooseUs from "@/app/components/WhyChooseUs";
 
 import Footer from "@/app/components/Footer";
 import home from "../../public/home.jpg";
-import Servicecard from "./components/servicecard";
+import Servicecard from "./components/ServicesCard";
 import { Homelamp } from "./components/Homelamp";
 import HomepageCard from "./components/HomepageCard";
 import CareersComponent from "./components/CareersComponent";
