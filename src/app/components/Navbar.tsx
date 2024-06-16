@@ -147,6 +147,15 @@ function Navbar({ className }: { className?: string }) {
             </Menu>
           </div>
 
+          {/* Login button */}
+          <div className="hidden lg:block px-8">
+            <Link href="/login">
+              <button className="text-white focus:outline-none">
+                Login
+              </button>
+            </Link>
+          </div>
+
           {/* Search Icon and Burger icon for small screens */}
           <div className="flex items-center space-x-4">
             <div className="hidden lg:block">
@@ -171,7 +180,12 @@ function Navbar({ className }: { className?: string }) {
               </button>
             </div>
 
-            <div className="block lg:hidden">
+            <div className="block lg:hidden space-x-4">
+              <Link href="/login">
+                <button className="text-white focus:outline-none">
+                  Login
+                </button>
+              </Link>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-white focus:outline-none"
@@ -205,127 +219,102 @@ function Navbar({ className }: { className?: string }) {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile menu */}
         {isMenuOpen && (
           <div className="lg:hidden">
-            <Menu setActive={setActive} className={isMenuOpen ? "block" : "hidden lg:flex"}>
-              <MenuItem setActive={setActive} active={active} item="What we do >">
-                <div className="flex pl-20 flex-col space-y-4 py-7">
-                  <HoveredLink href="/service">
-                    <span className="text-sm text-slate-400">Services</span>
-                  </HoveredLink>
-                  <HoveredLink href="/research">
-                    <span className="text-sm text-slate-400">
-                      Research & Innovations
-                    </span>
-                  </HoveredLink>
-                  <HoveredLink href="/security">
-                    <span className="text-sm text-slate-400">Security</span>
-                  </HoveredLink>
-                  <HoveredLink href="/courses">
-                    <span className="text-sm text-slate-400">
-                      Learning
-                    </span>
-                  </HoveredLink>
-                  <HoveredLink href="/courses">
-                    <span className="text-sm text-slate-400">
-                      Marketing and Experience
-                    </span>
-                  </HoveredLink>
-                </div>
-              </MenuItem>
-              <Link href={"/whatweThink"}>
+            <div className="flex flex-col items-end  bg-transparent px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <Menu setActive={setActive} className="flex flex-col items-baseline rounded-none space-y-4">
                 <MenuItem
                   setActive={setActive}
                   active={active}
-                  item="What we think"
-                />
-              </Link>
-              <MenuItem
-                setActive={setActive}
-                active={active}
-                item="What we are >"
-              >
-                <div className="flex flex-col space-y-4 py-7">
-                  <HoveredLink href="/courses">
-                    <span className="text-sm text-slate-400">
-                      Our organization
-                    </span>
-                  </HoveredLink>
-                  <HoveredLink href="/leaders">
-                    <span className="text-sm text-slate-400">Leaders</span>
-                  </HoveredLink>
-                  <HoveredLink href="/courses">
-                    <span className="text-sm text-slate-400">Locations</span>
-                  </HoveredLink>
-                  <HoveredLink href="/gallery">
-                    <span className="text-sm text-slate-400">Gallery</span>
-                  </HoveredLink>
-                  <HoveredLink href="/events">
-                    <span className="text-sm text-slate-400">Events</span>
-                  </HoveredLink>
-                  <HoveredLink href="/courses">
-                    <span className="text-sm text-slate-400">
-                      Media & Investors
-                    </span>
-                  </HoveredLink>
-                  <HoveredLink href="/courses">
-                    <span className="text-sm text-slate-400">
-                      Media Relations
-                    </span>
-                  </HoveredLink>
-                  <HoveredLink href="/courses">
-                    <span className="text-sm text-slate-400">
-                      Investor Relations
-                    </span>
-                  </HoveredLink>
-                </div>
-              </MenuItem>
-              <MenuItem setActive={setActive} active={active} item="Careers >">
-                <div className="flex flex-col space-y-4 py-7 pr-20">
-                  <HoveredLink href="">
-                    <span className="text-sm text-slate-400 cursor-text">
-                      Find Jobs
-                    </span>
-                  </HoveredLink>
-                  <HoveredLink href="/jobs">
-                    <span className="text-sm text-slate-400">
-                      Search all Jobs
-                    </span>
-                  </HoveredLink>
-                  <HoveredLink href="/experienceProf">
-                    <span className="text-sm text-slate-400">
-                      Experience Professionals
-                    </span>
-                  </HoveredLink>
-                  <HoveredLink href="/worken">
-                    <span className="text-sm text-slate-400">
-                      Work environment
-                    </span>
-                  </HoveredLink>
-                  <HoveredLink href="/courses">
-                    <span className="text-sm text-slate-400 cursor-text">
-                      Training & Internships
-                    </span>
-                  </HoveredLink>
-                  <HoveredLink href="/courses">
-                    <span className="text-sm text-slate-400">
-                      Training & Internship
-                    </span>
-                  </HoveredLink>
-                  <HoveredLink href="/contact">
-                    <span className="text-sm pt-2 text-slate-400 hover:text-yellow-500 cursor-pointer">
-                      Contact Us
-                    </span>
-                  </HoveredLink>
-                  <HoveredLink href="/faq">
-                    <span className="text-sm text-slate-400 hover:text-yellow-500 cursor-pointer">
-                      FAQ
-                    </span>
-                  </HoveredLink>
-                </div>
-              </MenuItem>
-            </Menu>
+                  item="What we do >"
+                >
+                  <div className="flex flex-col space-y-4 pr-[430px] pb-20 ">
+                    <HoveredLink href="/service">
+                      <span className="text-white">Services</span>
+                    </HoveredLink>
+                    <HoveredLink href="/research">
+                      <span className="text-white">Research & Innovations</span>
+                    </HoveredLink>
+                    <HoveredLink href="/security">
+                      <span className="text-white">Security</span>
+                    </HoveredLink>
+                    <HoveredLink href="/courses">
+                      <span className="text-white">Learning</span>
+                    </HoveredLink>
+                    <HoveredLink href="/courses">
+                      <span className="text-white">Marketing and Experience</span>
+                    </HoveredLink>
+                  </div>
+                </MenuItem>
+                <Link href={"/whatweThink"}>
+                  <MenuItem
+                    setActive={setActive}
+                    active={active}
+                    item="What we think"
+                  />
+                </Link>
+                <MenuItem
+                  setActive={setActive}
+                  active={active}
+                  item="What we are >"
+                >
+                  <div className="flex flex-col space-y-4 pr-[490px] pb-20">
+                    <HoveredLink href="/courses">
+                      <span className="text-white">Our organization</span>
+                    </HoveredLink>
+                    <HoveredLink href="/leaders">
+                      <span className="text-white">Leaders</span>
+                    </HoveredLink>
+                    <HoveredLink href="/location">
+                      <span className="text-white">Locations</span>
+                    </HoveredLink>
+                    <HoveredLink href="/gallery">
+                      <span className="text-white">Gallery</span>
+                    </HoveredLink>
+                    <HoveredLink href="/events">
+                      <span className="text-white">Events</span>
+                    </HoveredLink>
+                    <HoveredLink href="/media">
+                      <span className="text-white">Media Relations</span>
+                    </HoveredLink>
+                    <HoveredLink href="/investor">
+                      <span className="text-white">Investor Relations</span>
+                    </HoveredLink>
+                  </div>
+                </MenuItem>
+                <MenuItem
+                  setActive={setActive}
+                  active={active}
+                  item="Careers >"
+                >
+                  <div className="flex flex-col space-y-4 pr-[405px] pb-20">
+                    <HoveredLink href="/jobs">
+                      <span className="text-white">Search all Jobs</span>
+                    </HoveredLink>
+                    <HoveredLink href="/experienceProf">
+                      <span className="text-white">
+                        Experience Professionals
+                      </span>
+                    </HoveredLink>
+                    <HoveredLink href="/worken">
+                      <span className="text-white">Work environment</span>
+                    </HoveredLink>
+                    <HoveredLink href="/courses">
+                      <span className="text-white">
+                        Training & Development
+                      </span>
+                    </HoveredLink>
+                    <HoveredLink href="/contact">
+                      <span className="text-white">Contact Us</span>
+                    </HoveredLink>
+                    <HoveredLink href="/faq">
+                      <span className="text-white">FAQ</span>
+                    </HoveredLink>
+                  </div>
+                </MenuItem>
+              </Menu>
+            </div>
           </div>
         )}
       </nav>

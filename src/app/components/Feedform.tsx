@@ -88,7 +88,7 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
           </div>
           <button
             type="submit"
-            className="bg-purple-600 text-white px-6 py-2 rounded-lg"
+            className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg"
           >
             SUBMIT
           </button>
