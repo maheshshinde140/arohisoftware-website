@@ -76,7 +76,7 @@ function Navbar({ className }: { className?: string }) {
                     <HoveredLink href="/leaders">
                       <span className="hover:border-b-4 hover:text-blue-400">Leaders</span>
                     </HoveredLink>
-                    <HoveredLink href="/courses">
+                    <HoveredLink href="/location">
                       <span className="hover:border-b-4 hover:text-blue-400">Locations</span>
                     </HoveredLink>
                     <HoveredLink href="/gallery">
@@ -90,7 +90,7 @@ function Navbar({ className }: { className?: string }) {
                     <HoveredLink href="/courses">
                       <span className="text-sm text-slate-400">Media & Investors</span>
                     </HoveredLink>
-                    <HoveredLink href="/courses">
+                    <HoveredLink href="/media">
                       <span className="hover:border-b-4 animate-in border-neutral-100 border-y-gray-400 hover:text-blue-400">
                         Media Relations
                       </span>
@@ -132,7 +132,7 @@ function Navbar({ className }: { className?: string }) {
                     </HoveredLink>
                     <HoveredLink href="/courses">
                       <span className="hover:border-b-4 animate-in hover:text-blue-400 border-neutral-100 border-y-gray-400">
-                        Training & Internship
+                        Training & Development
                       </span>
                     </HoveredLink>
                     <HoveredLink href="/contact">

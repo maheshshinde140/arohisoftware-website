@@ -1,22 +1,28 @@
-import React from 'react';
-import Image from 'next/image';
-import './WorkCard.css';
+import React from "react";
+import Image from "next/image";
+import "animate.css";
+import "./WorkCard.css";
 
-interface WorkBalanceProps {
-    images: string;
-    altText: string;
-    title: string;
-    text: string;
-}
-
-const WorkCard: React.FC<WorkBalanceProps> = ({ images, title, text, altText }) => {
-    return (
-        <div className='card'>
-            <Image src={images} alt={altText} width={480} height={270} className='cardImag' />
-            <h3>{title}</h3>
-            <h4>{text}</h4>
-        </div>
-    );
+const WorkCard = ({ images, altText, text, title }) => {
+  return (
+    <div
+      className="card"
+      style={{
+        backgroundImage: `url(${images})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="card-content">
+        <h2 className="card-title my-5">{title}</h2>
+        <p className="card-body my-5">{text}</p>
+        <a href="#" className="button">
+          Learn More
+        </a>
+      </div>
+    </div>
+  );
 };
 
 export default WorkCard;
