@@ -1,6 +1,8 @@
 import React from "react";
 import SecurityCard from "@/app/components/SecurityCard";
 import Footer from "@/app/components/Footer";
+import CyberSecurityCard from "../components/CyberSecurityCard";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -31,9 +33,9 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-white sm:h-[70vh] w-full py-10">
-        <div className="container sm:flex justify-around justify-items-center items-center mt-5">
-          <div className="text-black">
+      <div className="bg-white sm:h-[70vh] w-full py-10 ">
+        <div className="container sm:flex justify-around justify-items-center items-center  mt-5">
+          {/* <div className="text-black">
             <div className="lg:container">
               <p className="font-normal text-lg text-justify">
                 Effective security and compliance are crucial for safeguarding
@@ -46,9 +48,9 @@ const page = () => {
                 to stay secure.
               </p>
             </div>
-          </div>
-
-          <div
+          </div> */}
+      <CyberSecurityCard/> 
+          {/* <div
             className="relative sm:h-[50vh] h-[40vh] mt-5 w-full"
             style={{
               backgroundImage:
@@ -57,11 +59,12 @@ const page = () => {
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }}
-          ></div>
+          ></div> */}
         </div>
       </div>
 
-      <div className="sm:h-[70vh] w-full bg-white text-black">
+     
+      <div className="sm:h-[70vh] w-full bg-white lg:pt-56  text-black">
         <div className="container text-center">
           <p className="font-bold text-xl sm:text-5xl py-4">
             Differentiators of Advanced Cybersecurity
@@ -142,7 +145,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="bg-white w-full pt-5">
+    <div className="bg-white w-full lg:pt-48">
         <div className="container sm:w-8/12 text-black">
           <p className="font-bold text-lg">All That We Do</p>
           <p className="font-bold text-xl sm:text-4xl mt-3">
@@ -168,9 +171,33 @@ const page = () => {
             
             />
           </div>
+
         </div>
       </div>
+      
+      <div className="sm:h-[70vh] w-full bg-white   text-black">
+      <div className="w-full max-w-screen-lg bg-gray-100 p-4 rounded-lg shadow-2xl transform transition-transform hover:scale-105  mx-auto">
+      <div className="flex flex-col md:flex-row">
+        <div className="flex-1 p-4">
+          <h2 className="text-3xl font-bold mb-4 text-gray-800">Featured Insight</h2>
+          <p className="text-gray-700 mb-4">
+            <strong>IDC Spotlight:</strong> Foundational Layers for Security Shifting Left and Shielding Right
+          </p>
+          <p className="text-blue-600 font-bold cursor-pointer">
+            Let's Find Out
+          </p>
+        </div>
+        <div className="flex-1  flex justify-center items-center">
+          <img
+            className="w-full h-40 md:h-64 rounded-lg object-cover"
+            src="https://plus.unsplash.com/premium_photo-1715071976245-b4ab72b6c48b?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Replace with your image URL
+            alt="Featured Insight"
+          />
+        </div>
+      </div>
+    </div>
 
+        </div>
       <Footer />
     </div>
   );

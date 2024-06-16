@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const cardClass = "relative group w-full h-64 object-cover rounded-lg transform transition-transform duration-300 group-hover:scale-105";
 const overlayClass = "absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-lg";
