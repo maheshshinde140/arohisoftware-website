@@ -9,18 +9,13 @@
     width: 80vw;
     margin: auto;
 }
-.workBalance-container h2{
-    font-size: 3rem;
-    font-weight: bolder;
-    
-}
+
 .workBalance-container span{
     font-size: 1.1rem;
     font-weight: 200;
 }
-.displayCard{
+/* .displayCard{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     /* border: 1px solid black; */
-}

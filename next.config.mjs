@@ -6,6 +6,9 @@ const nextConfig = {
     },
     images: {
       domains: ['dynamicmedia.accenture.com'],
+    },
+    images: {
+      domains: ['https://img.freepik.com'],
     }
     
 };
