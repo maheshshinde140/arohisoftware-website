@@ -4,7 +4,7 @@ const MainSection: React.FC = () => {
   return (
     <section className="flex flex-col md:flex-row p-8">
       <div className="md:w-1/2 flex justify-center items-center">
-        <img src="https://dynamicmedia.accenture.com/is/content/accenture/Accenture%20education%20services%20hero%20image?ts=1718160472009&&fmt=webp-alpha&dpr=off" alt="Main Visual" className="max-w-full" />
+        <img src="https://cdn.prod.website-files.com/636bbf9c519296f08f480299/63c2231007fffed10c64be04_62b37049573d7e52603cafe8_6283c09ee40fd039633e1520_man-speaking-to-coworker.jpeg" alt="Main Visual" className="max-w-full" />
       </div>
       <div className="md:w-1/2 flex flex-col justify-center mt-8 md:mt-0 md:ml-8">
         <h1 className="text-4xl font-bold mb-4">Become a talent creator</h1>
