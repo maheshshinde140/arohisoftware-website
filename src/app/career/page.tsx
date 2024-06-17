@@ -168,6 +168,7 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
+<<<<<<< HEAD:src/app/xoriant/page.tsx
         <DreamRealizedSection />
         <div
           className="container mx-auto text-center "
@@ -176,6 +177,24 @@ export default function Home() {
           <CareersComponent />
         </div>
         <Feedform title="" />
+=======
+        <DreamRealizedSection/>
+        
+          <CareersComponent />
+          
+          <Feedform title=""/>
+          
+         
+          
+
+        
+
+        
+
+
+
+       
+>>>>>>> 4e30512c260f29d2d65b34a14c90e82c90168aa7:src/app/career/page.tsx
       </main>
     </div>
   );
