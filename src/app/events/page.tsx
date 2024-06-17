@@ -1,4 +1,5 @@
 "use client"
+
 import React,{useRef} from 'react'
 import ContentSlider from "../components/ContentSlider";
 import CareersComponent from "../components/CareersComponent";
@@ -33,7 +34,7 @@ const event = [
     imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ]
-function page() {
+function EventPage() {
   const images = [
     "https://assets.lummi.ai/assets/Qmdkwg1U8TttG7EBZ8PVeYSQBSjCw53vgC9XKUMaAS4z7T?auto=format&w=1500",
     "https://assets.lummi.ai/assets/Qmf3ESd5FAiVufEuKfCeZCtuxVSPcxkynogjMvHjEtHNpb?auto=format&w=1500",
@@ -42,24 +43,23 @@ function page() {
     "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   ]
   const plugin = useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: false })
   )
   return (
     <div className='min-h-screen bg-white overflow-hidden'>
       <div className='pt-36 scale-100 lg:scale-150 mx-4 translate-x-0 lg:translate-x-16 lg:mx-auto  '>
         <Carousel
           plugins={[plugin.current]}
-          className="w-full max-w-5xl "
-          onMouseEnter={plugin.current.stop}
+          className="w-[100vw] max-w-5xl "
           onMouseLeave={plugin.current.reset}
         >
           <CarouselContent>
             {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index} className="pl-1   md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={index} className="pl-1 ">
                 <div className="p-1 ">
                   <Card className=''>
-                    <CardContent className="flex   aspect-square   items-center justify-center p-0">
-                      <img width={1000} height={1000} className=' object-cover ' src={images[index]} />
+                    <CardContent className="flex items-center justify-center p-0">
+                      <img width={'1000px'} height={1000} className=' w-[80vw] max-h-[60vh]  object-cover ' src={images[index]} />
                     </CardContent>
                   </Card>
                 </div>
@@ -70,16 +70,18 @@ function page() {
           <CarouselNext />
         </Carousel>
 
-        {/* <img className='h-[100vh] w-[70vw] pt-24 mx-auto' src={"https://assets.lummi.ai/assets/Qmdkwg1U8TttG7EBZ8PVeYSQBSjCw53vgC9XKUMaAS4z7T?auto=format&w=1500"} /> */}
         </div>
-      <h1 className='text-white mt-32 text-center text-5xl font-thin'>Event</h1>
+
+      <h1 className='text-black mt-12 lg:mt-56 text-center text-5xl font-thin'>UPCOMING EVENTS 🎉</h1>
+
       <div className='w-[90vw] mx-auto mt-44'>
         {event.map((event,i) => {
           return <Event key={i} {...event}/>
         })}
       </div>
+      
       <div className='flex gap-5 flex-col items-center justify-center my-24'>
-        <h2 className='text-5xl text-black font-thin mb-12'>Gleams of Events</h2>
+        <h2 className='text-5xl text-black font-thin mb-12'>Gleams of Events 🌟</h2>
         <div className='mx-12 lg:mx-0 lg:translate-x-12'>
           <Carousels images={images}/>
         </div>
@@ -110,10 +112,11 @@ function Event({title,date,time,address,description,imageUrl}:{
 
 }){
   return (
-    <div className="hover:scale-[103%] lg:w-[80vw] mx-auto transition-all backdrop-blur-xl b flex mt-12 flex-col text-black md:flex-row bg-[#b7bdf8] p-6">
+    <div className="mt-12 hover:pb-[12px] transition-all hover:pr-[12px]  bg-gradient-to-br w-fit from-violet-400 to-orange-300 p-[0px] ">
+      <div className=" lg:w-[80vw] mx-auto transition-all backdrop-blur-xl b flex flex-col text-black md:flex-row bg-[#b7bdf8] p-6">
         <div className="md:w-1/2">
           <img
-          src={imageUrl}
+            src={imageUrl}
             className="object-cover w-full h-full"
           />
         </div>
@@ -135,7 +138,7 @@ function Event({title,date,time,address,description,imageUrl}:{
             {description}
           </p>
           <div className="flex flex-wrap gap-2 mb-4">
-         {/* {   tags.map((tag,i) => {
+            {/* {   tags.map((tag,i) => {
               return <span key={i} className="px-3 py-1 bg-gray-200 rounded-md">{tag}</span>
             
             })} */}
@@ -145,13 +148,16 @@ function Event({title,date,time,address,description,imageUrl}:{
             <span className="px-3 py-1 bg-gray-200 rounded-md">Networking Opportunities</span>
             <span className="px-3 py-1 bg-gray-200 rounded-md">Creative Workshops</span> */}
           </div>
-          <button className="self-start bg-black text-white px-6 py-2 rounded-md">GET A TICKET</button>
+          <div className="bg-gradient-to-br w-fit from-violet-400 rounded-lg to-orange-300 p-[2px] ">
+            <button className="self-start bg-black text-white px-6 py-2 rounded-md">GET A TICKET</button>
+          </div>
         </div>
       </div>
+    </div>
     );
   };
 
-export default page
+
 
 
 
@@ -162,14 +168,14 @@ export function Carousels({images}:{images:string[]}) {
 
   
   const plugin = useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: false })
   )
 
   return (
     <Carousel
       plugins={[plugin.current]}
       className="w-full max-w-5xl "
-      onMouseEnter={plugin.current.stop}
+
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
@@ -190,3 +196,4 @@ export function Carousels({images}:{images:string[]}) {
     </Carousel>
   )
 }
+export default EventPage

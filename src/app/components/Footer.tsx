@@ -1,43 +1,51 @@
 "use client";
 
+import Link from "next/link";
+
 function Footer() {
   return (
    <>
     <div className="">
-      <footer className="footer bg-gray-800 lg:p-20 p-10 text-white grid lg:grid-cols-4 grid-cols-2 gap-8">
-        <nav className="text-white">
+      <footer className="footer bg-gray-900 lg:p-20 p-10 text-white grid lg:grid-cols-5 grid-cols-2 gap-8 lg:gap-0">
+        <nav className="text-white ">
           <h6 className="footer-title text-white text-xl mb-4">Services</h6>
-          <a className="link link-hover mt-2 block">Branding</a>
-          <a className="link link-hover mt-2 block">Design</a>
-          <a className="link link-hover mt-2 block">Marketing</a>
-          <a className="link link-hover mt-2 block">Advertisement</a>
+         <div className="font-thin ">
+              <Link href="/branding" className="link hover:underline link-hover mt-2 block">Branding</Link>
+              <Link href="/design" className="link hover:underline link-hover mt-2 block">Design</Link>
+              <Link href="/courses" className="link hover:underline link-hover mt-2 block">Marketing</Link>
+              <Link href="/courses" className="link hover:underline link-hover mt-2 block">Advertisement</Link>
+         </div>
         </nav>
         <nav className="text-white">
           <h6 className="footer-title text-white text-xl mb-4">Company</h6>
-          <a className="link link-hover mt-2 block">About us</a>
-          <a className="link link-hover mt-2 block">Contact</a>
-          <a className="link link-hover mt-2 block">Jobs</a>
-          <a className="link link-hover mt-2 block">Press kit</a>
+          <div className="font-thin">
+              <Link href="/about" className="link hover:underline link-hover mt-2 block">About us</Link>
+              <Link href="/contact" className="link hover:underline link-hover mt-2 block">Contact</Link>
+              <Link href="/jobs" className="link hover:underline link-hover mt-2 block">Jobs</Link>
+              <Link href={"/press"} className="link hover:underline link-hover mt-2 block">Press kit</Link>
+          </div>
         </nav>
         <nav className="text-white">
           <h6 className="footer-title text-white text-xl mb-4">Legal</h6>
-          <a className="link link-hover mt-2 block">Terms of use</a>
-          <a className="link link-hover mt-2 block">Privacy policy</a>
-          <a className="link link-hover mt-2 block">Cookie policy</a>
+          <div className="font-thin">
+              <Link href="/terms" className="link hover:underline link-hover mt-2 block">Terms of use</Link>
+              <Link href="/policy" className="link hover:underline link-hover mt-2 block">Privacy policy</Link>
+              <Link href="/policy" className="link hover:underline link-hover mt-2 block">Cookie policy</Link>
+          </div>
         </nav>
         <form className="lg:col-span-1 col-span-2">
           <h6 className="footer-title text-white text-xl mb-4">Newsletter</h6>
           <fieldset className="form-control w-full">
-            <label className="label">
+            <label className="label ">
               <span className="label-text text-white">Enter your email address</span>
             </label>
-            <div className="flex">
+            <div className="flex items-center gap-2">
               <input
                 type="email"
                 placeholder="username@site.com"
-                className="input input-bordered rounded-lg p-3 flex-grow"
+                className="input my-3 bg-black font-mono input-bordered rounded-lg p-3 flex-grow"
               />
-              <button className="btn btn-primary p-2  rounded-xl bg-blue-600 ml-2">Subscribe</button>
+              <button className="btn btn-primary p-2 h-12  rounded-xl bg-blue-600 ml-2">Subscribe</button>
             </div>
           </fieldset>
         </form>
