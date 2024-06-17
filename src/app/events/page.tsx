@@ -46,7 +46,7 @@ function page() {
   )
   return (
     <div className='min-h-screen bg-white overflow-hidden'>
-      <div className='pt-36 scale-150 translate-x-16 mx-auto  '>
+      <div className='pt-36 scale-100 lg:scale-150 mx-4 translate-x-0 lg:translate-x-16 lg:mx-auto  '>
         <Carousel
           plugins={[plugin.current]}
           className="w-full max-w-5xl "
@@ -80,13 +80,13 @@ function page() {
       </div>
       <div className='flex gap-5 flex-col items-center justify-center my-24'>
         <h2 className='text-5xl text-black font-thin mb-12'>Gleams of Events</h2>
-        <div className='translate-x-12'>
+        <div className='mx-12 lg:mx-0 lg:translate-x-12'>
           <Carousels images={images}/>
         </div>
-        <div className='-translate-x-12'>
+        <div className='lg:block hidden lg:-translate-x-12'>
           <Carousels images={images}/>
         </div>
-        <div className='translate-x-12'>
+        <div className='lg:block hidden lg:translate-x-12'>
           <Carousels images={images} />
         </div>
 
