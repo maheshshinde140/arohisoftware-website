@@ -1,4 +1,18 @@
-import React from 'react'
+"use client"
+import React,{useRef} from 'react'
+import ContentSlider from "../components/ContentSlider";
+import CareersComponent from "../components/CareersComponent";
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
+import Footer from '../components/Footer';
+
 
 const event = [
   {
@@ -20,13 +34,30 @@ const event = [
 ]
 function page() {
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen bg-white'>
       <h1 className='text-white mt-32 text-center text-5xl font-thin'>Event</h1>
       <div className='w-[90vw] mx-auto mt-44'>
         {event.map((event,i) => {
           return <Event key={i} {...event}/>
         })}
       </div>
+      <div className='flex gap-5 flex-col items-center justify-center my-24'>
+        <h2 className='text-5xl text-black font-thin mb-12'>Gleams of Events</h2>
+        <div className='translate-x-12'>
+          <Carousels />
+        </div>
+        <div className='-translate-x-12'>
+          <Carousels />
+        </div>
+        <div className='translate-x-12'>
+          <Carousels />
+        </div>
+
+      </div>
+      <CareersComponent/>
+      <Footer/>
+
+
     </div>
   )
 }
@@ -84,3 +115,47 @@ function Event({title,date,time,address,description,imageUrl}:{
   };
 
 export default page
+
+
+
+
+
+
+export function Carousels() {
+
+  const images = [
+    "https://assets.lummi.ai/assets/Qmdkwg1U8TttG7EBZ8PVeYSQBSjCw53vgC9XKUMaAS4z7T?auto=format&w=1500",
+    "https://assets.lummi.ai/assets/Qmf3ESd5FAiVufEuKfCeZCtuxVSPcxkynogjMvHjEtHNpb?auto=format&w=1500",
+    "https://assets.lummi.ai/assets/QmfASNx9gWu4AZTrAvogsGeZa72YUKLbkopbcHdrzgAqy6?auto=format&w=1500",
+    "https://assets.lummi.ai/assets/QmRujGEci3URiLwknwUJyr1fFzfBTT2L4KDuhBau5JVSFG?auto=format&w=1500 ",
+    "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  ]
+  const plugin = useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  )
+
+  return (
+    <Carousel
+      plugins={[plugin.current]}
+      className="w-full max-w-5xl "
+      onMouseEnter={plugin.current.stop}
+      onMouseLeave={plugin.current.reset}
+    >
+      <CarouselContent>
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square  items-center justify-center p-0">
+                  <img width={1000} height={1000} className='object-cover' src={images[index]} />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+  )
+}
