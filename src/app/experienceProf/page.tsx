@@ -1,11 +1,15 @@
+<<<<<<< HEAD
+"use client";
+=======
 
+>>>>>>> 358c1ce57301b9a0cc3c867e3cc803237b004807
 import React from 'react'
 import WorkCard from '@/app/components/WorkCard/WorkCard'
 import Footer from '@/app/components/Footer';
 
 import CareersPage from "../components/CareersComponent";
 import StayConnected from '../components/StayConnected';
-
+import CareersPage from '../components/CareersComponent';
 const page = () => {
     return (
         <div className='bg-white'>
@@ -60,8 +64,9 @@ const page = () => {
                     </div>
                 </div>
             </div>
+            <CareersPage/>
             <StayConnected/>
-            <Footer />
+            <Footer/>
         </div>
     );
 };
