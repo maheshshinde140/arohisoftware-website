@@ -5,6 +5,10 @@ import Head from 'next/head';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
 import DreamRealizedSection from '../components/DreamRealizedSection';
+import CareersComponent from "../components/CareersComponent";
+import Feedform from '../components/Feedform';
+
+
 
 
 export default function Home() {
@@ -101,6 +105,17 @@ export default function Home() {
 
         {/* Services Section */}
         <DreamRealizedSection/>
+        
+          <CareersComponent />
+          
+          <Feedform title=""/>
+          
+         
+          
+
+        
+
+        
 
 
 

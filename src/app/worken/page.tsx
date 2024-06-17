@@ -1,21 +1,20 @@
 "use client";
 
+import React from 'react';
 import WorkCard from "@/app/components/WorkCard/WorkCard";
+import CareersPage from "@/app/components/CareersComponent";
+import Footer from "@/app/components/Footer";
+import StayConnected from "@/app/components/StayConnected";
 import "./worken.css";
 
-import Footer from "@/app/components/Footer";
-import StayConnected from "../components/StayConnected";
-
-function page() {
+const page: React.FC = () => {
   return (
-    <div>
-      <div className=" bg-white h-24"></div>
-
+    <div className="bg-white h-24">
       <div className=" bg-white ">
         <div className="lg:container flex-col-reverse flex justify-around items-center lg:flex-wrap h-[80vh] ">
           <div className=" lg:w-5/12 m-7">
             <p className="text-black text-3xl lg:text-6xl w-fit text-wrap font-bold">
-              Arohi Work <br></br> Environment
+              Arohi Work <br /> Environment
             </p>
             <p className="text-black font-light text-1xl mt-5">
               Be your best every day in a workplace culture that helps drive
@@ -85,7 +84,7 @@ function page() {
           </p>
           <span>
             Balance your work and personal life with a range of workplace
-            options and innovative tools that <br></br> help you stay connected
+            options and innovative tools that <br /> help you stay connected
             globally.
           </span>
 
@@ -111,10 +110,72 @@ function page() {
           </div>
         </div>
       </div>
-  <StayConnected/>
+      <div className="bg-white p-5 text-black container">
+        <span className="lg:text-5xl text-2xl font-bold">Our Culture</span>
+        <div>
+          <div className="mt-5 flex lg:flex-row flex-col-reverse justify-center items-center">
+         
+            <div className='lg:w-1/2'>
+              <img
+                src="/assets/worken/inovation.jpg"
+                alt="innovation"
+                className="w-[80vh] mx-auto lg:h-[40vh] h-[30vh] rounded-lg shadow-lg"
+              />
+            </div>
+            <div className='lg:w-1/2 p-3 m-4'>
+              <h2 className="text-xl font-bold my-5">Innovation and Creativity</h2>
+              <p>
+                At Arohi Software, we embrace a culture of innovation. Our team is
+                encouraged to think outside the box and bring fresh ideas to the
+                table. We believe that the best solutions come from diverse
+                perspectives and creative problem-solving.
+              </p>
+            </div>
+          </div>
+          <div className="mt-5 flex lg:flex-row flex-col-reverse justify-center items-center">
+         
+         <div className='lg:w-1/2'>
+           <img
+             src="/assets/worken/teamwork.jpg"
+             alt="innovation"
+             className="w-[80vh] aspect-video lg:h-[40vh] h-[30vh] mx-auto  rounded-lg shadow-lg"
+           />
+         </div>
+         <div className='lg:w-1/2 p-3 m-4'>
+           <h2 className="text-xl font-bold my-5">Collaboration and Teamwork
+           </h2>
+           <p>
+           We value collaboration and believe that great things happen when we work together. Our open and inclusive work environment ensures that everyone’s voice is heard, and we support each other to achieve our common goals.
+           </p>
+         </div>
+       </div>
+       <div className="mt-5 flex lg:flex-row flex-col-reverse justify-center items-center">
+         
+         <div className='lg:w-1/2'>
+           <img
+             src="/assets/worken/learning.png"
+             alt="innovation"
+             className="w-[80vh] lg:h-[40vh] h-[30vh] mx-auto rounded-lg shadow-lg"
+           />
+         </div>
+         <div className='lg:w-1/2 p-3 m-4'>
+           <h2 className="text-xl font-bold my-5">Continuous Learning</h2>
+           <p>
+           Technology is ever-evolving, and so are we. We invest in our employees’ professional development through ongoing training, workshops, and access to the latest industry resources. We are committed to helping our team stay ahead of the curve.
+           </p>
+         </div>
+       </div>
+        </div>
+      </div>
+
+      <div className="bg-white py-5">
+        <CareersPage />
+        <StayConnected />
+      </div>
+
       <Footer />
     </div>
   );
-}
+};
 
 export default page;
