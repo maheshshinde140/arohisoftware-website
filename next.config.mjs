@@ -2,7 +2,13 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-      domains: ['www.xoriant.com'],
+      domains: ['images.unsplash.com'],
+      remotePatterns: [
+      {
+        hostname: 'images.unsplash.com',
+        pathname: 'images.unsplash.com/**',
+      },
+    ],
     },
     images: {
       domains: ['dynamicmedia.accenture.com'],
@@ -12,6 +18,7 @@ const nextConfig = {
     }
     
 };
+
 
 export default nextConfig;
 
