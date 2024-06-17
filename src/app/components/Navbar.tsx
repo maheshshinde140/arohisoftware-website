@@ -50,7 +50,7 @@ function Navbar({ className }: { className?: string }) {
                     <HoveredLink href="">
                       <span className="text-sm text-slate-400"></span>
                     </HoveredLink>
-                    <HoveredLink href="/courses">
+                    <HoveredLink href="/learning">
                       <span className="hover:border-b-4 animate-in border-neutral-100 border-y-gray-400 hover:text-blue-400">
                        Learning
                       </span>

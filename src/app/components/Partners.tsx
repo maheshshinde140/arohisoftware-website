@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
@@ -5,7 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 // Import images from assets
-import awsLogo from './../../../public/assets/partners/awsLogo.png';
+import awsLogo from './../../../public/assets/partners/awsLogo.png' ;
 import accenturelogo from "./../../../public/assets/partners/accenturelogo.png"
 // import courseraLogo from './assets/logos/coursera.png';
 // import googleCloudLogo from './assets/logos/google-cloud.png';
@@ -18,7 +19,7 @@ import accenturelogo from "./../../../public/assets/partners/accenturelogo.png"
 
 const PartnersContainer = styled.div`
   padding: 56px 0;
-  background: #f5f5f5;
+  background: grey;
   text-align: center;
 
   h2 {
@@ -51,10 +52,10 @@ const Partners = () => {
   };
 
   const logos = [
-    { src: awsLogo, alt: 'AWS' },
-    { src: awsLogo, alt: 'AWS' },
-    { src: awsLogo, alt: 'AWS' },
-    { src: awsLogo, alt: 'AWS' },
+    { src: awsLogo.src, alt: 'AWS' },
+    { src: accenturelogo.src, alt: 'accenture' },
+    { src: awsLogo.src, alt: 'AWS' },
+    { src: awsLogo.src, alt: 'AWS' },
     // { src: courseraLogo, alt: 'Coursera' },
     // { src: googleCloudLogo, alt: 'Google Cloud' },
     // { src: microsoftLogo, alt: 'Microsoft' },
@@ -71,12 +72,15 @@ const Partners = () => {
       <Slider {...settings}>
         {logos.map((logo, index) => (
           <PartnerLogoContainer key={index}>
-            <PartnerLogo src={`${logo.src}`} alt={logo.alt} />
+            <PartnerLogo src = {logo.src} alt={logo.alt} />
           </PartnerLogoContainer>
         ))}
       </Slider>
     </PartnersContainer>
-  );
-};
+
+  )}
+
+
+
 
 export default Partners;

@@ -11,13 +11,15 @@ interface thinkCardProps {
 const ThinkCard: React.FC<thinkCardProps> = ({images,altText,title,text}) => {
   return (
     <div className='box' >
-      <Image src={`${images}`} alt={altText}/>
+      <Image src={`${images}`} alt="altText"/>
       
       <div className='second-div'>
       <h1>Research report</h1>
       <p>{title}</p>
       </div>
+      </div>
 
+)
 }
 
 export default ThinkCard;

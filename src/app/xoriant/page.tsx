@@ -1,24 +1,18 @@
-
-"use client"
+"use client";
 // pages/index.tsx
-import Head from 'next/head';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
-import DreamRealizedSection from '../components/DreamRealizedSection';
+import Head from "next/head";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
+import DreamRealizedSection from "../components/DreamRealizedSection";
 import CareersComponent from "../components/CareersComponent";
-import Feedform from '../components/Feedform';
-
-
-
+import Feedform from "../components/Feedform";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100">
- 
-
-      <main className="w-full" >
+      <main className="w-full">
         {/* Hero Section */}
-        <section className="relative h-screen" >
+        <section className="relative h-screen">
           <Carousel
             autoPlay
             infiniteLoop
@@ -26,59 +20,122 @@ export default function Home() {
             showStatus={false}
             className="h-full"
           >
-            <div className="relative h-screen" style={{backgroundImage:"url('./line.png')"}}>
-              <img src="/xbg1.png" alt="Background 1" className="w-full h-full object-cover" />
+            <div
+              className="relative h-screen"
+              style={{ backgroundImage: "url('./line.png')" }}
+            >
+              <img
+                src="/xbg1.png"
+                alt="Background 1"
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-black opacity-50"></div>
             </div>
             <div className="relative h-screen">
-              <img src="/x.bg2.png" alt="Background 2" className="w-full h-full object-cover" />
+              <img
+                src="/x.bg2.png"
+                alt="Background 2"
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-black opacity-50"></div>
             </div>
             <div className="relative h-screen">
-              <img src="/xbg3.png" alt="Background 3" className="w-full h-full object-cover" />
+              <img
+                src="/xbg3.png"
+                alt="Background 3"
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-black opacity-50"></div>
             </div>
           </Carousel>
           <div className="absolute inset-0 flex items-center justify-center text-center">
             <div className="text-white">
-              <h1 className="text-5xl md:text-6xl font-bold mb-4">Welcome to Arohi Software</h1>
-              <p className="text-xl md:text-2xl mb-8">Delivering Cutting-edge IT Solutions</p>
-              <a href="#" className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-md text-white">Learn More</a>
+              <h1 className="text-5xl md:text-6xl font-bold mb-4">
+                Welcome to Arohi Software
+              </h1>
+              <p className="text-xl md:text-2xl mb-8">
+                Delivering Cutting-edge IT Solutions
+              </p>
+              <a
+                href="#"
+                className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-md text-white"
+              >
+                Learn More
+              </a>
             </div>
           </div>
         </section>
 
         {/* About Section */}
-        <section className="py-16 bg-white" style={{backgroundImage:"url('./Bottom Wave Desktop.png.webp')"}}>
-          <div className="container mx-auto text-center px-4 " style={{maxWidth:"70vw"}}>
-            <h2 className="text-4xl font-semibold mb-6 text-black">About Arohi Software</h2>
-            <h4  className='text-2xl font-semibold mb-6 text-black'>We are the intersection where digital engineering and tomorrow's technologies meet today’s business aspirations, accelerating enterprise future states.</h4>
+        <section
+          className="py-16 bg-white"
+          style={{ backgroundImage: "url('./Bottom Wave Desktop.png.webp')" }}
+        >
+          <div
+            className="container mx-auto text-center px-4 "
+            style={{ maxWidth: "70vw" }}
+          >
+            <h2 className="text-4xl font-semibold mb-6 text-black">
+              About Arohi Software
+            </h2>
+            <h4 className="text-2xl font-semibold mb-6 text-black">
+              We are the intersection where digital engineering and tomorrow's
+              technologies meet today’s business aspirations, accelerating
+              enterprise future states.
+            </h4>
             <p className="text-gray-600 mb-8">
-              We are a leading technology solutions provider, delivering innovative services to our clients.
+              We are a leading technology solutions provider, delivering
+              innovative services to our clients.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="relative group bg-gray-900 p-6 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-white">Our Mission</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-white">
+                  Our Mission
+                </h3>
 
-                <img src="/xbg1.png" alt="Our Mission" className="w-full h-40 object-cover mb-4 rounded-md group-hover:opacity-0 transition-opacity duration-300" />
+                <img
+                  src="/xbg1.png"
+                  alt="Our Mission"
+                  className="w-full h-40 object-cover mb-4 rounded-md group-hover:opacity-0 transition-opacity duration-300"
+                />
                 <div className="absolute inset-0 flex flex-col justify-center items-center bg-gray-900 bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-gray-400">To provide state-of-the-art technology solutions that add real value to businesses.</p>
+                  <p className="text-gray-400">
+                    To provide state-of-the-art technology solutions that add
+                    real value to businesses.
+                  </p>
                 </div>
               </div>
               <div className="relative group bg-gray-900 p-6 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-white">Our Vision</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-white">
+                  Our Vision
+                </h3>
 
-                <img src="/x.bg2.png" alt="Our Vision" className="w-full h-40 object-cover mb-4 rounded-md group-hover:opacity-0 transition-opacity duration-300" />
+                <img
+                  src="/x.bg2.png"
+                  alt="Our Vision"
+                  className="w-full h-40 object-cover mb-4 rounded-md group-hover:opacity-0 transition-opacity duration-300"
+                />
                 <div className="absolute inset-0 flex flex-col justify-center items-center bg-gray-900 bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-gray-400">To be recognized as a global leader in IT services and solutions.</p>
+                  <p className="text-gray-400">
+                    To be recognized as a global leader in IT services and
+                    solutions.
+                  </p>
                 </div>
               </div>
               <div className="relative group bg-gray-900 p-6 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-white">Our Values</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-white">
+                  Our Values
+                </h3>
 
-                <img src="/xbg3.png" alt="Our Values" className="w-full h-40 object-cover mb-4 rounded-md group-hover:opacity-0 transition-opacity duration-300" />
+                <img
+                  src="/xbg3.png"
+                  alt="Our Values"
+                  className="w-full h-40 object-cover mb-4 rounded-md group-hover:opacity-0 transition-opacity duration-300"
+                />
                 <div className="absolute inset-0 flex flex-col justify-center items-center bg-gray-900 bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-gray-400">Innovation, Integrity, and Excellence in all we do.</p>
+                  <p className="text-gray-400">
+                    Innovation, Integrity, and Excellence in all we do.
+                  </p>
                 </div>
               </div>
             </div>
@@ -86,10 +143,18 @@ export default function Home() {
         </section>
 
         {/* Video Section */}
-        <section style={{backgroundImage:"url('./line.png')"}}>
-          <div className="container mx-auto text-center px-4" style={{ maxWidth: "70vw" ,backgroundImage:"url('./line.png')"}}>
-            <h2 className="text-4xl font-semibold mb-6 text-black">Watch Our Story</h2>
-            <div className="relative w-full overflow-hidden pb-56 mb-8 "  style={{height:"70vh"}}>
+        <section style={{ backgroundImage: "url('./line.png')" }}>
+          <div
+            className="container mx-auto text-center px-4"
+            style={{ maxWidth: "70vw", backgroundImage: "url('./line.png')" }}
+          >
+            <h2 className="text-4xl font-semibold mb-6 text-black">
+              Watch Our Story
+            </h2>
+            <div
+              className="relative w-full overflow-hidden pb-56 mb-8 "
+              style={{ height: "70vh" }}
+            >
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
                 src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
@@ -97,29 +162,20 @@ export default function Home() {
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-               
               ></iframe>
             </div>
           </div>
-          </section>
+        </section>
 
         {/* Services Section */}
-        <DreamRealizedSection/>
-        <div className="container mx-auto text-center " style={{ maxWidth: "70vw" , maxHeight:"80vh"}}>
+        <DreamRealizedSection />
+        <div
+          className="container mx-auto text-center "
+          style={{ maxWidth: "70vw", maxHeight: "80vh" }}
+        >
           <CareersComponent />
-          </div>
-          <Feedform title=""/>
-          
-         
-          
-
-        
-
-        
-
-
-
-       
+        </div>
+        <Feedform title="" />
       </main>
     </div>
   );

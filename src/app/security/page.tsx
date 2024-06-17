@@ -1,8 +1,19 @@
-import React from "react";
+"use client"
+
 import SecurityCard from "@/app/components/SecurityCard";
 import Footer from "@/app/components/Footer";
 import CyberSecurityCard from "../components/CyberSecurityCard";
 import Image from "next/image";
+import Partners from "../components/Partners";
+import CareersPage from "../components/CareersComponent";
+// Import your local images
+import bgImage from "./../../../public/assets/security/360_F_358108785_rNJtmort9m65M3pft5swd7lnKJcTCB8u.jpg";
+import insightImage from "./../../../public/assets/security/istockphoto-1430232403-612x612.jpg";
+import allianceImage from "./../../../public/assets/security/01-Leverage-alliances.png.webp";
+import zeroTrustImage from "./../../../public/assets/security/02-Achieve-over.png.webp";
+import fortifySecurityImage from "./../../../public/assets/security/03-Fortify-security.png.webp";
+import complianceImage from "./../../../public/assets/security/04-Evaluate-security.png.webp";
+
 
 const page = () => {
   return (
@@ -12,8 +23,7 @@ const page = () => {
       <div
         className="sm:h-[85vh] h-52 w-full pt-7"
         style={{
-          backgroundImage:
-            "url('https://t4.ftcdn.net/jpg/03/58/10/87/360_F_358108785_rNJtmort9m65M3pft5swd7lnKJcTCB8u.jpg')",
+          backgroundImage: `url(${bgImage.src})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -34,37 +44,12 @@ const page = () => {
       </div>
 
       <div className="bg-white sm:h-[70vh] w-full py-10 ">
-        <div className="container sm:flex justify-around justify-items-center items-center  mt-5">
-          {/* <div className="text-black">
-            <div className="lg:container">
-              <p className="font-normal text-lg text-justify">
-                Effective security and compliance are crucial for safeguarding
-                business assets, customer data, and reputation. Despite the
-                relentless stream of attacks, Xoriant&apos;s extensive security
-                expertise and continuous adoption of innovative tools empower us
-                to shield your assets—be it legacy systems, cloud-native
-                infrastructure, or mobile apps. Count on us to eliminate both
-                existing and potential vulnerabilities, enabling your business
-                to stay secure.
-              </p>
-            </div>
-          </div> */}
-      <CyberSecurityCard/> 
-          {/* <div
-            className="relative sm:h-[50vh] h-[40vh] mt-5 w-full"
-            style={{
-              backgroundImage:
-                "url('https://media.istockphoto.com/id/1430232403/photo/cybersecurity-data-protection-digital-technology-concept-internet-network-connection-icons.jpg?s=612x612&w=0&k=20&c=-fhyHDA2mmWyTYjcANIxm2POetmVxtLlSZuu7jPtO1Q=')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
-          ></div> */}
+        <div className="container sm:flex justify-around justify-items-center items-center mt-5">
+          <CyberSecurityCard /> 
         </div>
       </div>
 
-     
-      <div className="sm:h-[70vh] w-full bg-white lg:pt-56  text-black">
+      <div className="sm:h-[70vh] w-full bg-white lg:pt-56 text-black">
         <div className="container text-center">
           <p className="font-bold text-xl sm:text-5xl py-4">
             Differentiators of Advanced Cybersecurity
@@ -74,8 +59,7 @@ const page = () => {
               <div
                 className="h-[10vh] w-24 ml-3 mt-3"
                 style={{
-                  backgroundImage:
-                    "url('https://www.xoriant.com/cdn/ff/1-2a7dHkqwKpuu1b7Ar5go9mBq3LuUShw1JwUqpnums/1713168911/public/styles/webp/public/2023-08/01-Leverage-alliances.png.webp?itok=EjwDOShc')",
+                  backgroundImage: `url(${allianceImage.src})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
@@ -92,11 +76,10 @@ const page = () => {
               <div
                 className="h-[10vh] w-24 ml-3 mt-3"
                 style={{
-                  backgroundImage:
-                    "url('https://www.xoriant.com/cdn/ff/c90A1IazLkijzEVc6adgd2SsFUdQr3zNIfZubez2TV4/1713168911/public/styles/webp/public/2023-08/02-Achieve-over.png.webp?itok=-M65aItf')",
+                  backgroundImage: `url(${zeroTrustImage.src})`,
                   backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
                 }}
               ></div>
 
@@ -110,8 +93,7 @@ const page = () => {
               <div
                 className="h-[10vh] w-24 ml-3 mt-3"
                 style={{
-                  backgroundImage:
-                    "url('https://www.xoriant.com/cdn/ff/6lzM9IdiEZfT5k2nVKWgpX6N3gzf5GYfOJEQqOCk1XI/1713168911/public/styles/webp/public/2023-08/03-Fortify-security.png.webp?itok=NrQAs7Bg')",
+                  backgroundImage: `url(${fortifySecurityImage.src})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
@@ -124,12 +106,11 @@ const page = () => {
               </div>
             </div>
 
-            <div className=" sm:w-[15vw] bg-gray-200 rounded-lg cursor-pointer">
+            <div className="sm:w-[15vw] bg-gray-200 rounded-lg cursor-pointer">
               <div
                 className="h-[10vh] w-24 ml-3 mt-3"
                 style={{
-                  backgroundImage:
-                    "url('https://www.xoriant.com/cdn/ff/ZaNfY_tr0rSf5Dciv57w6BkrCB6OCoP6rl-tuYqeHDs/1713168911/public/styles/webp/public/2023-08/04-Evaluate-security.png.webp?itok=B3CieO5h')",
+                  backgroundImage: `url(${complianceImage.src})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
@@ -145,7 +126,7 @@ const page = () => {
         </div>
       </div>
 
-    <div className="bg-white w-full lg:pt-48">
+      <div className="bg-white w-full lg:pt-48">
         <div className="container sm:w-8/12 text-black">
           <p className="font-bold text-lg">All That We Do</p>
           <p className="font-bold text-xl sm:text-4xl mt-3">
@@ -153,7 +134,7 @@ const page = () => {
           </p>
           <div className="mt-5 flex justify-around flex-wrap h-50">
             <SecurityCard
-              images="https://www.xoriant.com/cdn/ff/tfQmLKCNCpNzud20vm4FyLBTJS3PJMKLCs8-z0-n9Y0/1713168911/public/styles/webp/public/2023-08/Security-1.png.webp?itok=z_slh30l"
+              images={allianceImage.src}
               altText="this is img"
               text="Implement a strategic Security framework through a thorough security posture analysis, roadmap development, policy implementation, and BCP development."
               title="Enterprise Security Strategy"
@@ -162,42 +143,42 @@ const page = () => {
             />
 
             <SecurityCard
-              images="https://www.xoriant.com/cdn/ff/tfQmLKCNCpNzud20vm4FyLBTJS3PJMKLCs8-z0-n9Y0/1713168911/public/styles/webp/public/2023-08/Security-1.png.webp?itok=z_slh30l"
+              images={allianceImage.src}
               altText="this is img"
               text="Implement a strategic Security framework through a thorough security posture analysis, roadmap development, policy implementation, and BCP development."
               title="Enterprise Security Strategy"
               width={100}
               height={100}
-            
             />
           </div>
-
         </div>
       </div>
+
+      <div className="sm:h-[70vh] w-full bg-white text-black">
+        <div className="w-full max-w-screen-lg bg-gray-100 p-4 rounded-lg shadow-2xl transform transition-transform hover:scale-105 mx-auto">
+          <div className="flex flex-col md:flex-row">
+            <div className="flex-1 p-4">
+              <h2 className="text-3xl font-bold mb-4 text-gray-800">Featured Insight</h2>
+              <p className="text-gray-700 mb-4">
+                <strong>IDC Spotlight:</strong> Foundational Layers for Security Shifting Left and Shielding Right
+              </p>
+              <p className="text-blue-600 font-bold cursor-pointer">
+                Let's Find Out
+              </p>
+            </div>
+            <div className="flex-1 flex justify-center items-center">
+              <img
+                className="w-full h-40 md:h-64 rounded-lg object-cover"
+                src={insightImage.src}
+                alt="Featured Insight"
+              />
+            </div>
+          </div>
+        </div>
       
-      <div className="sm:h-[70vh] w-full bg-white   text-black">
-      <div className="w-full max-w-screen-lg bg-gray-100 p-4 rounded-lg shadow-2xl transform transition-transform hover:scale-105  mx-auto">
-      <div className="flex flex-col md:flex-row">
-        <div className="flex-1 p-4">
-          <h2 className="text-3xl font-bold mb-4 text-gray-800">Featured Insight</h2>
-          <p className="text-gray-700 mb-4">
-            <strong>IDC Spotlight:</strong> Foundational Layers for Security Shifting Left and Shielding Right
-          </p>
-          <p className="text-blue-600 font-bold cursor-pointer">
-            Let's Find Out
-          </p>
-        </div>
-        <div className="flex-1  flex justify-center items-center">
-          <img
-            className="w-full h-40 md:h-64 rounded-lg object-cover"
-            src="https://plus.unsplash.com/premium_photo-1715071976245-b4ab72b6c48b?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Replace with your image URL
-            alt="Featured Insight"
-          />
-        </div>
       </div>
-    </div>
-
-        </div>
+        <Partners/>
+        <CareersPage/>
       <Footer />
     </div>
   );
