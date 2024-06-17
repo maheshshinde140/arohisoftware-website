@@ -1,8 +1,9 @@
+"use client";
 import React from 'react'
 import WorkCard from '@/app/components/WorkCard/WorkCard'
 import Footer from '@/app/components/Footer'
 import StayConnected from '../components/StayConnected';
-
+import CareersPage from '../components/CareersComponent';
 const page = () => {
     return (
         <div className='bg-white'>
@@ -57,8 +58,9 @@ const page = () => {
                     </div>
                 </div>
             </div>
+            <CareersPage/>
             <StayConnected/>
-            <Footer />
+            <Footer/>
         </div>
     );
 };
