@@ -43,16 +43,18 @@ const DreamRealizedSection = () => {
             className="w-full"
           >
             {successStories.map((story, index) => (
-              <div key={index} className="grid md:grid-cols-2 gap-4 items-center">
+              <div key={index} className="grid md:grid-cols-2 items-center">
                 <div className="w-full h-full md:col-span-1">
                   <img
                     src={story.image}
                     alt={story.title}
-                    className="w-full h-auto object-cover rounded-md"
+                    className="w-full h-full object-cover rounded-md"
+                    style={{height:"40vh"}}
+                    
                   />
                 </div>
                 <div className="flex flex-col justify-center items-center bg-white bg-opacity-90 p-6 rounded-md md:col-span-1">
-                  <h3 className="text-2xl font-semibold mb-4 text-teal-900">
+                  <h3 className="text-2xl font-semibold  text-teal-900">
                     {story.title}
                   </h3>
                   <p className="text-gray-600">{story.description}</p>
