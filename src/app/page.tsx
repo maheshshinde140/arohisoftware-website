@@ -21,6 +21,7 @@ import { Homelamp } from "./components/Homelamp";
 import HomepageCard from "./components/HomepageCard";
 import CareersComponent from "./components/CareersComponent";
 import Feedform from "./components/Feedform";
+import Partners from "./components/Partners";
 
 export default function Home() {
 
@@ -31,8 +32,9 @@ export default function Home() {
         <WhyChooseUs />
         <Servicecard />
         <CareersComponent />
-        <TestimonialCards />
+        <Partners/>
         <Feedform title="Move to Cloud or Make the most of Existing Cloud Setup for the Next-phase-of-growth."/>
+        <TestimonialCards />
         <Footer />
 
 
