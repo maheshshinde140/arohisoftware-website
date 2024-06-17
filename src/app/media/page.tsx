@@ -1,14 +1,24 @@
-"use client"
 
-import { useState, Fragment } from 'react';
-import { Dialog, Transition } from '@headlessui/react';
-import Head from 'next/head';
+
+
+"use client";
+
+import { useState, Fragment } from "react";
+import { Dialog, Transition } from "@headlessui/react";
+import Head from "next/head";
+
+interface News {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+}
 
 const NewsroomPage = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedNews, setSelectedNews] = useState({ title: '', description: '' });
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [selectedNews, setSelectedNews] = useState<News | null>(null);
 
-  const openModal = (news) => {
+  const openModal = (news: News) => {
     setSelectedNews(news);
     setIsOpen(true);
   };
@@ -17,24 +27,24 @@ const NewsroomPage = () => {
     setIsOpen(false);
   };
 
-  const newsList = [
+  const newsList: News[] = [
     {
       id: 1,
-      title: 'News Title 1',
-      description: 'Full description of news 1...',
-      image: '/new1.png',
+      title: "News Title 1",
+      description: "Full description of news 1...",
+      image: "/new1.png",
     },
     {
       id: 2,
-      title: 'News Title 2',
-      description: 'Full description of news 2...',
-      image: '/new2.png',
+      title: "News Title 2",
+      description: "Full description of news 2...",
+      image: "/new2.png",
     },
     {
       id: 3,
-      title: 'News Title 3',
-      description: 'Full description of news 3...',
-      image: '/new3.png',
+      title: "News Title 3",
+      description: "Full description of news 3...",
+      image: "/new3.png",
     },
   ];
 
@@ -44,7 +54,7 @@ const NewsroomPage = () => {
         <title>Newsroom - Arohi Softwares</title>
         <meta name="description" content="Accenture Newsroom" />
       </Head>
-      
+
       <header className="bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
@@ -63,14 +73,19 @@ const NewsroomPage = () => {
       <main className="py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-semibold text-gray-800 mb-8">Newsroom</h1>
-          
+
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Featured News</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {newsList.map(news => (
                 <div key={news.id} className="bg-white p-6 shadow-md rounded-lg hover:shadow-lg transition-shadow duration-300">
                   <img src={news.image} alt="News" className="w-full h-48 object-cover rounded-md mb-4" />
-                  <h3 className="text-xl font-semibold text-blue-600 mb-2 cursor-pointer hover:text-blue-800 transition-colors duration-300" onClick={() => openModal(news)}>{news.title}</h3>
+                  <h3
+                    className="text-xl font-semibold text-blue-600 mb-2 cursor-pointer hover:text-blue-800 transition-colors duration-300"
+                    onClick={() => openModal(news)}
+                  >
+                    {news.title}
+                  </h3>
                   <p className="text-gray-600">Brief description of the news...</p>
                 </div>
               ))}
@@ -82,7 +97,12 @@ const NewsroomPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {newsList.map(news => (
                 <div key={news.id} className="bg-white p-6 shadow-md rounded-lg hover:shadow-lg transition-shadow duration-300">
-                  <h3 className="text-xl font-semibold text-blue-600 mb-2 cursor-pointer hover:text-blue-800 transition-colors duration-300" onClick={() => openModal(news)}>{news.title}</h3>
+                  <h3
+                    className="text-xl font-semibold text-blue-600 mb-2 cursor-pointer hover:text-blue-800 transition-colors duration-300"
+                    onClick={() => openModal(news)}
+                  >
+                    {news.title}
+                  </h3>
                   <p className="text-gray-600">Brief description of the news...</p>
                 </div>
               ))}
@@ -126,11 +146,11 @@ const NewsroomPage = () => {
             >
               <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
                 <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
-                  {selectedNews.title}
+                  {selectedNews?.title}
                 </Dialog.Title>
                 <div className="mt-2">
                   <p className="text-sm text-gray-500">
-                    {selectedNews.description}
+                    {selectedNews?.description}
                   </p>
                 </div>
 

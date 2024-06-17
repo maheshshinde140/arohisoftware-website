@@ -6,21 +6,22 @@ const DreamRealizedSection = () => {
   const successStories = [
     {
       image: "./xbg1.png",
-      title: "Success Story 1",
+      title: "Revolutionizing Healthcare with Arohi Software",
       description:
-        "Description of success story one goes here. Highlighting top-notch solutions provided.",
+        `
+ Arohi Software has completely transformed our hospital's operations. The new system is intuitive, efficient, and has made a noticeable difference in patient care.” – Dr. Sarah Thompson, Chief Medical Officer, HealthyLife Hospitals`,
     },
     {
       image: "./x.bg2.png",
-      title: "Success Story 2",
+      title: "Streamlining Supply Chain Management",
       description:
-        "Description of success story two goes here. Showcasing innovative solutions delivered.",
+        "Arohi Software’s SCM solution has been a game-changer for our business. The efficiency and transparency we’ve gained have directly contributed to our bottom line.” – John Riley, CEO, GlobalTech Manufacturing",
     },
     {
       image: "./xbg3.png",
-      title: "Success Story 3",
+      title: "Empowering E-Commerce Growth",
       description:
-        "Description of success story three goes here. Demonstrating excellence in every service.",
+        "“Thanks to Arohi Software, our e-commerce platform is now a cornerstone of our business strategy. The increase in sales and customer engagement has been remarkable.” – Emily Ross, Marketing Director, TrendyWear Fashion",
     },
   ];
 

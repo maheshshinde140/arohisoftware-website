@@ -105,9 +105,9 @@ export default function Home() {
 
         {/* Services Section */}
         <DreamRealizedSection/>
-        <div className="container mx-auto text-center " style={{ maxWidth: "70vw" , maxHeight:"80vh"}}>
+        
           <CareersComponent />
-          </div>
+          
           <Feedform title=""/>
           
          
