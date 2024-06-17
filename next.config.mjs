@@ -1,3 +1,5 @@
+import { hostname } from 'os';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
@@ -15,7 +17,8 @@ const nextConfig = {
     },
     images: {
       domains: ['https://img.freepik.com'],
-    }
+    },
+    
     
 };
 
