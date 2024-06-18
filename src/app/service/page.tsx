@@ -4,6 +4,7 @@ import Image from "next/image";
 import ServiceCard from "../components/ServicesCard";
 import IndustrySelection from "../components/IndustrySelectionCard";
 import Footer from "../components/Footer";
+import Feedform from "../components/Feedform";
 
 function Service() {
   return (
@@ -77,6 +78,7 @@ function Service() {
         </div>
       </div>
       <ServiceCard/>
+      <Feedform title="" />
       <Footer/>
           
     </div>
