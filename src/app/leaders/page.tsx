@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Leadership from './components/Leadership';
+import Leadership from '@/components/ui/Leadership';
 
 function App() {
   return (

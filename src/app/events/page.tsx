@@ -43,31 +43,31 @@ function EventPage() {
     "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   ]
   const plugin = useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false })
+    Autoplay({ delay: 3000, stopOnInteraction: false })
   )
   return (
-    <div className='min-h-screen bg-white overflow-hidden'>
-      <div className='pt-36 scale-100 lg:scale-150 mx-4 translate-x-0 lg:translate-x-16 lg:mx-auto  '>
+    <div className='min-h-screen  bg-white overflow-hidden'>
+      <div className='pt-24 scale-100  '>
         <Carousel
           plugins={[plugin.current]}
-          className="w-[100vw] max-w-5xl "
+          className="w-screen "
           onMouseLeave={plugin.current.reset}
         >
           <CarouselContent>
             {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index} className="pl-1 ">
-                <div className="p-1 ">
-                  <Card className=''>
+              <CarouselItem key={index} className="">
+                <div className=" ">
+                  <Card className='w-screen'>
                     <CardContent className="flex items-center justify-center p-0">
-                      <img width={'1000px'} height={1000} className=' w-[80vw] max-h-[60vh]  object-cover ' src={images[index]} />
+                      <img  height={1000} className='w-full max-h-[80vh]  object-cover ' src={images[index]} />
                     </CardContent>
                   </Card>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+    
+  
         </Carousel>
 
         </div>
