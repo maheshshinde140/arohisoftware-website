@@ -4,6 +4,9 @@ import Image from "next/image";
 import ServiceCard from "../components/ServicesCard";
 import IndustrySelection from "../components/IndustrySelectionCard";
 import Footer from "../components/Footer";
+import StayConnected from "../components/StayConnected";
+import CareerPage from "../career/page"
+import CareersComponent from "../components/CareersComponent";
 
 function Service() {
   return (
@@ -76,7 +79,9 @@ function Service() {
          
         </div>
       </div>
+     
       <ServiceCard/>
+      <CareersComponent/>
       <Footer/>
           
     </div>

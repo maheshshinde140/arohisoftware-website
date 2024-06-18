@@ -1,25 +1,36 @@
-import React from 'react';
-import Image, { StaticImageData } from 'next/image';
-import './ThinkCard.css';
+import React from 'react'
+import Image from 'next/image';
+import CareerComponent from '../components/CareersComponent';
+import Footer from './Footer';
 
-interface thinkCardProps {
-    images:String,
-    altText: String,
-    title:String,
-    text:String
-   }
-const ThinkCard: React.FC<thinkCardProps> = ({images,altText,title,text}) => {
-  return (
-    <div className='box' >
-      <Image src={`${images}`} alt="altText"/>
-      
-      <div className='second-div'>
-      <h1>Research report</h1>
-      <p>{title}</p>
-      </div>
-      </div>
+import './ThinkCard.css'
 
-)
+interface ThinkCardProps {
+    images: string,
+    altText: string,
+    title: string,
+    text: string
 }
 
-export default ThinkCard;
+const ThinkCard: React.FC<ThinkCardProps> = ({ images, altText, title, text }) => {
+  return (
+ <div>
+     <div className='box'>
+      <Image src={`${images}`} alt={altText} width={500} height={300} />
+      <div className='second-div'>
+        <h1>Research report</h1>
+        <p>{title}</p>
+      </div>
+      <div className='overlay'>
+        <h2>{text}</h2>
+      </div>
+
+    
+      
+    </div>
+    
+ </div>
+  )
+}
+
+export default ThinkCard

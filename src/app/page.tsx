@@ -25,22 +25,17 @@ import Feedform from "./components/Feedform";
 import OurPartners from "./components/OurPartners";
 
 export default function Home() {
-
   return (
     <div className=" relative overflow-hidden">
-        <HeroSection />
-        <HomepageCard />
-        <WhyChooseUs />
-        <Servicecard />
-        <OurPartners/>
-        <CareersComponent />
-        <Feedform title="Move to Cloud or Make the most of Existing Cloud Setup for the Next-phase-of-growth."/>
-        <TestimonialCards />
-        <Footer />
-
-
-
-       
+      <HeroSection />
+      <HomepageCard />
+      <WhyChooseUs />
+      <Servicecard />
+      <OurPartners />
+      <CareersComponent />
+      <Feedform title="Move to Cloud or Make the most of Existing Cloud Setup for the Next-phase-of-growth." />
+      <TestimonialCards />
+      <Footer />
     </div>
   );
 }
