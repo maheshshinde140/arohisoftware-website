@@ -14,7 +14,7 @@ import CareersComponent from '../components/CareersComponent';
 
 const App: React.FC = () => {
   return (
-    <div className="App bg-black">
+    <div className="App bg-black ">
       <Header />
       <main className="py-20">
         {/* <LearningNavbar /> */}

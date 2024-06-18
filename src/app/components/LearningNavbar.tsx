@@ -1,21 +1,21 @@
 import React from 'react';
-import './styles.css';  // Import your custom CSS
 
-const Header: React.FC = () => {
+const MainSection: React.FC = () => {
   return (
-    <header className="flex justify-between items-center p-4 bg-purple-600">
-      <div className="flex items-center space-x-4">
-        <img src="/logo.png" alt="Logo" className="h-8" />
-        <span className="text-white font-bold">Learning Service</span>
+    <section className="flex flex-col md:flex-row p-8">
+      <div className="md:w-1/2 flex justify-center items-center">
+        <img src="https://dynamicmedia.accenture.com/is/content/accenture/Accenture%20education%20services%20hero%20image?ts=1718160472009&&fmt=webp-alpha&dpr=off" alt="Main Visual" className="max-w-full" />
       </div>
-      <nav className="flex space-x-4">
-        <a href="#our-vision" className="underline-animation text-white font-bold">Our vision</a>
-        <a href="#what-you-need" className="underline-animation text-white font-bold">What you need to do</a>
-        <a href="#whats-trending" className="underline-animation text-white font-bold">What’s trending</a>
-        <a href="#careers" className="underline-animation text-white font-bold">Careers</a>
-      </nav>
-    </header>
+      <div className="md:w-1/2 flex flex-col justify-center mt-8 md:mt-0 md:ml-8">
+        <h1 className="text-4xl font-bold mb-4">Become a talent creator</h1>
+        <p className="text-lg mb-4">
+          While technology plays a key role in business reinvention, it’s your people who determine its success.
+          Accenture LearnVantage helps you build the skills they need, and you want, to grow faster.
+        </p>
+      </div>
+    </section>
   );
 }
 
-export default Header;
+export default MainSection;
+

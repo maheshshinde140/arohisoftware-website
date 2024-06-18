@@ -55,7 +55,7 @@ function Navbar({ className }: { className?: string }) {
                        Learning
                       </span>
                     </HoveredLink>
-                    <HoveredLink href="/courses">
+                    <HoveredLink href="/marketing&experience">
                       <span className="hover:border-b-4 hover:text-blue-400">Marketing and Experience</span>
                     </HoveredLink>
                   </div>
