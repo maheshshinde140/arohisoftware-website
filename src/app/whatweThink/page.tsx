@@ -127,47 +127,6 @@ const Page = () => {
       </div>
 
       <div>
-<<<<<<< HEAD
-        <div
-          className={`${sharedClasses.maxW7xl} ${sharedClasses.mxAuto} ${sharedClasses.py12} ${sharedClasses.px4} ${sharedClasses.smPx6} ${sharedClasses.lgPx8}`}
-        >
-          <div className={sharedClasses.textCenter}>
-            <h2
-              className={`${sharedClasses.textLg} ${sharedClasses.textZincBold}`}
-            >
-              Our Vision
-            </h2>
-            <p
-              className={`${sharedClasses.mt4} ${sharedClasses.textLg} ${sharedClasses.leading6} ${sharedClasses.textZinc} text-justify`}
-            >
-              At Arohi Software, we are driven by a vision to transform
-              businesses through innovative technology solutions. Our insights
-              and philosophies shape the way we approach challenges and create
-              impactful solutions for our clients. Here, we share our thoughts
-              on the evolving digital landscape, the future of business, and our
-              commitment to excellence.
-            </p>
-          </div>
-          <div className={sharedClasses.mt10}>
-            <dl
-              className={`${sharedClasses.grid} ${sharedClasses.gridCols2} ${sharedClasses.gapX8} ${sharedClasses.gapY10} lg:${sharedClasses.gridCols3}`}
-            >
-              <ValueItem
-                title="Empowering Digital Transformation"
-                description="We believe that digital transformation is not just about adopting new technologies but about fundamentally changing the way businesses operate and deliver value to their customers. Our goal is to empower businesses to navigate this transformation seamlessly and effectively. "
-              />
-              <ValueItem
-                title="Innovation at the Core"
-                description="Innovation is at the heart of everything we do. We continuously explore emerging technologies and develop innovative solutions that drive business growth and efficiency. From AI and machine learning to cloud computing and IoT, we are committed to staying at the forefront of technological advancements."
-              />
-              <ValueItem
-                title="Customer-Centric Approach"
-                description="Our customers are at the center of our universe. We are dedicated to understanding their unique needs and challenges, and we tailor our solutions to deliver maximum impact. We believe that building strong, long-term relationships with our clients is key to mutual success."
-              />
-            </dl>
-          </div>
-        </div>
-=======
   
 
 
@@ -230,7 +189,6 @@ const Page = () => {
       
     </div>
   </div>
->>>>>>> 3bef201c8efb2a8349218efe63f4e3687ea2e764
 
         <div
           className={`${sharedClasses.maxW7xl} ${sharedClasses.mxAuto} ${sharedClasses.py12} ${sharedClasses.px4} ${sharedClasses.smPx6} ${sharedClasses.lgPx8}`}
