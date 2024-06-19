@@ -40,16 +40,20 @@ const LocationPage = () => {
 
     return (
         <div className="min-h-screen mt-12 flex w-full flex-col items-center justify-center ">
+           <div className='max-h-screen relative overflow-hidden'>
+                <section className="absolute left-1/4 top-24 bg-white/60 backdrop-blur-lg text-center text-black py-10 z-10">
+                    <h1 className="text-4xl font-semibold mb-4 text-black">Arohi Softwares IT Company</h1>
+                    <p className="text-lg text-black px-6">Find us at our office or get in touch with us for any inquiries. We are here to help you!</p>
+                </section>
+                <img className='-translate-y-11 scale-125 -z-10' src='https://cdn.dribbble.com/users/2096861/screenshots/18532623/media/7567479d6dd3db1282da37267a9cacc6.jpg' />
+           </div>
             <Head>
                 <title>Contact Us - Arohi Softwares</title>
                 <meta name="description" content="Contact us at Arohi Softwares" />
             </Head>
 
             {/* Background image */}
-            <section className="text-center text-white py-10">
-              <h1 className="text-4xl font-semibold mb-4 text-gray-500">Arohi Softwares IT Company</h1>
-              <p className="text-lg text-gray-400">Find us at our office or get in touch with us for any inquiries. We are here to help you!</p>
-          </section>
+            
             <main className="flex items-center justify-center w-full h-screen   p-6 bg-black shadow-lg rounded-lg z-10">
 
 
