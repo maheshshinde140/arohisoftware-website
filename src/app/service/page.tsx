@@ -4,13 +4,7 @@ import Image from "next/image";
 import ServiceCard from "../components/ServicesCard";
 import IndustrySelection from "../components/IndustrySelectionCard";
 import Footer from "../components/Footer";
-<<<<<<< HEAD
-import StayConnected from "../components/StayConnected";
-import CareerPage from "../career/page"
-import CareersComponent from "../components/CareersComponent";
-=======
 import Feedform from "../components/Feedform";
->>>>>>> eb13b2a1d3cdf1c537645f91d33f6d1eb02c6ddb
 
 function Service() {
   return (
@@ -85,11 +79,7 @@ function Service() {
       </div>
      
       <ServiceCard/>
-<<<<<<< HEAD
-      <CareersComponent/>
-=======
       <Feedform title="" />
->>>>>>> eb13b2a1d3cdf1c537645f91d33f6d1eb02c6ddb
       <Footer/>
           
     </div>

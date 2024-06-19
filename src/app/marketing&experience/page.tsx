@@ -16,10 +16,10 @@ const App: React.FC = () => {
   return (
     <div className="App bg-black">
       <Header />
-      <main className="">
-        {/* <LearningNavbar2 /> */}
-        <div className="">
-        <CareersComponent />
+      <main className="py-20">
+        
+        <div className="px-12 py-10">
+       
           <LearningHero />
           <Services />
           <ReinventLearning />

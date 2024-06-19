@@ -23,17 +23,19 @@ import CareersComponent from "./components/CareersComponent";
 import Feedform from "./components/Feedform";
 
 import OurPartners from "./components/OurPartners";
+import HomePageComponent from "./components/HomePageComponent";
 
 export default function Home() {
   return (
     <div className=" relative overflow-hidden">
       <HeroSection />
       <HomepageCard />
+      <HomePageComponent/>
       <WhyChooseUs />
       <Servicecard />
       <OurPartners />
       <CareersComponent />
-      <Feedform title="Move to Cloud or Make the most of Existing Cloud Setup for the Next-phase-of-growth." />
+      <Feedform title="Business With Arohi Software " />
       <TestimonialCards />
       <Footer />
     </div>

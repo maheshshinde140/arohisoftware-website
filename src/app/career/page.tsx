@@ -6,6 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carous
 import DreamRealizedSection from "../components/DreamRealizedSection";
 import CareersComponent from "../components/CareersComponent";
 import Feedform from "../components/Feedform";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -60,7 +61,7 @@ export default function Home() {
                 href="#"
                 className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-md text-white"
               >
-                Learn More
+               Start Learning 
               </a>
             </div>
           </div>
@@ -168,33 +169,13 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-<<<<<<< HEAD:src/app/xoriant/page.tsx
         <DreamRealizedSection />
-        <div
-          className="container mx-auto text-center "
-          style={{ maxWidth: "70vw", maxHeight: "80vh" }}
-        >
-          <CareersComponent />
-        </div>
+
+        
+
+
         <Feedform title="" />
-=======
-        <DreamRealizedSection/>
-        
-          <CareersComponent />
-          
-          <Feedform title=""/>
-          
-         
-          
-
-        
-
-        
-
-
-
-       
->>>>>>> 4e30512c260f29d2d65b34a14c90e82c90168aa7:src/app/career/page.tsx
+        <Footer/>
       </main>
     </div>
   );

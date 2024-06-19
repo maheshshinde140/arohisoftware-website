@@ -3,7 +3,7 @@ import React from 'react';
 import { FaUsersBetweenLines } from "react-icons/fa6";
 import { MdTipsAndUpdates } from "react-icons/md";
 import { TbFileAlert } from "react-icons/tb";
-import Link from 'next/link';
+// import Link from 'next/link';
 
 interface SharedButtonProps {
   className: string;
@@ -27,9 +27,9 @@ const StayConnected: React.FC = () => {
           </div>
           <h3 className="text-xl font-semibold text-black mt-2 text-center">Join Our Team</h3>
           <p className="text-black mt-2 text-center">Search open positions that match your skills and interest.</p>
-          <Link href="/jobs">
+          
             <a className="mt-4 w-full block"><SharedButton className="w-full">Search Accenture Jobs</SharedButton></a>
-          </Link>
+        
         </div>
         <div className="bg-gray-100 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
           <div className="w-[100%] flex justify-center">

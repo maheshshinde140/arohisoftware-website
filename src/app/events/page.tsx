@@ -47,6 +47,7 @@ const event = [
     description: "Quaerat beatae excepturi rem amet placeat dolor perferendis, id aut error voluptatem ratione?. Perspiciatis dicta. Maxime dolores, atque accusantium molestias assumenda, explicabo, consequatur nemo distinctio dolore ex fugiat quis quidem natus iusto!",
     imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
+<<<<<<< HEAD
 ];
 
 const images = [
@@ -71,14 +72,43 @@ const EventPage: React.FC = () => {
                   <Card>
                     <CardContent className="flex items-center justify-center p-0">
                       <img width={'1000px'} height={1000} className='w-[80vw] max-h-[60vh] object-cover' src={image} alt={`Carousel ${index + 1}`} />
+=======
+]
+function EventPage() {
+  const images = [
+    "https://assets.lummi.ai/assets/Qmdkwg1U8TttG7EBZ8PVeYSQBSjCw53vgC9XKUMaAS4z7T?auto=format&w=1500",
+    "https://assets.lummi.ai/assets/Qmf3ESd5FAiVufEuKfCeZCtuxVSPcxkynogjMvHjEtHNpb?auto=format&w=1500",
+    "https://assets.lummi.ai/assets/QmfASNx9gWu4AZTrAvogsGeZa72YUKLbkopbcHdrzgAqy6?auto=format&w=1500",
+    "https://assets.lummi.ai/assets/QmRujGEci3URiLwknwUJyr1fFzfBTT2L4KDuhBau5JVSFG?auto=format&w=1500 ",
+    "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  ]
+  const plugin = useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false })
+  )
+  return (
+    <div className='min-h-screen  bg-white overflow-hidden'>
+      <div className='pt-24 scale-100  '>
+        <Carousel
+          plugins={[plugin.current]}
+          className="w-screen "
+          onMouseLeave={plugin.current.reset}
+        >
+          <CarouselContent>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index} className="">
+                <div className=" ">
+                  <Card className='w-screen'>
+                    <CardContent className="flex items-center justify-center p-0">
+                      <img  height={1000} className='w-full max-h-[80vh]  object-cover ' src={images[index]} />
+>>>>>>> 3bef201c8efb2a8349218efe63f4e3687ea2e764
                     </CardContent>
                   </Card>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+    
+  
         </Carousel>
       </div>
 
