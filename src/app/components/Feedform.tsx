@@ -23,11 +23,11 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
         </div>
       </div>
       <div className="flex-1 bg-white p-10 flex flex-col justify-center">
-        <h2 className="text-1xl font-black mb-4 text-gray-500">Get Started</h2>
+        <h2 className="text-3xl font-black mb-4 text-gray-500">Get Started</h2>
         <h1 className="text-2xl md:text-3xl text-black lg:text-4xl font-bold mb-3">
           {title}
         </h1>
-        <p className="text-md mb-5 font-sans text-black">Talk to our Client Experts</p>
+        <p className="text-md mb-5 font-sans text-black">business</p>
         <form className="space-y-4 mb-5">
           <div className="lg:flex lg:space-x-4">
             <input

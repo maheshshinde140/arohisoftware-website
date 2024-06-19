@@ -422,8 +422,8 @@ const Jobs: React.FC = () => {
           </div>
         </div>
       )}
-      <CareersPage />
-      <StayConnected />
+      {/* <CareersPage /> */}
+      {/* <StayConnected /> */}
       <Footer />
     </div>
   );

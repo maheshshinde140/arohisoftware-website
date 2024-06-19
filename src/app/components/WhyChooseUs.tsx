@@ -5,35 +5,31 @@ import { StickyScroll } from "./ui/sticky-scroll-reveal";
 
 const musicSchoolContent = [
     {
-      title: 'Discover Your Sound with Us: A Personal Journey in Music Mastery',
+      title: 'Innovation and Development at Arohi Software',
       description:
-        'Embark on a musical journey thats uniquely yours. Our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our music school, your aspirations meet our dedicated support, creating a harmonious path to mastery.',
+        "At Arohi Software, innovation and development drive us. We're leaders in creating cutting-edge applications and systems for various industries. With our team of talented developers, engineers, and designers, we push the limits of technology. Our commitment to research and development ensures we offer advanced and user-friendly solutions that keep us ahead of trends.",
     },
     {
-      title: 'Discover Your Sound with Us: A Personal Journey in Music Mastery',
+      title: 'Client-Centric Approach',
       description:
-        'Embark on a musical journey that’s uniquely yours. Our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our music school, your aspirations meet our dedicated support, creating a harmonious path to mastery.',
+        'Arohi Software puts clients first, creating custom solutions that meet their specific needs. We listen carefully to our clients and deliver software that improves their business operations. This client-focused approach builds strong relationships and ensures high satisfaction. Our excellent customer service and support help clients overcome technical challenges and achieve their goals.',
     },
     {
-      title: 'Discover Your Sound with Us: A Personal Journey in Music Mastery',
+      title: 'Agile Methodology',
       description:
-        'Embark on a musical journey that’s uniquely yours. Our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our music school, your aspirations meet our dedicated support, creating a harmonious path to mastery.',
+     " At Arohi Software, we use agile methodology to stay efficient and adaptable. Agile practices involve breaking projects into smaller parts and completing them in short cycles. This flexibility allows our teams to quickly respond to changes and feedback. By encouraging constant communication and collaboration, agile methods boost productivity and ensure timely, budget-friendly project delivery.",
     },
     {
-      title: 'Live Feedback & Engagement',
+      title: 'Comprehensive Development Services',
       description:
         'Immerse yourself in an interactive learning experience where feedback is immediate, just like real-time changes in a collaborative project. This approach enhances your understanding and mastery of music concepts and performance techniques.',
     },
     {
-      title: 'Cutting-Edge Curriculum',
+      title: 'Security and Compliance',
       description:
-        'Our curriculum is continuously updated to include the latest music education trends and technologies, ensuring you’re always learning with the most current and effective methods. Say goodbye to outdated materials and welcome an education that evolves with the industry.',
+        'Security and compliance are top priorities at Arohi Software. We protect sensitive data with strong security measures and ensure our products meet industry standards. Regular security audits, vulnerability assessments, and encryption technologies are part of our process. By focusing on security, we build trust with our clients, keeping their information safe and our software reliable.',
     },
-    {
-      title: 'Limitless Learning Opportunities',
-      description:
-        'With our expansive resource library and dynamic course offerings, you’ll never find yourself without something new to explore. Our platform provides continuous opportunities for growth, ensuring your musical skills are always advancing.',
-    },
+ 
   ];
 
 function WhyChooseUs() {

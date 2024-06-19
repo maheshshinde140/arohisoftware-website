@@ -77,6 +77,7 @@ function Service() {
          
         </div>
       </div>
+     
       <ServiceCard/>
       <Feedform title="" />
       <Footer/>

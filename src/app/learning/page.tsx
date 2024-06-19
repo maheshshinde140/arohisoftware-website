@@ -17,7 +17,7 @@ const App: React.FC = () => {
     <div className="App bg-black ">
       <Header />
       <main className="py-20">
-        <LearningNavbar />
+        {/* <LearningNavbar /> */}
         <div className="px-12 py-10">
           <Services />
           <ReinventLearning />
