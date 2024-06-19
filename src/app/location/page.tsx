@@ -40,6 +40,9 @@ const LocationPage = () => {
 
     return (
         <div className="min-h-screen mt-12 flex w-full flex-col items-center justify-center ">
+           <div className='max-h-screen overflow-hidden'>
+                <img className='-translate-y-11 scale-125 -z-10' src='https://cdn.dribbble.com/users/2096861/screenshots/18532623/media/7567479d6dd3db1282da37267a9cacc6.jpg' />
+           </div>
             <Head>
                 <title>Contact Us - Arohi Softwares</title>
                 <meta name="description" content="Contact us at Arohi Softwares" />
