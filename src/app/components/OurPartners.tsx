@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
@@ -14,7 +14,7 @@ import samsungLogo from './../../../public/assets/partners/samsung-removebg-prev
 import twitterLogo from './../../../public/assets/partners/teiter-removebg-preview.png';
 import abstractLogo from './../../../public/assets/partners/avstract-removebg-preview.png';
 
-const Container = styled.div`
+const PartnersContainer = styled.div`
   padding: 56px 0;
   text-align: center;
   background: #63387C;
@@ -26,14 +26,14 @@ const Container = styled.div`
   }
 `;
 
-const LogoContainer = styled.div`
+const PartnerLogoContainer = styled.div`
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
-const LogoBox = styled.div`
+const PartnerLogoBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,12 +44,12 @@ const LogoBox = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
-const Logo = styled.img`
+const PartnerLogo = styled.img`
   max-width: 100%;
   max-height: 100%;
 `;
 
-const Partners = () => {
+const OurPartners = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -95,22 +95,36 @@ const Partners = () => {
     { src: samsungLogo.src, alt: 'Samsung' },
     { src: twitterLogo.src, alt: 'Twitter' },
     { src: abstractLogo.src, alt: 'Abstract' },
+    { src: awsLogo.src, alt: 'AWS' },
+    { src: accentureLogo.src, alt: 'Accenture' },
+    { src: growAro.src, alt: 'GrowAro' },
+    { src: courseraLogo.src, alt: 'Coursera' },
+    { src: samsungLogo.src, alt: 'Samsung' },
+    { src: twitterLogo.src, alt: 'Twitter' },
+    { src: abstractLogo.src, alt: 'Abstract' },
+    { src: awsLogo.src, alt: 'AWS' },
+    { src: accentureLogo.src, alt: 'Accenture' },
+    { src: growAro.src, alt: 'GrowAro' },
+    { src: courseraLogo.src, alt: 'Coursera' },
+    { src: samsungLogo.src, alt: 'Samsung' },
+    { src: twitterLogo.src, alt: 'Twitter' },
+    { src: abstractLogo.src, alt: 'Abstract' },
   ];
 
   return (
-    <Container>
+    <PartnersContainer>
       <h2>Our Partners</h2>
       <Slider {...settings}>
         {logos.map((logo, index) => (
-          <LogoContainer key={index}>
-            <LogoBox>
-              <Logo src={logo.src} alt={logo.alt} />
-            </LogoBox>
-          </LogoContainer>
+          <PartnerLogoContainer key={index}>
+            <PartnerLogoBox>
+              <PartnerLogo src={logo.src} alt={logo.alt} />
+            </PartnerLogoBox>
+          </PartnerLogoContainer>
         ))}
       </Slider>
-    </Container>
+    </PartnersContainer>
   );
 }
 
-export default Partners;
+export default OurPartners;

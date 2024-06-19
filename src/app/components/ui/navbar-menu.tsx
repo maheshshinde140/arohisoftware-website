@@ -37,7 +37,7 @@ export const MenuItem = ({
           transition={transition}
         >
           {active === item && children && (
-            <div className="absolute top-[calc(100%_+_1.7rem)] left-1/2 transform -translate-x-1/2">
+            <div className="absolute top-[-7.0rem)] w-fit lg:top-[3rem] ml-56 transform -translate-x-1/2">
               <motion.div
                 transition={transition}
                 layoutId="active"

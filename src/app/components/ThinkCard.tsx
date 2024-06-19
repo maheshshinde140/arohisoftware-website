@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
+import CareerComponent from '../components/CareersComponent';
+import Footer from './Footer';
 
 import './ThinkCard.css'
 
@@ -12,7 +14,8 @@ interface ThinkCardProps {
 
 const ThinkCard: React.FC<ThinkCardProps> = ({ images, altText, title, text }) => {
   return (
-    <div className='box'>
+ <div>
+     <div className='box'>
       <Image src={`${images}`} alt={altText} width={500} height={300} />
       <div className='second-div'>
         <h1>Research report</h1>
@@ -21,7 +24,12 @@ const ThinkCard: React.FC<ThinkCardProps> = ({ images, altText, title, text }) =
       <div className='overlay'>
         <h2>{text}</h2>
       </div>
+
+    
+      
     </div>
+    
+ </div>
   )
 }
 
