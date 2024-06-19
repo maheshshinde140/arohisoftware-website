@@ -23,7 +23,13 @@ const Servicecard: React.FC = () => {
     { src: "https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Data Analytics", title: "Data Analytics" },
     { src: "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Cloud Computing", title: "Cloud Computing" },
     { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Cyber Security", title: "Cyber Security" },
-    { src: "https://images.unsplash.com/photo-1518481612376-d2d319d11826?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Blockchain", title: "Blockchain" },
+    { src: '/block.png', alt: "Blockchain", title: "Blockchain" },
+    { src: '/machine.png', alt: "Machine Learning", title: "Machine Learning" },
+    { src: '/Automation.png', alt: "Automation", title: "Automation" },
+    { src: '/Internet of Things.png', alt: "Internet of Things (IoT)", title: "Internet of Things (IoT)" },
+    { src: '/Digital Marketing.png', alt: "Digital Marketing", title: "Digital Marketing" },
+    { src: '/Emerging Technologies.png', alt: "Digital Marketing", title: "Emerging Technologies" },
+
   ];
 
   const [showAll, setShowAll] = useState(false);
@@ -60,7 +66,7 @@ const Servicecard: React.FC = () => {
       ) : (
         <button 
           onClick={handleViewAllClick}
-          className="mt-8 px-6 py-3 bg-zinc-700 text-white rounded-full hover:bg-zinc-600 transition-colors duration-300"
+          className="mt-8 px-6 py-3 bg-zinc-700 text-white rounded-full hover:bg-zinc-600 transition-colors duration-300 object-cover"
         >
           View all topics
         </button>
