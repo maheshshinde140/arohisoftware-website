@@ -19,6 +19,7 @@ const App: React.FC = () => {
       <main className="py-20">
         {/* <LearningNavbar /> */}
         <div className="px-12 py-10">
+          <LearningNavbar/>
           <Services />
           <ReinventLearning />
           <Partners />
