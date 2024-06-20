@@ -28,7 +28,7 @@ const StayConnected: React.FC = () => {
           <h3 className="text-xl font-semibold text-black mt-2 text-center">Join Our Team</h3>
           <p className="text-black mt-2 text-center">Search open positions that match your skills and interest.</p>
           
-            <a className="mt-4 w-full block"><SharedButton className="w-full mt-6">Search Arohi Software Jobs</SharedButton></a>
+            <a  href='#' className="mt-4 w-full block"><SharedButton className="w-full mt-6">Search Arohi Software Jobs</SharedButton></a>
         
         </div>
         <div className="bg-gray-100 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
@@ -37,7 +37,7 @@ const StayConnected: React.FC = () => {
           </div>
           <h3 className="text-xl font-semibold text-black mt-2 text-center">Keep Up to Date</h3>
           <p className="text-black mt-2 text-center">Stay ahead with career tips, insider perspectives, and industry-leading insights.</p>
-          <SharedButton className="mt-4 w-full">Read Careers Blog</SharedButton>
+          <a href="/events"><SharedButton className="mt-4 w-full">Read Careers Blog</SharedButton></a>
         </div>
         <div className="bg-gray-100 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
           <div className="w-[100%] flex justify-center">
@@ -45,7 +45,7 @@ const StayConnected: React.FC = () => {
           </div>
           <h3 className="text-xl font-semibold text-black mt-2 text-center">Job Alert Emails</h3>
           <p className="text-black mt-2 text-center">Personalize your subscription to receive job alerts, latest news and insider tips.</p>
-          <SharedButton className="mt-4 w-full">Register for Job Alerts</SharedButton>
+          <a href="/login"><SharedButton className="mt-4 w-full">Register for Job Alerts</SharedButton></a>
         </div>
       </div>
     </div>

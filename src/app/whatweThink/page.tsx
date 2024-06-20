@@ -189,7 +189,7 @@ const Page = () => {
       
     </div>
   </div>
-
+{/* 
         <div
           className={`${sharedClasses.maxW7xl} ${sharedClasses.mxAuto} ${sharedClasses.py12} ${sharedClasses.px4} ${sharedClasses.smPx6} ${sharedClasses.lgPx8}`}
         >
@@ -230,7 +230,7 @@ const Page = () => {
               />
             </dl>
           </div>
-        </div>
+        </div> */}
       </div>
        <Partners/>
        <CareerComponent/>

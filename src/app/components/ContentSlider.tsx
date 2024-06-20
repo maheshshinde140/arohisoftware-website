@@ -8,15 +8,15 @@ interface Content {
 
 const CONTENTS: Content[] = [
   {
-    title: "Accelerating Time to Value with Arohi Software AI Force",
+    title: "Transforming your vision into reality.",
     description: "GenAI-driven software development and engineering lifecycle management for greater productivity and improved quality"
   },
   {
-    title: "Harnessing the Power of AI for Business Growth",
+    title: "Your success is our mission.",
     description: "Empowering businesses with cutting-edge AI technologies for unparalleled growth"
   },
   {
-    title: "Innovative AI Solutions for Modern Enterprises",
+    title: "Empowering businesses through innovative IT solutions.",
     description: "Delivering state-of-the-art AI solutions to drive innovation and efficiency"
   }
 ];
@@ -31,19 +31,19 @@ const ContentSlider: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex(prevIndex => (prevIndex + 1) % CONTENTS.length);
-    }, 2000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="bg-transparent text-white p-8 space-y-4">
+    <div className="bg-transparent text-white text-left p-8 space-y-4">
       <div id="content" className={contentStyles}>
         <h1 className={titleStyles}>{CONTENTS[index].title}</h1>
         <p className={descriptionStyles}>{CONTENTS[index].description}</p>
       </div>
       <button className="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition">
-        Explore our AI Force Solutions →
+      Have A Look Over Services →
       </button>
     </div>
   );
