@@ -6,7 +6,6 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import Footer from '../components/Footer';
 import Head from 'next/head';
-import { FaMapMarkerAlt } from "react-icons/fa";
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 const markerIcon = new L.Icon({
