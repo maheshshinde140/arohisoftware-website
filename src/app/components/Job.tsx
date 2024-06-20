@@ -31,7 +31,7 @@ const JobCard: React.FC<JobCardProps> = ({
   onClick,
 }) => {
   return (
-    <div
+    <div id="jobs"
       onClick={onClick}
       className="cursor-pointer bg-gray-100 p-4 rounded-lg shadow-lg job-card duration-300"
     >

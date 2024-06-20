@@ -26,7 +26,7 @@ const DreamRealizedSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section id="DreamRealizedSection" className="py-16 bg-gray-100">
       <div className="container mx-auto px-4" style={{ maxWidth: "70vw" }}>
         <h2
           className="text-4xl font-semibold mb-6 text-center text-green-600"

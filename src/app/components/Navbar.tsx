@@ -16,7 +16,7 @@ function Navbar({ className }: { className?: string }) {
 
   return (
     <div className={cn("fixed top-0 inset-x-0 z-50 w-full", className)}>
-      <nav className="bg-black w-full">
+      <nav className="bg-gray-400 w-full">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/">

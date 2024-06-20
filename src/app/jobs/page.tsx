@@ -60,7 +60,7 @@ export default function Page() {
               </h1>
               <p className="text-xl md:text-2xl mb-8">Explore opportunities</p>
               <a
-                href="#"
+                href="#jobs"
                 className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-md text-white"
               >
                 Search Jobs
