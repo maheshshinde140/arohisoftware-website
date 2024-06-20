@@ -1,4 +1,3 @@
-
 import Feedform from '@/app/components/Feedform';
 import React from 'react';
 
@@ -6,7 +5,7 @@ const Leadership = () => {
   const leaders = [
     { name: 'Julie Sweet', title: 'Chair & CEO', image: 'https://assets.lummi.ai/assets/QmUCnqpmmzbf83yWn2y7JXD5KKR7snJNZeQ2HFyoEFdg4H?auto=format&w=1500' },
     { name: 'Muqsit Ashraf', title: 'Lead - Strategy', image: 'https://assets.lummi.ai/assets/QmWJZv45tQLv5tSUGQczwVAm9BQ9gR342HfTbiESiPQrxP?auto=format&w=1500' },
-    { name: 'Jack Azagury', title: 'Group Chief Executive – Strategy & Consulting', image: 'https://assets.lummi.ai/assets/QmPd9RX1fYobqxCP7Ekjrmc4w6Xkxm7Mmda4vqThnnV8as?auto=format&w=1500', image: 'https://assets.lummi.ai/assets/QmWew78Q8QfzBQ1m3TJvSqXnrqnTVLA8w6iqKEJ3XU4CAd?auto=format&w=1500' },
+    { name: 'Jack Azagury', title: 'Group Chief Executive - Strategy & Consulting', image: 'https://assets.lummi.ai/assets/QmPd9RX1fYobqxCP7Ekjrmc4w6Xkxm7Mmda4vqThnnV8as?auto=format&w=1500' },
     { name: 'Komal Bedi', title: 'Lead - Diamond Client Leadership Council', image: 'https://assets.lummi.ai/assets/QmRS65cvMHZeP3N7dkN31KwSdV7QhgVbb5ZreL9xbX72tH?auto=format&w=1500' },
     { name: 'Venkata Murthy Renduchintala', title: 'Leader', image: 'https://assets.lummi.ai/assets/Qmdz6yNiH5vgoKB5geofjqr6wtrQxwrJpYQSPph3GYBKuR?auto=format&w=1500' },
     { name: 'Arun Sarin', title: 'Leader', image: 'https://assets.lummi.ai/assets/QmRjs9qv8XBDBeLz5CsdPnNxnKP7ab4XPbqHHfyti94m3c?auto=format&w=1500' },
@@ -22,13 +21,9 @@ const Leadership = () => {
         </h1>
       </div>
 
-
-
-    
-
       <div className="container max-w-full lg:max-w-[900px] text-center mt-12 mx-auto px-4 py-8">
         <header className="text-center mb-12">
-          <p className="text-lg text-gray-600">Our executive leadership team averages 24 years of experience with ArohiSoftware.</p>
+          <p className="text-lg text-gray-600">Our executive leadership team averages 24 years of experience with Arohi Software.</p>
         </header>
         <section>
           <h2 className="text-3xl font-semibold mb-6">Our leaders</h2>
@@ -49,7 +44,7 @@ const Leadership = () => {
       <section >
         <section className="text-center my-12">
           <p className=" w-fit mx-auto  text-white  py-2 px-4 rounded-full my-12 text-4xl ">Contact Us</p>
-          <Feedform />
+          <Feedform title='Chart Your Career Path with Arohi Software: Meet Our Visionary Leaders' />
         </section>
 
         <section className=''>

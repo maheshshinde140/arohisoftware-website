@@ -28,7 +28,7 @@ function Navbar({ className }: { className?: string }) {
             <Menu setActive={setActive} className="flex space-x-4">
 
               <MenuItem setActive={setActive}  active={active} item="What we do >">
-                <div className="flex justify-around space-y-6 ml-28 space-x-10 p-10 ">
+                <div className="flex justify-around space-y-6  space-x-10 p-10 ">
                   <div className="flex flex-col space-y-4 py-7">
                     <p className="mb-2 text-xl text-slate-400 hover:text-yellow-400 hover:cursor-text">
                       What we do<span>➡️</span>
