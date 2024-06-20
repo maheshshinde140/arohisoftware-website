@@ -56,7 +56,7 @@ export default function Page() {
           <div className="absolute inset-0 flex items-center justify-center text-center">
             <div className="text-white">
               <h1 className="text-5xl md:text-6xl font-bold mb-4">
-                Search Jobs at Arohi Software
+                Discover your new career
               </h1>
               <p className="text-xl md:text-2xl mb-8">Explore opportunities</p>
               <a
@@ -91,8 +91,9 @@ export default function Page() {
               technology and human ingenuity.
             </h4>
             <p className="text-gray-600 mb-8">
-              Join us and help our clients become the next and best versions of
-              themselves.
+       
+
+Join us and help our clients become the next and best versions of themselves.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="relative group bg-gray-900 p-6 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
