@@ -29,6 +29,7 @@ const JobCard: React.FC<JobCardProps> = ({
   experience,
   postedTime,
   onClick,
+  
 }) => {
   return (
     <div
