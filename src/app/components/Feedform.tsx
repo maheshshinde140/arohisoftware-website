@@ -45,6 +45,7 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
             <input
               type="text"
               placeholder="Phone"
+              maxLength={10}
               className="flex-1 border-b-2 focus:border-purple-600 text-[#0a0a0a] p-2 border-gray-300 focus:outline-none"
             />
             <input
