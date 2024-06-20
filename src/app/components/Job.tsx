@@ -280,7 +280,15 @@ const Job: React.FC = () => {
                 businessArea={job.businessArea}
                 experience={job.experience}
                 postedTime={job.postedTime}
-                onClick={() => handleJobCardClick(job)}
+                onClick={() => handleJobCardClick({
+                  location: job.location,
+                  title: job.title,
+                  role: job.role,
+                  businessArea: job.businessArea,
+                  experience: job.experience,
+                  postedTime: job.postedTime,
+                  onClick: () => {}, // Adding an empty onClick function to satisfy the prop requirement
+                })}
               />
             ))}
           </div>
@@ -320,8 +328,6 @@ const Job: React.FC = () => {
           </div>
         )}
       </div>
-    
-     
     </div>
   );
 };

@@ -6,7 +6,7 @@ const Leadership = () => {
   const leaders = [
     { name: 'Julie Sweet', title: 'Chair & CEO', image: 'https://assets.lummi.ai/assets/QmUCnqpmmzbf83yWn2y7JXD5KKR7snJNZeQ2HFyoEFdg4H?auto=format&w=1500' },
     { name: 'Muqsit Ashraf', title: 'Lead - Strategy', image: 'https://assets.lummi.ai/assets/QmWJZv45tQLv5tSUGQczwVAm9BQ9gR342HfTbiESiPQrxP?auto=format&w=1500' },
-    { name: 'Jack Azagury', title: 'Group Chief Executive – Strategy & Consulting', image: 'https://assets.lummi.ai/assets/QmPd9RX1fYobqxCP7Ekjrmc4w6Xkxm7Mmda4vqThnnV8as?auto=format&w=1500', image: 'https://assets.lummi.ai/assets/QmWew78Q8QfzBQ1m3TJvSqXnrqnTVLA8w6iqKEJ3XU4CAd?auto=format&w=1500' },
+    { name: 'Jack Azagury', title: 'Group Chief Executive – Strategy & Consulting', image: 'https://assets.lummi.ai/assets/QmPd9RX1fYobqxCP7Ekjrmc4w6Xkxm7Mmda4vqThnnV8as?auto=format&w=1500' },
     { name: 'Komal Bedi', title: 'Lead - Diamond Client Leadership Council', image: 'https://assets.lummi.ai/assets/QmRS65cvMHZeP3N7dkN31KwSdV7QhgVbb5ZreL9xbX72tH?auto=format&w=1500' },
     { name: 'Venkata Murthy Renduchintala', title: 'Leader', image: 'https://assets.lummi.ai/assets/Qmdz6yNiH5vgoKB5geofjqr6wtrQxwrJpYQSPph3GYBKuR?auto=format&w=1500' },
     { name: 'Arun Sarin', title: 'Leader', image: 'https://assets.lummi.ai/assets/QmRjs9qv8XBDBeLz5CsdPnNxnKP7ab4XPbqHHfyti94m3c?auto=format&w=1500' },
@@ -16,7 +16,7 @@ const Leadership = () => {
   return (
     <div>
       <div className='relative'>
-        <img className='w-full h-screen object-cover' src='https://assets.lummi.ai/assets/QmW9AKc7BxwDYkum1vri54fKhz5wTnduGyERiUKLM1Qjvr?auto=format&w=1500' alt='Leadership Background Image' />
+        <img className='w-full h-screen object-cover' src='https://www.sienaheights.edu/wp-content/uploads/Leadership-team.jpg' alt='Leadership Background Image' />
         <h1 className='absolute top-1/3 left-4 sm:left-12 md:left-24 text-4xl sm:text-6xl md:text-8xl lg:text-[100px] px-2 font-semibold border bg-gradient-to-br from-violet-400/20 to-purple-500/20 backdrop-blur-xl border-r-[6px] sm:border-r-[8px] md:border-r-[10px] lg:border-r-[12px] border-b-[6px] sm:border-b-[8px] md:border-b-[10px] lg:border-b-[12px] text-black'>
           Leadership
         </h1>
@@ -49,7 +49,7 @@ const Leadership = () => {
       <section >
         <section className="text-center my-12">
           <p className=" w-fit mx-auto  text-white  py-2 px-4 rounded-full my-12 text-4xl ">Contact Us</p>
-          <Feedform />
+          <Feedform title="" />
         </section>
 
         <section className=''>
