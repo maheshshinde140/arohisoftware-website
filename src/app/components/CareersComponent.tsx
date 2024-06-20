@@ -18,11 +18,7 @@ const CareerComponent: React.FC = () => {
           Apply Now
         </button>
      </a>
-      <a href='/career'>
-      <button className="mt-6 px-6 py-3 mx-5 bg-purple-600 text-white text-lg font-semibold rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out transform hover:scale-105">
-          Start Learning
-        </button>
-      </a>
+ 
 
      </div>
       </div>

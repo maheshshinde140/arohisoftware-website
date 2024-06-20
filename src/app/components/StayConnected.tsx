@@ -3,7 +3,7 @@ import React from 'react';
 import { FaUsersBetweenLines } from "react-icons/fa6";
 import { MdTipsAndUpdates } from "react-icons/md";
 import { TbFileAlert } from "react-icons/tb";
-// import Link from 'next/link';
+
 
 interface SharedButtonProps {
   className: string;
@@ -18,7 +18,7 @@ const SharedButton: React.FC<SharedButtonProps> = ({ className, children }) => (
 
 const StayConnected: React.FC = () => {
   return (
-    <div className="my-8 p-5 bg-gray-200 rounded-lg">
+    <div className=" p-5 bg-gray-200 rounded-lg">
       <h2 className="text-2xl font-semibold text-black">Stay connected</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         <div className="bg-gray-100 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
@@ -28,7 +28,7 @@ const StayConnected: React.FC = () => {
           <h3 className="text-xl font-semibold text-black mt-2 text-center">Join Our Team</h3>
           <p className="text-black mt-2 text-center">Search open positions that match your skills and interest.</p>
           
-            <a className="mt-4 w-full block"><SharedButton className="w-full">Search Accenture Jobs</SharedButton></a>
+            <a className="mt-4 w-full block"><SharedButton className="w-full mt-6">Search Arohi Software Jobs</SharedButton></a>
         
         </div>
         <div className="bg-gray-100 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300">

@@ -50,6 +50,8 @@ const NewsroomPage = () => {
   ];
 
   return (
+
+
     <div className="min-h-screen bg-gray-100">
       <Head>
         <title>Newsroom - Arohi Softwares</title>
@@ -77,7 +79,7 @@ const NewsroomPage = () => {
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Featured News</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {newsList.map(news => (
                 <div key={news.id} className="bg-white p-6 shadow-md rounded-lg hover:shadow-lg transition-shadow duration-300">
                   <img src={news.image} alt="News" className="w-full h-48 object-cover rounded-md mb-4" />
@@ -95,7 +97,7 @@ const NewsroomPage = () => {
 
           <section>
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Latest News</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {newsList.map(news => (
                 <div key={news.id} className="bg-white p-6 shadow-md rounded-lg hover:shadow-lg transition-shadow duration-300">
                   <h3
@@ -172,6 +174,8 @@ const NewsroomPage = () => {
 
       <Footer/>
     </div>
+
+
   );
 };
 
