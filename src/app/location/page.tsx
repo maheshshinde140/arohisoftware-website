@@ -10,7 +10,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 const markerIcon = new L.Icon({
-  iconUrl: '/marker-icon.png', // Use the correct URL for your marker icon
+  iconUrl: 'https://www.pikpng.com/pngl/b/66-660381_business-icon-company-name-icon-clipart.png', // Use the correct URL for your marker icon
   iconSize: [38, 38], // Increased the size of the marker icon
   iconAnchor: [19, 38], // Adjusted the anchor point
 });
@@ -53,7 +53,7 @@ const LocationPage = () => {
       <main className="flex flex-col items-center justify-center w-full h-full p-6 bg-black shadow-lg rounded-lg z-10">
         <section className="flex flex-col md:flex-row justify-center gap-6 md:gap-12 w-full mb-12">
           <div className="hover:bg-gradient-to-br p-[2px] from-violet-400 to-orange-300 w-full md:w-1/2">
-            <button className="group w-full text-left border flex justify-between items-center p-2 bg-white text-black" onClick={() => setLocation({ x: 19.0945, y: 74.7381 })}>
+            <button className="group w-full text-left border rounded-md flex justify-between items-center p-5 bg-white text-black" onClick={() => setLocation({ x: 19.0945, y: 74.7381 })}>
               <div>
                 <h3 className="text-3xl">Ahmednagar, Maharashtra</h3>
                 <p>Full Address</p>
@@ -62,7 +62,7 @@ const LocationPage = () => {
             </button>
           </div>
           <div className="hover:bg-gradient-to-br p-[2px] from-violet-400 to-orange-300 w-full md:w-1/2">
-            <button className="group w-full text-left border p-2 flex justify-between items-center bg-white text-black" onClick={() => setLocation({ x: 18.5204, y: 73.8567 })}>
+            <button className="group w-full text-left border p-5 rounded-md flex justify-between items-center bg-white text-black" onClick={() => setLocation({ x: 18.5204, y: 73.8567 })}>
               <div>
                 <h3 className="text-3xl">Pune, Maharashtra</h3>
                 <p>Upcoming</p>
