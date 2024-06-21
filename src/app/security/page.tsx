@@ -128,7 +128,7 @@ const page = () => {
           <p className="font-bold text-xl sm:text-4xl mt-3">
             Milestones to Cement Enterprise Cyber Security
           </p>
-          <div className="mt-20 flex justify-between flex-wrap ">
+          <div className="mt-20 px-10 flex justify-between flex-wrap ">
             <SecurityCard
               images="/s1.png"
               altText="this is img"
@@ -136,6 +136,8 @@ const page = () => {
               title="Enterprise Security Strategy"
               width={80}
               height={80}
+              
+              
             />
 
             <SecurityCard

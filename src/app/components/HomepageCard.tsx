@@ -41,11 +41,11 @@ const Card: React.FC<CardProps> = ({
         <p className={textClasses}>{category}</p>
         <h3 className={titleClasses}>{title}</h3>
         {description && <p className="text-sm mt-2">{description}</p>}
-        {description && (
+        {/* {description && (
           <button className="mt-4 bg-white text-black py-2 px-4 rounded">
             Expand
           </button>
-        )}
+        )} */}
       </div>
     </div>
   );
