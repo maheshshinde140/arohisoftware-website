@@ -170,7 +170,7 @@ const ContactForm: React.FC = () => {
               ></textarea>
               <button
                 type="submit"
-                className="bg-orange-600 text-white p-2 rounded"
+                className="bg-purple-800 text-white p-2 rounded"
               >
                 Send message
               </button>
