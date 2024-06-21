@@ -8,6 +8,7 @@ import home6 from "../../../public/assets/Homepage/Home6.avif";
 import home7 from "../../../public/assets/Homepage/home7.avif";
 import home8 from "../../../public/assets/Homepage/home8.avif";
 import { StaticImageData } from "next/image";
+import Image from "next/image";
 
 const cardClasses = "relative group";
 const overlayClasses =
@@ -32,10 +33,12 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div className={cardClasses}>
-      <img
+      <Image
         src={typeof imageUrl === "string" ? imageUrl : imageUrl.src}
         alt={altText}
         className="w-full h-full object-cover"
+        width={500} // Add appropriate width
+        height={300} // Add appropriate height
       />
       <div className={overlayClasses}>
         <p className={textClasses}>{category}</p>

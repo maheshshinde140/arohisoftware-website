@@ -10,7 +10,7 @@ function CyberSecurityCard() {
             Why invest on reactive threat mitigation, when managed Cyber Security Services help proactively prevent threats?
           </p>
           <p className="text-gray-700 mb-4">
-            Effective security and compliance are crucial for safeguarding business assets, customer data, and reputation. Despite the relentless stream of attacks, Xoriant's extensive security expertise and continuous adoption of innovative tools empower us to shield your assets—be it legacy systems, cloud-native infrastructure, or mobile apps. Count on us to eliminate both existing and potential vulnerabilities, enabling your business to stay secure.
+            Effective security and compliance are crucial for safeguarding business assets, customer data, and reputation. Despite the relentless stream of attacks, Xoriant&apos;s extensive security expertise and continuous adoption of innovative tools empower us to shield your assets—be it legacy systems, cloud-native infrastructure, or mobile apps. Count on us to eliminate both existing and potential vulnerabilities, enabling your business to stay secure.
           </p>
         </div>
         <div className="flex-1 p-4 flex justify-center items-center">

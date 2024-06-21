@@ -19,13 +19,13 @@ const App: React.FC = () => {
       <main className="py-20">
         {/* <LearningNavbar /> */}
         <div className="px-12 py-10">
-          <LearningNavbar/>
-          <Services />
+           <LearningNavbar/>
+         <Services />
           <ReinventLearning />
           <Partners />
           <Leaders />
           <CareersComponent />
-          <Feedform title="Contact Us" />
+          <Feedform title="Contact Us" /> 
         </div>
 
       </main>

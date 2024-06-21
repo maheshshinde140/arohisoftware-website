@@ -17,7 +17,7 @@ const Leadership = () => {
     <div>
       <div className='relative'>
         <img className='w-full h-screen object-cover' src='https://www.sienaheights.edu/wp-content/uploads/Leadership-team.jpg' alt='Leadership Background Image' />
-        <h1 className='absolute top-1/3 left-4 sm:left-12 md:left-24 text-4xl sm:text-6xl md:text-8xl lg:text-[100px] px-2 font-semibold border bg-gradient-to-br from-violet-400/20 to-purple-500/20 backdrop-blur-xl border-r-[6px] sm:border-r-[8px] md:border-r-[10px] lg:border-r-[12px] border-b-[6px] sm:border-b-[8px] md:border-b-[10px] lg:border-b-[12px] text-black'>
+        <h1 className='absolute top-[75vh] left-4 sm:left-12 md:left-24 text-4xl sm:text-6xl md:text-8xl lg:text-[100px] px-2 font-semibold border bg-gradient-to-br from-violet-400/20 to-purple-500/20 backdrop-blur-xl border-r-[6px] sm:border-r-[8px] md:border-r-[10px] lg:border-r-[12px] border-b-[6px] sm:border-b-[8px] md:border-b-[10px] lg:border-b-[12px] text-black'>
           Leadership
         </h1>
       </div>
