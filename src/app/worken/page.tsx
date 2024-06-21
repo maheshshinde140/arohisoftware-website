@@ -14,9 +14,9 @@ const page: React.FC = () => {
         <div className="lg:container flex-col-reverse flex justify-around items-center lg:flex-wrap h-[80vh] ">
           <div className=" lg:w-5/12 m-7">
             <p className="text-black text-3xl lg:text-6xl w-fit text-wrap font-bold">
-              Arohi Work <br /> Environment
+              Arohi Software <br />Work Environment
             </p>
-            <p className="text-black font-light text-1xl mt-5">
+            <p className="text-black font-light text-2xl mt-5" style={{fontWeight:600}}>
               Be your best every day in a workplace culture that helps drive
               innovation in everything you do.
             </p>
@@ -44,22 +44,11 @@ const page: React.FC = () => {
           <div className="lg:container mt-6 lg:flex justify-around items-center ">
             <div className="lg:w-[35vw] ">
               <p className="text-black font-midium">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-                vel quos facere sapiente. Nisi incidunt velit cum inventore qui
-                odit error quam quasi, dolorum expedita enim, fugiat dicta
-                nesciunt corrupti!
+              "Innovating in a truly human way" emphasizes creating technological advancements that prioritize human needs, values, and experiences. It focuses on empathy-driven design, ethical considerations, and user-centric solutions. This approach ensures that innovation enhances human life, fosters inclusivity, and addresses real-world challenges.
                 <br />
                 <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                obcaecati hic earum ipsa harum quod expedita, dolores, dolorem
-                unde alias nesciunt culpa excepturi sed sint repudiandae natus
-                laudantium ipsam voluptatum?
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur ipsa fugit accusamus eaque ipsam. Numquam ipsum, qui
-                fuga quibusdam, iste vitae velit quidem impedit, laboriosam
-                totam id reiciendis voluptates illo.
+                By integrating technology with a deep understanding of human behavior and societal impacts, we create solutions that are not only groundbreaking but also meaningful and beneficial for people and communities
+                
               </p>
             </div>
 
