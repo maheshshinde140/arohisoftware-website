@@ -43,7 +43,7 @@ const Servicecard: React.FC = () => {
   };
 
   return (
-    <div className="min-h-[600px] bg-zinc-900 text-white flex flex-col items-center justify-center p-8">
+    <div className="min-h-[600px] bg-zinc-900 text-white flex flex-col items-center justify-center p-8" id='#services'>
       <div className="text-center mb-[90px]">
         <h2 className="text-sm uppercase tracking-widest text-zinc-400 mb-5">Services</h2>
         <h1 className="text-3xl md:text-5xl font-bold mt-2">Transform your business with advanced technologies</h1>

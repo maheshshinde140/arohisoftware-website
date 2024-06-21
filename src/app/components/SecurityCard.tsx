@@ -56,7 +56,7 @@ interface SecurityCardProps {
 
 const SecurityCard: React.FC<SecurityCardProps> = ({ images, altText, title, text, width, height }) => {
   return (
-    <div className='lg:h-[70vh] w-60 mb-4 cursor-pointer text-left hover:shadow-lg transform transition-all duration-300'>
+    <div className='lg:h-fit lg:p-6 lg:w-[20vw] mb-4 cursor-pointer text-left hover:shadow-lg transform transition-all duration-300'>
       <div className="relative overflow-hidden">
         <Image
           src={images}

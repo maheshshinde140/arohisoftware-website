@@ -25,7 +25,7 @@ const HomePageComponent: React.FC = () => {
           <p className="mt-2">
             Arohi Software specializes in transformative IT solutions, offering bespoke web development, mobile app creation, and enterprise software services. Our innovative approach and commitment to excellence ensure tailored solutions that enhance efficiency and drive growth for businesses of all sizes. Partner with us for unparalleled digital success.
           </p>
-          <a href="#" className="text-blue-500 mt-4 inline-block">Read more</a>
+         
         </div>
 
       </div>

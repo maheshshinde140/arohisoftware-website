@@ -82,10 +82,10 @@ const HomepageCard: React.FC = () => {
         <Card
           imageUrl={home4}
           altText="Card Image"
-          category="RESEARCH REPORT"
-          title="Reinventing M&A with AI"
-          description="Innovative approaches to mergers and acquisitions."
-        />
+          category=" Remote Work"
+          title="The Remote Work Revolution: Strategies for Success."
+          description="Investigate the rise of remote work, its benefits, challenges, and strategies for maintaining productivity and collaboration."
+         />
         <Card
           imageUrl={home5}
           altText="Card Image"
