@@ -10,16 +10,16 @@ function Footer() {
         <nav className="text-white ">
           <h6 className="footer-title text-white text-xl mb-4">Services</h6>
          <div className="font-thin ">
-              <Link href="/branding" className="link hover:underline link-hover mt-2 block">Branding</Link>
-              <Link href="/design" className="link hover:underline link-hover mt-2 block">Design</Link>
-              <Link href="/courses" className="link hover:underline link-hover mt-2 block">Marketing</Link>
-              <Link href="/courses" className="link hover:underline link-hover mt-2 block">Advertisement</Link>
+              <Link href="/service" className="link hover:underline link-hover mt-2 block">Branding</Link>
+              <Link href="/service"className="link hover:underline link-hover mt-2 block">Design</Link>
+              <Link href="/service" className="link hover:underline link-hover mt-2 block">Marketing</Link>
+              <Link href="/service" className="link hover:underline link-hover mt-2 block">Advertisement</Link>
          </div>
         </nav>
         <nav className="text-white">
           <h6 className="footer-title text-white text-xl mb-4">Company</h6>
           <div className="font-thin">
-              <Link href="/about" className="link hover:underline link-hover mt-2 block">About us</Link>
+              <Link href="/leaders" className="link hover:underline link-hover mt-2 block">About us</Link>
               <Link href="/contact" className="link hover:underline link-hover mt-2 block">Contact</Link>
               <Link href="/jobs" className="link hover:underline link-hover mt-2 block">Jobs</Link>
               <Link href={"/press"} className="link hover:underline link-hover mt-2 block">Press kit</Link>

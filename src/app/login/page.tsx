@@ -81,13 +81,6 @@ const Page: React.FC = () => {
               className="flex items-center w-full justify-center rounded bg-gray-800 text-white border border-gray-600 hover:bg-gray-700 px-4 py-2 text-sm font-semibold leading-6 shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600"
               type="button"
             >
-              <FaGithub className="h-4 w-4 mr-2" />
-              <span>GitHub</span>
-            </button>
-            <button
-              className="flex items-center w-full justify-center rounded bg-gray-800 text-white border border-gray-600 hover:bg-gray-700 px-4 py-2 text-sm font-semibold leading-6 shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600"
-              type="button"
-            >
               <FcGoogle className="h-4 w-4 mr-2" />
               <span>Google</span>
             </button>

@@ -24,7 +24,7 @@ const Servicecard: React.FC = () => {
     { src: '/Automation.png', alt: "Automation", title: "Automation" },
     { src: "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: " IT Training and Education", title: " IT Training and Education" },
     { src: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Artificial Intelligence", title: "Artificial Intelligence" },
-     { src: "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Cloud Computing", title: "Cloud Computing" },
+    { src: "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Cloud Computing", title: "Cloud Computing" },
     { src: "https://imageio.forbes.com/specials-images/imageserve/642445004586b4330e81b689//960x0.jpg?height=406&width=711&fit=bounds", alt: "Cyber Security", title: "Cyber Security" },
     { src: '/machine.png', alt: "Machine Learning", title: "Machine Learning" },
     { src: '/Emerging Technologies.png', alt: "Digital Marketing", title: "Emerging Technologies" },
@@ -43,7 +43,7 @@ const Servicecard: React.FC = () => {
   };
 
   return (
-    <div className="min-h-[600px] bg-zinc-900 text-white flex flex-col items-center justify-center p-8">
+    <div className="min-h-[600px] bg-zinc-900 text-white flex flex-col items-center justify-center p-8" id='#services'>
       <div className="text-center mb-[90px]">
         <h2 className="text-sm uppercase tracking-widest text-zinc-400 mb-5">Services</h2>
         <h1 className="text-3xl md:text-5xl font-bold mt-2">Transform your business with advanced technologies</h1>

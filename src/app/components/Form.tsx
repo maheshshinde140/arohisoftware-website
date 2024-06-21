@@ -82,13 +82,6 @@ export function SignupForm() {
               className="group/btn flex items-center justify-center px-4 w-full max-w-xs bg-gray-800 text-white text-sm font-semibold rounded h-10 shadow-lg"
               type="button"
             >
-              <FaGithub className="h-4 w-4 mr-2" />
-              Sign up with GitHub
-            </button>
-            <button
-              className="group/btn flex items-center justify-center px-4 w-full max-w-xs bg-gray-800 text-white text-sm font-semibold rounded h-10 shadow-lg"
-              type="button"
-            >
               <FcGoogle className="h-4 w-4 mr-2" />
               Sign up with Google
             </button>
