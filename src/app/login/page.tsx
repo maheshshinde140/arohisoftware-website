@@ -1,10 +1,48 @@
 "use client";
-import React from 'react';
+
+import Link from "next/link";
+import React, {useEffect} from "react";
+import {useRouter} from "next/navigation";
+import axios from "axios";
+import { toast } from "react-hot-toast";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import './page.css';
 
 const Page: React.FC = () => {
+  const router = useRouter();
+    const [user, setUser] = React.useState({
+        email: "",
+        password: "",
+       
+    })
+    const [buttonDisabled, setButtonDisabled] = React.useState(false);
+    const [loading, setLoading] = React.useState(false);
+
+
+    const onLogin = async () => {
+        try {
+            setLoading(true);
+            const response = await axios.post("/api/users/login", user);
+            console.log("Login success", response.data);
+            toast.success("Login success");
+            router.push("/signup");
+        } catch (error:any) {
+            console.log("Login failed", error.message);
+            toast.error(error.message);
+        } finally{
+        setLoading(false);
+        }
+    }
+
+    useEffect(() => {
+        if(user.email.length > 0 && user.password.length > 0) {
+            setButtonDisabled(false);
+        } else{
+            setButtonDisabled(true);
+        }
+    }, [user]);
+
   return (
     <div className="flex flex-1 w-full h-[96vh] md:flex-row flex-col-reverse justify-between items-center mt-6 px-6 lg:px-8 main">
       <div className="w-full max-w-md p-10 md:mt-14 mb-6 bg-gray-900 bg-opacity-80 rounded-lg shadow-lg">
@@ -16,6 +54,7 @@ const Page: React.FC = () => {
 
         <div className="mt-6 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" action="#" method="POST">
+          <h1>{loading ? "Processing" : "Login"}</h1>
             <div>
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-white">
                 Email address
@@ -26,6 +65,8 @@ const Page: React.FC = () => {
                   name="email"
                   type="email"
                   autoComplete="email"
+                  onChange={(e) => setUser({...user, email: e.target.value})}
+                  placeholder="email"
                   required
                   className="block w-full p-3 rounded border-0 py-1.5 placeholder-gray-400 text-white bg-gray-700 shadow-md ring-1 ring-inset ring-gray-600 sm:text-sm sm:leading-6"
                 />
@@ -49,6 +90,8 @@ const Page: React.FC = () => {
                   name="password"
                   type="password"
                   autoComplete="current-password"
+                  value={user.password}
+                  onChange={(e) => setUser({...user, password: e.target.value})}
                   required
                   className="block w-full p-3 rounded border-0 py-1.5 placeholder-gray-400 text-white bg-gray-700 shadow-md ring-1 ring-inset ring-gray-600 sm:text-sm sm:leading-6"
                 />
@@ -57,7 +100,7 @@ const Page: React.FC = () => {
 
             <div>
               <button
-                type="submit"
+                 onClick={onLogin}
                 className="flex w-full justify-center rounded bg-indigo-600 hover:bg-indigo-500 px-4 py-2 text-sm font-semibold leading-6 text-white shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
               >
                 Sign in
