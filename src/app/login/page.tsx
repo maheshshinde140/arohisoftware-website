@@ -3,8 +3,20 @@ import React from 'react';
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import './page.css';
+import axios from 'axios'
 
 const Page: React.FC = () => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try{
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries());
+    const resp= await axios.get ('http://localhost:3000/api/users/signup',data)
+    console.log(resp); 
+  }catch(error){
+console.log("register ",error)
+  }
+}
   return (
     <div className="flex flex-1 w-full h-[96vh] md:flex-row flex-col-reverse justify-between items-center mt-6 px-6 lg:px-8 main">
       <div className="w-full max-w-md p-10 md:mt-14 mb-6 bg-gray-900 bg-opacity-80 rounded-lg shadow-lg">

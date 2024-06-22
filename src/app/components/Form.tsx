@@ -1,16 +1,45 @@
 "use client";
-import React from "react";
+import React,{useEffect, useState} from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { cn } from "@/utils/cn";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
+import { useRouter } from "next/navigation";
+import {toast} from 'react-hot-toast'
+import axios from 'axios';
+
 
 export function SignupForm() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted");
-  };
+ 
+  const router= useRouter()
+  const [user,setUser]= React.useState({fname:"",lname:"",email:"",password:""})
+  const [buttonDisabled, setButtonDisabled] = React.useState(false);
+  const [loading, setLoading] = React.useState(false);
+
+  const onSignup = async () => {
+      try {
+          setLoading(true);
+          const response = await axios.post("/api/users/signup", user);
+          console.log("Signup success", response.data);
+          router.push("/login");
+          
+      } catch (error:any) {
+          console.log("Signup failed", error.message);
+          
+          toast.error(error.message);
+      }finally {
+          setLoading(false);
+      }
+  }
+
+  useEffect(() => {
+      if(user.email.length > 0 && user.password.length > 0 && user.fname.length > 0 && user.lname.length > 0) {
+          setButtonDisabled(false);
+      } else {
+          setButtonDisabled(true);
+      }
+  }, [user]);
 
   return (
     <div
@@ -25,18 +54,23 @@ export function SignupForm() {
       }}
     >
       <div className="max-w-md w-full md:mx-5 rounded-lg my-3 p-8 bg-gray-900 bg-opacity-90 shadow-lg">
+      <h1>{loading ? "Processing" : "Signup"}</h1>
         <h2 className="font-bold text-3xl text-center text-white">Welcome to ArohiSoftware</h2>
         <p className="text-neutral-400 text-sm text-center mt-2">
           Login to Arohi if you can because we don&apos;t have a login flow yet
         </p>
-        <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
+        <form className="mt-6 space-y-4">
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
             <div className="flex-1">
               <Label htmlFor="firstname" className="text-white">First name</Label>
               <Input
                 id="firstname"
+                name="firstname"
                 placeholder="Tyler"
                 type="text"
+                value={user.fname}
+                onChange={(e)=>setUser({...user,fname:e.target.value})}
+                required
                 className="dark:bg-gray-700 dark:text-white rounded w-full shadow-md"
               />
             </div>
@@ -44,6 +78,10 @@ export function SignupForm() {
               <Label htmlFor="lastname" className="text-white">Last name</Label>
               <Input
                 id="lastname"
+                name="lastname"
+                value={user.lname}
+                onChange={(e)=>setUser({...user,lname:e.target.value})}
+                required
                 placeholder="Durden"
                 type="text"
                 className="dark:bg-gray-700 dark:text-white rounded w-full shadow-md"
@@ -54,6 +92,10 @@ export function SignupForm() {
             <Label htmlFor="email" className="text-white">Email Address</Label>
             <Input
               id="email"
+              name="email"
+              value={user.email}
+              onChange={(e)=>setUser({...user,email:e.target.value})}
+              required
               placeholder="projectmayhem@fc.com"
               type="email"
               className="dark:bg-gray-700 dark:text-white rounded w-full shadow-md"
@@ -63,7 +105,11 @@ export function SignupForm() {
             <Label htmlFor="password" className="text-white">Password</Label>
             <Input
               id="password"
+              name="password"
+              value={user.password}
+              onChange={(e)=>setUser({...user,password:e.target.value})}
               placeholder="••••••••"
+              required
               type="password"
               className="dark:bg-gray-700 dark:text-white rounded w-full shadow-md"
             />
@@ -72,6 +118,7 @@ export function SignupForm() {
             <button
               className="group/btn flex items-center justify-center px-4 w-full max-w-xs bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded h-10 shadow-lg"
               type="submit"
+              onClick={onSignup}
             >
               Sign up &rarr;
             </button>
