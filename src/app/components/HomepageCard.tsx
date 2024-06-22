@@ -8,6 +8,7 @@ import home6 from "../../../public/assets/Homepage/Home6.avif";
 import home7 from "../../../public/assets/Homepage/home7.avif";
 import home8 from "../../../public/assets/Homepage/home8.avif";
 import { StaticImageData } from "next/image";
+import Image from "next/image";
 
 const cardClasses = "relative group";
 const overlayClasses =
@@ -32,20 +33,22 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div className={cardClasses}>
-      <img
+      <Image
         src={typeof imageUrl === "string" ? imageUrl : imageUrl.src}
         alt={altText}
         className="w-full h-full object-cover"
+        width={500} // Add appropriate width
+        height={300} // Add appropriate height
       />
       <div className={overlayClasses}>
         <p className={textClasses}>{category}</p>
         <h3 className={titleClasses}>{title}</h3>
         {description && <p className="text-sm mt-2">{description}</p>}
-        {description && (
+        {/* {description && (
           <button className="mt-4 bg-white text-black py-2 px-4 rounded">
             Expand
           </button>
-        )}
+        )} */}
       </div>
     </div>
   );
@@ -79,10 +82,10 @@ const HomepageCard: React.FC = () => {
         <Card
           imageUrl={home4}
           altText="Card Image"
-          category="RESEARCH REPORT"
-          title="Reinventing M&A with AI"
-          description="Innovative approaches to mergers and acquisitions."
-        />
+          category=" Remote Work"
+          title="The Remote Work Revolution: Strategies for Success."
+          description="Investigate the rise of remote work, its benefits, challenges, and strategies for maintaining productivity and collaboration."
+         />
         <Card
           imageUrl={home5}
           altText="Card Image"

@@ -148,7 +148,7 @@ Join us and help our clients become the next and best versions of themselves.
         </section>
 
         {/* Video Section */}
-        <section style={{ backgroundImage: "url('./line.png')" }}>
+        {/* <section style={{ backgroundImage: "url('./line.png')" }}>
           <div
             className="container mx-auto text-center px-4"
             style={{ maxWidth: "70vw", backgroundImage: "url('./line.png')" }}
@@ -170,7 +170,7 @@ Join us and help our clients become the next and best versions of themselves.
               ></iframe>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Services Section */}
 

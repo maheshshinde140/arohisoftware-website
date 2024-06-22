@@ -1,4 +1,18 @@
-import React from "react";
+"use client"
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
+import { Button } from "@/components/ui/button"
+
+
 
 interface FeedformProps {
   title: string;
@@ -9,16 +23,48 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
     <div className="flex flex-col md:flex-row min-h-screen">
       <div className="flex-1 bg-gradient-to-r from-purple-600 to-[#020817] p-10 text-white flex flex-col justify-center items-start">
         <h1 className="text-4xl font-bold mb-4">Think Tomorrow With Arohi Software</h1>
-        <p className="mb-4">Is your digital roadmap adaptive to</p>
+        <p className="mb-4">Empowering Futures through Innovative Software Solutions</p>
         <p className="mb-4">
-          Generative AI, Hyper cloud, and Intelligent Automation?
+        Join us as we shape the future of software solutions, driving progress and success for businesses worldwide.
         </p>
         <div className="flex space-x-4 mt-4">
           <button className="bg-white text-purple-600 px-4 py-2 rounded-lg">
-            Absolutely Yes
+          <AlertDialog>
+      <AlertDialogTrigger asChild>
+        <Button className="bg-white text-lg text-purple-600 px-4 py-2 rounded-lg">Absolutely Yes</Button>
+      </AlertDialogTrigger>
+      <AlertDialogContent>
+        <AlertDialogHeader>
+          <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+          <AlertDialogDescription>
+          Yes, I'm absolutely sure.
+          </AlertDialogDescription>
+        </AlertDialogHeader>
+        <AlertDialogFooter>
+          <AlertDialogCancel>Cancel</AlertDialogCancel>
+          <AlertDialogAction>Continue</AlertDialogAction>
+        </AlertDialogFooter>
+      </AlertDialogContent>
+    </AlertDialog>
           </button>
           <button className="bg-white text-purple-600 px-4 py-2 rounded-lg">
-            Not Completely
+          <AlertDialog>
+      <AlertDialogTrigger asChild>
+        <Button className="bg-white text-lg text-purple-600 px-4 py-2 rounded-lg"> Not Completely</Button>
+      </AlertDialogTrigger>
+      <AlertDialogContent>
+        <AlertDialogHeader>
+          <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+          <AlertDialogDescription>
+          No, not now!
+          </AlertDialogDescription>
+        </AlertDialogHeader>
+        <AlertDialogFooter>
+          <AlertDialogCancel>Cancel</AlertDialogCancel>
+          <AlertDialogAction>Continue</AlertDialogAction>
+        </AlertDialogFooter>
+      </AlertDialogContent>
+    </AlertDialog>
           </button>
         </div>
       </div>
@@ -45,6 +91,7 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
             <input
               type="text"
               placeholder="Phone"
+              maxLength={10}
               className="flex-1 border-b-2 focus:border-purple-600 text-[#0a0a0a] p-2 border-gray-300 focus:outline-none"
             />
             <input

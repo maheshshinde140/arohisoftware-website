@@ -3,6 +3,7 @@ import ThinkCard from "@/app/components/ThinkCard";
 import Footer from "@/app/components/Footer";
 import CareerComponent from "../components/CareersComponent";
 import Partners from "../components/Partners";
+import Feedform from "../components/Feedform";
 
 
 const sharedClasses = {
@@ -30,7 +31,7 @@ const sharedClasses = {
   spaceY0: "space-y-0",
 };
 
-const ValueItem = ({ title, description }) => (
+const ValueItem = ({ title, description } :any) => (
   <div>
     <dt
       className={`${sharedClasses.textLg} ${sharedClasses.leading6} ${sharedClasses.textZincBold}`}
@@ -161,79 +162,10 @@ const Page = () => {
     </div>
   </div>
 
-  <div className={`${sharedClasses.maxW7xl} ${sharedClasses.mxAuto} ${sharedClasses.py12} ${sharedClasses.px4} ${sharedClasses.smPx6} ${sharedClasses.lgPx8}`}>
-    <div className={sharedClasses.textCenter}>
-      <h2 className={`text-3xl ${sharedClasses.textZincBold}`}>Industry Insights</h2>
-      <p className={`w-[60vw] mx-auto ${sharedClasses.mt4} ${sharedClasses.textLg} ${sharedClasses.leading6} ${sharedClasses.textZinc} text-justify`}>In the rapidly evolving landscape of digital transformation, staying ahead of industry trends and technological advancements is crucial for business success. At Arohi Software, we leverage our deep expertise and cutting-edge research to provide valuable insights into the future of business and technology. We observe that the rise of AI and machine learning is reshaping industries, enabling companies to automate processes and make data-driven decisions with unprecedented accuracy.</p>
-    </div>
-    <div className={sharedClasses.mt10}>
-            <dl className={` grid grid-cols-6 gap-12 lg:w-[80vw] mx-auto`}>
-              <div className='grid bg-gradient-to-br from-violet-300 to to-red-400 p-[1px] col-span-3 border border-whte rounded-lg '>
-                <div className='bg-black p-4 rounded-[6px]'>
-                  <ValueItem title="The Future of Online Business" description="As more businesses move online, the digital marketplace is becoming increasingly competitive. We see a future where personalized customer experiences, seamless integrations, and data-driven decision-making will be the differentiators that set successful businesses apart. " />
-               </div>
-              </div>
-              <div className='grid col-span-3'>
-                <div className='border bg-gradient-to-br from-violet-300 to to-red-400 bg-black border-whte rounded-lg p-[1px]'>
-                  <div className='bg-black p-4 rounded-[6px]'>
-                    <ValueItem title="The Rise of AI and Automation" description="Artificial intelligence and automation are transforming industries at an unprecedented pace. We believe that these technologies will continue to revolutionize business operations, enabling companies to enhance productivity, reduce costs, and improve decision-making processes." />
-                  </div>
-                </div>
-                <div className='border bg-gradient-to-br from-violet-300 to to-red-400 bg-black border-whte rounded-lg p-[1px] mt-4'>
-                  <div className='bg-black p-4 rounded-[6px]'>
-                    <ValueItem title="Cybersecurity: A Critical Imperative" description="In today's digital age, cybersecurity is more important than ever. We are committed to helping businesses protect their data and systems from cyber threats. Our approach to cybersecurity is proactive, comprehensive, and constantly evolving to address new challenges." />
-                  </div>
-                </div>
-              </div>
-            </dl>
-      
-    </div>
-  </div>
-
-        <div
-          className={`${sharedClasses.maxW7xl} ${sharedClasses.mxAuto} ${sharedClasses.py12} ${sharedClasses.px4} ${sharedClasses.smPx6} ${sharedClasses.lgPx8}`}
-        >
-          <div className={sharedClasses.textCenter}>
-            <h2
-              className={`${sharedClasses.textLg} ${sharedClasses.textZincBold}`}
-            >
-              Industry Insights
-            </h2>
-            <p
-              className={`${sharedClasses.mt4} ${sharedClasses.textLg} ${sharedClasses.leading6} ${sharedClasses.textZinc} text-justify`}
-            >
-              In the rapidly evolving landscape of digital transformation,
-              staying ahead of industry trends and technological advancements is
-              crucial for business success. At Arohi Software, we leverage our
-              deep expertise and cutting-edge research to provide valuable
-              insights into the future of business and technology. We observe
-              that the rise of AI and machine learning is reshaping industries,
-              enabling companies to automate processes and make data-driven
-              decisions with unprecedented accuracy.
-            </p>
-          </div>
-          <div className={sharedClasses.mt10}>
-            <dl
-              className={`${sharedClasses.grid} ${sharedClasses.gridCols2} ${sharedClasses.gapX8} ${sharedClasses.gapY10} lg:${sharedClasses.gridCols3}`}
-            >
-              <ValueItem
-                title="The Future of Online Business"
-                description="As more businesses move online, the digital marketplace is becoming increasingly competitive. We see a future where personalized customer experiences, seamless integrations, and data-driven decision-making will be the differentiators that set successful businesses apart."
-              />
-              <ValueItem
-                title="The Rise of AI and Automation"
-                description="Artificial intelligence and automation are transforming industries at an unprecedented pace. We believe that these technologies will continue to revolutionize business operations, enabling companies to enhance productivity, reduce costs, and improve decision-making processes."
-              />
-              <ValueItem
-                title="Cybersecurity: A Critical Imperative"
-                description="In today's digital age, cybersecurity is more important than ever. We are committed to helping businesses protect their data and systems from cyber threats. Our approach to cybersecurity is proactive, comprehensive, and constantly evolving to address new challenges."
-              />
-            </dl>
-          </div>
-        </div>
       </div>
        <Partners/>
        <CareerComponent/>
+       <Feedform title=" with Arohi Software Development"/>
       <Footer />
     </div>
   );

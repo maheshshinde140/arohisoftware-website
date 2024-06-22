@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 interface Content {
   title: string;
@@ -37,13 +38,13 @@ const ContentSlider: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-transparent text-white p-8 space-y-4">
+    <div className="bg-transparent text-white text-left p-8 space-y-4">
       <div id="content" className={contentStyles}>
         <h1 className={titleStyles}>{CONTENTS[index].title}</h1>
         <p className={descriptionStyles}>{CONTENTS[index].description}</p>
       </div>
       <button className="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition">
-        Explore our AI Force Solutions →
+     <Link href="/service" > Have A Look Over Services →</Link>
       </button>
     </div>
   );
