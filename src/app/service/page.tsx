@@ -58,7 +58,7 @@ function Service() {
               Belief Power Business
             </h2>
             <p className="text-base sm:text-lg text-gray-700">
-              At TCS, we go beyond helping businesses transform through
+              At Arohi Software, we go beyond helping businesses transform through
               technology. We help them make a meaningful difference; to their
               customers, and to the communities they serve.
             </p>

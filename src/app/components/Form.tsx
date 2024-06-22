@@ -1,5 +1,9 @@
 "use client";
-import React from "react";
+import Link from "next/link";
+import React, { useEffect } from "react";
+import {useRouter} from "next/navigation";
+import axios from "axios";
+import { toast } from "react-hot-toast";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { cn } from "@/utils/cn";
@@ -11,6 +15,40 @@ export function SignupForm() {
     e.preventDefault();
     console.log("Form submitted");
   };
+  const router = useRouter();
+  const [user, setUser] = React.useState({
+      email: "",
+      password: "",
+      username: "",
+      fname:"",
+  })
+  const [buttonDisabled, setButtonDisabled] = React.useState(false);
+  const [loading, setLoading] = React.useState(false);
+
+  const onSignup = async () => {
+      try {
+          setLoading(true);
+          const response = await axios.post("/api/users/signup", user);
+          console.log("Signup success", response.data);
+          router.push("/login");
+          
+      } catch (error:any) {
+          console.log("Signup failed", error.message);
+          
+          toast.error(error.message);
+      }finally {
+          setLoading(false);
+      }
+  }
+
+  useEffect(() => {
+      if(user.email.length > 0 && user.password.length > 0 && user.username.length > 0 && user.fname.length > 0) {
+          setButtonDisabled(false);
+      } else {
+          setButtonDisabled(true);
+      }
+  }, [user]);
+
 
   return (
     <div
@@ -30,6 +68,8 @@ export function SignupForm() {
           Login to Arohi if you can because we don&apos;t have a login flow yet
         </p>
         <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
+        <h1>{loading ? "Processing" : "."}</h1>
+
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
             <div className="flex-1">
               <Label htmlFor="firstname" className="text-white">First name</Label>
@@ -37,6 +77,8 @@ export function SignupForm() {
                 id="firstname"
                 placeholder="Tyler"
                 type="text"
+                value={user.fname}
+                onChange={(e) => setUser({...user, fname: e.target.value})}
                 className="dark:bg-gray-700 dark:text-white rounded w-full shadow-md"
               />
             </div>
@@ -45,6 +87,8 @@ export function SignupForm() {
               <Input
                 id="lastname"
                 placeholder="Durden"
+                value={user.username}
+                onChange={(e) => setUser({...user, username: e.target.value})}
                 type="text"
                 className="dark:bg-gray-700 dark:text-white rounded w-full shadow-md"
               />
@@ -56,6 +100,8 @@ export function SignupForm() {
               id="email"
               placeholder="projectmayhem@fc.com"
               type="email"
+              value={user.email}
+              onChange={(e) => setUser({...user, email: e.target.value})}
               className="dark:bg-gray-700 dark:text-white rounded w-full shadow-md"
             />
           </div>
@@ -65,26 +111,19 @@ export function SignupForm() {
               id="password"
               placeholder="••••••••"
               type="password"
+              value={user.password}
+            onChange={(e) => setUser({...user, password: e.target.value})}
               className="dark:bg-gray-700 dark:text-white rounded w-full shadow-md"
             />
           </div>
           <div className="flex justify-center mt-6">
-            <button
-              className="group/btn flex items-center justify-center px-4 w-full max-w-xs bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded h-10 shadow-lg"
-              type="submit"
-            >
-              Sign up &rarr;
-            </button>
+          <button
+            onClick={onSignup}
+            className="flex w-full justify-center rounded bg-indigo-600 hover:bg-indigo-500 px-4 py-2 text-sm font-semibold leading-6 text-white shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">{buttonDisabled ? " signup" : "Signup"}</button>
+            {/* <Link href="/login">Visit login page</Link> */}
           </div>
           <div className="relative my-4 h-px w-full bg-gray-600" />
           <div className="flex flex-col items-center space-y-3">
-            <button
-              className="group/btn flex items-center justify-center px-4 w-full max-w-xs bg-gray-800 text-white text-sm font-semibold rounded h-10 shadow-lg"
-              type="button"
-            >
-              <FaGithub className="h-4 w-4 mr-2" />
-              Sign up with GitHub
-            </button>
             <button
               className="group/btn flex items-center justify-center px-4 w-full max-w-xs bg-gray-800 text-white text-sm font-semibold rounded h-10 shadow-lg"
               type="button"

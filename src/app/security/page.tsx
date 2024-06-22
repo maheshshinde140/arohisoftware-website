@@ -24,11 +24,11 @@ const page = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="container mx-auto relative z-10 px-4">
+        <div className="container mx-auto relative h-[85%] z-10 px-4">
           <div className="lg:mx-10 mr-10 font-bold text-white border-b-2 border-b-slate-300 py-3">
             <p>WHAT WE DO</p>
           </div>
-          <div className="mt-6">
+          <div className="mt-6 h-[100%] ">
             <p className="font-normal text-lg sm:text-6xl text-white">
               Cyber Security Services
               <br />
@@ -123,12 +123,12 @@ const page = () => {
       </div>
 
       <div className="bg-white w-full lg:pt-48 py-10">
-        <div className="container sm:w-8/12 text-black mx-auto text-center px-4 mt-10">
+        <div className="container w-[90vw] text-black mx-auto text-center px-4 mt-10">
           <p className="font-bold text-lg">All That We Do</p>
           <p className="font-bold text-xl sm:text-4xl mt-3">
             Milestones to Cement Enterprise Cyber Security
           </p>
-          <div className="mt-20 flex justify-between flex-wrap ">
+          <div className="mt-20 px-7 lg:flex justify-between lg:space-x-10 flex-wrap ">
             <SecurityCard
               images="/s1.png"
               altText="this is img"
@@ -136,6 +136,8 @@ const page = () => {
               title="Enterprise Security Strategy"
               width={80}
               height={80}
+              
+              
             />
 
             <SecurityCard
@@ -188,11 +190,11 @@ const page = () => {
               height={80}
             />
           </div>
-          <div className="text-left">
+          <div className="text-left mt-28 container">
   <h4 className="text-green-600 text-l">Accelators In The House</h4>
   <h2 className="text-black-600 text-3xl">Frameworks for Robust Managed IT Security Services</h2>
   
-  <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+  <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
     <div className="card bg-pink-700 p-6 rounded-lg shadow-md transition-all duration-500">
       <h3 className="text-xl font-bold mb-4 text-white">Security as Code</h3>
       <p className="text-gray-100">involves embedding security practices within the software development lifecycle using code. </p>

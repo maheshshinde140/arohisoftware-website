@@ -1,5 +1,7 @@
 "use client"
 import React from 'react';
+import Link from "next/link"
+
 
 const CareerComponent: React.FC = () => {
   return (
@@ -13,11 +15,12 @@ const CareerComponent: React.FC = () => {
         </h1>
         <p className="text-white text-lg md:text-xl lg:text-2xl mt-4">Join the team</p>
      <div className='flex ' >
-     <a href='/jobs'>
-     <button className="mt-6 px-6 py-3  bg-purple-600 text-white text-lg font-semibold rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out transform hover:scale-105">
+     {/* <a href='/jobs'> */}
+    <Link href="/careers">
+    <button className="mt-6 px-6 py-3  bg-purple-600 text-white text-lg font-semibold rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out transform hover:scale-105">
           Apply Now
-        </button>
-     </a>
+        </button></Link>
+     {/* </a> */}
  
 
      </div>

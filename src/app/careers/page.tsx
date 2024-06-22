@@ -148,12 +148,12 @@ Join us and help our clients become the next and best versions of themselves.
         </section>
 
         {/* Video Section */}
-        <section style={{ backgroundImage: "url('./line.png')" }}>
+        {/* <section style={{ backgroundImage: "url('./line.png')" }}>
           <div
             className="container mx-auto text-center px-4"
             style={{ maxWidth: "70vw", backgroundImage: "url('./line.png')" }}
           >
-            <h2 className="text-4xl font-semibold mb-6 text-black">
+            <h2 className="text-4xl font-semibold mb-6 text-white py-4">
               Watch Our Story
             </h2>
             <div
@@ -170,7 +170,7 @@ Join us and help our clients become the next and best versions of themselves.
               ></iframe>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Services Section */}
 

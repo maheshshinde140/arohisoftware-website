@@ -6,7 +6,12 @@ const nextConfig = {
       'www.xoriant.com',
       'dynamicmedia.accenture.com',
       'img.freepik.com',
-      'images.unsplash.com'
+      'image.freepik.com', // Add this line
+      'images.unsplash.com',
+      'media.istockphoto.com',
+      'cdn-icons-png.flaticon.com',
+      'd34u8crftukxnk.cloudfront.net',
+      
     ],
     remotePatterns: [
       {

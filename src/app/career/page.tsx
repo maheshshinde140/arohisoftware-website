@@ -1,6 +1,7 @@
 "use client";
 // pages/index.tsx
 import Head from "next/head";
+import Image from 'next/image';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import DreamRealizedSection from "../components/DreamRealizedSection";
@@ -25,26 +26,32 @@ export default function Home() {
               className="relative h-screen"
               style={{ backgroundImage: "url('./line.png')" }}
             >
-              <img
+              <Image
                 src="/xbg1.png"
                 alt="Background 1"
                 className="w-full h-full object-cover"
+                layout="fill"
+                objectFit="cover"
               />
               <div className="absolute inset-0 bg-black opacity-50"></div>
             </div>
             <div className="relative h-screen">
-              <img
+              <Image
                 src="/x.bg2.png"
                 alt="Background 2"
                 className="w-full h-full object-cover"
+                layout="fill"
+                objectFit="cover"
               />
               <div className="absolute inset-0 bg-black opacity-50"></div>
             </div>
             <div className="relative h-screen">
-              <img
+              <Image
                 src="/xbg3.png"
                 alt="Background 3"
                 className="w-full h-full object-cover"
+                layout="fill"
+                objectFit="cover"
               />
               <div className="absolute inset-0 bg-black opacity-50"></div>
             </div>
@@ -93,10 +100,11 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold mb-4 text-white">
                   Our Mission
                 </h3>
-
-                <img
+                <Image
                   src="/xbg1.png"
                   alt="Our Mission"
+                  width={500}
+                  height={160}
                   className="w-full h-40 object-cover mb-4 rounded-md group-hover:opacity-0 transition-opacity duration-300"
                 />
                 <div className="absolute inset-0 flex flex-col justify-center items-center bg-gray-900 bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -110,10 +118,11 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold mb-4 text-white">
                   Our Vision
                 </h3>
-
-                <img
+                <Image
                   src="/x.bg2.png"
                   alt="Our Vision"
+                  width={500}
+                  height={160}
                   className="w-full h-40 object-cover mb-4 rounded-md group-hover:opacity-0 transition-opacity duration-300"
                 />
                 <div className="absolute inset-0 flex flex-col justify-center items-center bg-gray-900 bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -127,10 +136,11 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold mb-4 text-white">
                   Our Values
                 </h3>
-
-                <img
+                <Image
                   src="/xbg3.png"
                   alt="Our Values"
+                  width={500}
+                  height={160}
                   className="w-full h-40 object-cover mb-4 rounded-md group-hover:opacity-0 transition-opacity duration-300"
                 />
                 <div className="absolute inset-0 flex flex-col justify-center items-center bg-gray-900 bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -170,9 +180,6 @@ export default function Home() {
 
         {/* Services Section */}
         <DreamRealizedSection />
-
-        
-
 
         <Feedform title="" />
         <Footer/>

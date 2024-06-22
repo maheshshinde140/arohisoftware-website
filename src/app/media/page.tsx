@@ -6,6 +6,7 @@
 import { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import Head from "next/head";
+import Footer from "../components/Footer";
 
 interface News {
   id: number;
@@ -170,6 +171,8 @@ const NewsroomPage = () => {
           </div>
         </Dialog>
       </Transition>
+
+      <Footer/>
     </div>
 
 

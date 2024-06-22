@@ -56,11 +56,11 @@ export default function Page() {
           <div className="absolute inset-0 flex items-center justify-center text-center">
             <div className="text-white">
               <h1 className="text-5xl md:text-6xl font-bold mb-4">
-                Search Jobs at Arohi Software
+                Shape Your Career with Arohi Software
               </h1>
               <p className="text-xl md:text-2xl mb-8">Explore opportunities</p>
               <a
-                href="#"
+                href="#jobs"
                 className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-md text-white"
               >
                 Search Jobs
@@ -82,14 +82,12 @@ export default function Page() {
               About Arohi Software
             </h2>
             <h2 className="text-black font-bold text-3xl">
-              Work at the heart of change
-            </h2>
+            Work at the Heart of Transformation            </h2>
             <h4 className="text-2xl font-semibold mb-6 text-black">
-              At the heart of every great change is a great human. Every day our
-              People of Change are doing incredible things by working together
-              to pursue our shared purpose–to deliver on the promise of
-              technology and human ingenuity.
-            </h4>
+           
+
+              At the core of every significant transformation is a dedicated individual. At Arohi Software, our team of Change Makers collaborate daily to achieve our common goal: to harness the power of technology and human creativity to drive progress. Together, we are turning innovative ideas into reality and making a meaningful impact.
+                          </h4>
             <p className="text-gray-600 mb-8">
               Join us and help our clients become the next and best versions of
               themselves.
@@ -122,8 +120,7 @@ export default function Page() {
                 />
                 <div className="absolute inset-0 flex flex-col justify-center items-center bg-gray-900 bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-gray-400">
-                    To be recognized as a global leader in IT services and
-                    solutions.
+                  Empowering innovation and transforming industries through the seamless integration of cutting-edge technology and human ingenuity.
                   </p>
                 </div>
               </div>
@@ -152,7 +149,7 @@ export default function Page() {
             className="container mx-auto text-center px-4"
             style={{ maxWidth: "70vw", backgroundImage: "url('./line.png')" }}
           >
-            <h2 className="text-4xl font-semibold mb-6 text-black">
+            <h2 className="text-4xl font-semibold mb-6 text-white py-4">
               Watch Our Story
             </h2>
             <div

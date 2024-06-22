@@ -48,13 +48,13 @@ const page = () => {
 
       {/* performance */}
 
-      <div className="text-black pt-5 bg-white h-fit">
+      <div className="text-black pt-5 bg-white h-fit py-10">
         <div className="w-11/12 mx-auto">
           <h1 className="md:text-4xl text-2xl mb-3 font-sans font-bold pt-6">
             FY2023 PERFORMANCE
           </h1>
 
-          <div className="flex flex-col lg:flex-row items-center flex-wrap gap-4 mt-10">
+          <div className="flex flex-col lg:flex-row items-center flex-wrap gap-4 justify-around mt-10">
             <PerformanceCard
               title="Compound annual total return to shareholders over the last 5 fiscal years"
               text="16%"
