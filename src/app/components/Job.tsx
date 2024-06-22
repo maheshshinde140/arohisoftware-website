@@ -320,6 +320,8 @@ const Job: React.FC = () => {
           </div>
         )}
       </div>
+    
+     
     </div>
   );
 };
