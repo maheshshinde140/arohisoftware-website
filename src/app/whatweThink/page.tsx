@@ -86,44 +86,44 @@ const Page = () => {
         <ThinkCard
           images="https://dynamicmedia.accenture.com/is/image/accenture/MandA-TL-image-3840x2160:rad-5x3?ts=1715047724829&fit=constrain&dpr=off"
           altText="this is img"
-          title="Generative AI for customer growth"
-          text="Real work today suggests generative AI is poised to help businesses achieve stronger growth across marketing, sales and services."
+          title="Customer-Centric Approach"
+          text="Invest in improving customer service and engagement,  Implement robust feedback systems to understand and act on customer needs."
         />
         <ThinkCard
           images="https://dynamicmedia.accenture.com/is/image/accenture/Hero_Smart_v1:rad-5x3?ts=1717518201472&fit=constrain&dpr=off"
           altText="this is img"
-          title="Generative AI for customer growth"
-          text="Real work today suggests generative AI is poised to help businesses achieve stronger growth across marketing, sales and services."
+          title="Automation and AI"
+          text="Use automation and AI to improve efficiency and service delivery.Invest in digital tools and platforms to streamline operations and enhance customer interaction."
         />
         <ThinkCard
           images="https://dynamicmedia.accenture.com/is/image/accenture/Accenture-Paradox-Choice-CFOs-Hero-1200x400:rad-5x3?ts=1706171340303&fmt=webp-alpha&wid=1200&fit=constrain&op_sharpen=1&dpr=off"
           altText="this is img"
-          title="Generative AI for customer growth"
-          text="Real work today suggests generative AI is poised to help businesses achieve stronger growth across marketing, sales and services."
+          title="Talent Management"
+          text="Regularly upskill employees to keep pace with industry changes.Foster a positive work environment to retain talent."
         />
         <ThinkCard
           images="https://dynamicmedia.accenture.com/is/image/accenture/Hero%20Image_3840x2160__Total%20Enterprise%20Reinvention%202024:rad-5x3?ts=1716508517954&dpr=off&wid=1600"
           altText="this is img"
-          title="Generative AI for customer growth"
-          text="Real work today suggests generative AI is poised to help businesses achieve stronger growth across marketing, sales and services."
+          title="Performance Metrics and Evaluation"
+          text="Conduct regular performance reviews to stay on track with goals and objectives.Define and monitor Key Performance Indicators  to measure success and areas for improvement."
         />
         <ThinkCard
           images="https://dynamicmedia.accenture.com/is/image/accenture/Accenture-Commercial-Banking-Trends-2024-3840x2160:rad-5x3?ts=1713910608487&fit=constrain&dpr=off&wid=1600"
           altText="this is img"
-          title="Generative AI for customer growth"
-          text="Real work today suggests generative AI is poised to help businesses achieve stronger growth across marketing, sales and services."
+          title="Invest in Research and Development"
+          text="Develop prototypes and conduct thorough testing to refine the product before launch.Form a dedicated Research and Development team to focus on product innovation and development."
         />
         <ThinkCard
           images="https://dynamicmedia.accenture.com/is/image/accenture/ChatGPT_Hero_2064x1238_black_bg:rad-5x3-hd?ts=1710889004221&dpr=off&wid=1600"
           altText="this is img"
-          title="Generative AI for customer growth"
-          text="Real work today suggests generative AI is poised to help businesses achieve stronger growth across marketing, sales and services."
+          title="Client Relationship Management"
+          text="Focus on building long-term relationships with clients through excellent service and support. Implement loyalty programs or incentives for repeat clients."
         />
         <ThinkCard
           images="https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg"
           altText="this is img"
-          title="Generative AI for customer growth"
-          text="Real work today suggests generative AI is poised to help businesses achieve stronger growth across marketing, sales and services."
+          title="Feedback and Engagement"
+          text=" Encourage an open dialogue with your audience by inviting them to share their thoughts and feedback.Include interactive content such as polls, surveys, or forums to engage visitors."
         />
       </div>
 

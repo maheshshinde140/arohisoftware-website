@@ -10,6 +10,8 @@ import { cn } from "@/utils/cn";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 
+
+
 export function SignupForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -49,7 +51,6 @@ export function SignupForm() {
       }
   }, [user]);
 
-
   return (
     <div
       className="flex flex-1 justify-end items-center"
@@ -63,6 +64,7 @@ export function SignupForm() {
       }}
     >
       <div className="max-w-md w-full md:mx-5 rounded-lg my-3 p-8 bg-gray-900 bg-opacity-90 shadow-lg">
+      <h1>{loading ? "Processing" : "Signup"}</h1>
         <h2 className="font-bold text-3xl text-center text-white">Welcome to ArohiSoftware</h2>
         <p className="text-neutral-400 text-sm text-center mt-2">
           Login to Arohi if you can because we don&apos;t have a login flow yet
@@ -75,6 +77,7 @@ export function SignupForm() {
               <Label htmlFor="firstname" className="text-white">First name</Label>
               <Input
                 id="firstname"
+                name="firstname"
                 placeholder="Tyler"
                 type="text"
                 value={user.fname}
@@ -86,9 +89,11 @@ export function SignupForm() {
               <Label htmlFor="lastname" className="text-white">Last name</Label>
               <Input
                 id="lastname"
-                placeholder="Durden"
+                name="lastname"
                 value={user.username}
-                onChange={(e) => setUser({...user, username: e.target.value})}
+                onChange={(e)=>setUser({...user,username:e.target.value})}
+                required
+                placeholder="Durden"
                 type="text"
                 className="dark:bg-gray-700 dark:text-white rounded w-full shadow-md"
               />
@@ -98,10 +103,12 @@ export function SignupForm() {
             <Label htmlFor="email" className="text-white">Email Address</Label>
             <Input
               id="email"
+              name="email"
+              value={user.email}
+              onChange={(e)=>setUser({...user,email:e.target.value})}
+              required
               placeholder="projectmayhem@fc.com"
               type="email"
-              value={user.email}
-              onChange={(e) => setUser({...user, email: e.target.value})}
               className="dark:bg-gray-700 dark:text-white rounded w-full shadow-md"
             />
           </div>
@@ -109,10 +116,12 @@ export function SignupForm() {
             <Label htmlFor="password" className="text-white">Password</Label>
             <Input
               id="password"
-              placeholder="••••••••"
-              type="password"
+              name="password"
               value={user.password}
-            onChange={(e) => setUser({...user, password: e.target.value})}
+              onChange={(e)=>setUser({...user,password:e.target.value})}
+              placeholder="••••••••"
+              required
+              type="password"
               className="dark:bg-gray-700 dark:text-white rounded w-full shadow-md"
             />
           </div>

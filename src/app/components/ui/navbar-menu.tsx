@@ -16,6 +16,7 @@ export const MenuItem = ({
   active,
   item,
   children,
+
 }: {
   setActive: (item: string) => void;
   active: string | null;
@@ -37,7 +38,7 @@ export const MenuItem = ({
           transition={transition}
         >
           {active === item && children && (
-            <div className="absolute top-[-7.0rem)] w-fit lg:top-[3rem] ml-56 transform -translate-x-1/2">
+            <div className="absolute top-5 z-[100] w-fit lg:top-[3rem] ml-12 transform -translate-x-1/2">
               <motion.div
                 transition={transition}
                 layoutId="active"
@@ -67,7 +68,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)}
-      className={`relative rounded-full border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-10 px-8 py-6 ${className}`}
+      className={`relative rounded-full border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex-row text-[13px] text-base flex justify-center lg:space-x-10 space-x-4 lg:px-8 flex-wrap gap-3 w-[100%] py-2 lg:py-6`}
     >
       {children}
     </nav>

@@ -3,11 +3,11 @@
 import Link from "next/link";
 import React, {useEffect} from "react";
 import {useRouter} from "next/navigation";
-import axios from "axios";
 import { toast } from "react-hot-toast";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import './page.css';
+import axios from 'axios'
 
 const Page: React.FC = () => {
   const router = useRouter();
