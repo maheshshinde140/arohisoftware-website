@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Footer from "../components/Footer";
+import Image from "next/image";
 
 function Page() {
   return (
@@ -24,12 +25,19 @@ function Page() {
       </div>
 
       <div className="w-full bg-gray-200">
-        <h3 className="text-5xl font-semibold text-black px-10 py-8 ">Innovation never stops</h3>
+        <h3 className="text-5xl font-semibold text-black px-10 py-8 ">Training and Development</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
           <div className="flex flex-col  justify-around pb-8 px-8">
-            <p className="text-black font-normal leading-6 tracking-wide pl-4">
-            "Innovation never stops" encapsulates the relentless pursuit of progress and improvement. It signifies a commitment to continuous learning, adaptation, and the constant quest for new ideas and solutions. This mindset drives individuals and organizations to push boundaries, explore uncharted territories, and embrace change. By fostering a culture of perpetual innovation, we ensure that we remain at the forefront of advancements, consistently delivering value and staying ahead in a rapidly evolving world. Whether through small incremental improvements or groundbreaking discoveries, the spirit of ongoing innovation fuels growth, resilience, and success. 
-              </p>
+            <p className="text-black font-normal leading-6 tracking-wide mb-2 pl-4">
+            At arohi software, we believe that continuous learning and skill enhancement are essential for staying ahead in the ever-evolving field of information technology. Our comprehensive training and development programs are designed to empower individuals and organizations with the knowledge and skills needed to thrive in the digital age.
+            </p>
+              <p className="text-black font-normal leading-6 tracking-wide pl-4 mb-2">Our training programs cover a wide range of IT topics, from foundational courses in programming and networking to advanced training in cloud computing, cybersecurity, and data analytics. Whether you are a beginner looking to break into the tech industry or an experienced professional aiming to upskill, we have the right course for you.          </p>
+              <p className="text-black font-normal leading-6 tracking-wide pl-4">We offer flexible learning options, including online courses, in-person workshops, and customized corporate training sessions, to fit your schedule and learning preferences. Our experienced instructors are industry experts who bring real-world insights and practical knowledge to the classroom, ensuring that you gain relevant and up-to-date skills. </p>
+       
+          </div>
+
+          <div className="p-5">
+          <img src="https://www.sutisoft.com/blog/wp-content/uploads/2023/05/Employee-Training-Development.jpg" alt="developement"></img>
           </div>
         
         </div>

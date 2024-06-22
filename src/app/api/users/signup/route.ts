@@ -13,7 +13,11 @@ connect()
 export async function POST(request: NextRequest){
     try {
         const reqBody = await request.json()
+<<<<<<< HEAD
+        const {fname,lname, email, password} = reqBody
+=======
         const {fname,username, email, password} = reqBody
+>>>>>>> 965a7003b4c2942f62deb1cb63104d3d59d204dc
 
         console.log(reqBody);
 
@@ -30,7 +34,11 @@ export async function POST(request: NextRequest){
 
         const newUser = new User({
             fname,
+<<<<<<< HEAD
+            lname,
+=======
             username,
+>>>>>>> 965a7003b4c2942f62deb1cb63104d3d59d204dc
             email,
             password: hashedPassword
         })
@@ -41,7 +49,7 @@ export async function POST(request: NextRequest){
         //send verification email
 
         await sendEmail({email, emailType: "VERIFY", userId: savedUser._id})
-
+ 
         return NextResponse.json({
             message: "User created successfully",
             success: true,
