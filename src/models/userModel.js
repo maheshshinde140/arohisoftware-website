@@ -1,10 +1,14 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
+    fname: {
+        type: String,
+        required: [true, "Please provide a fname"],
+        
+    },
     username: {
         type: String,
-        required: [true, "Please provide a username"],
-        unique: true,
+        required: [true, "Please provide a lname"],
     },
     email: {
         type: String,

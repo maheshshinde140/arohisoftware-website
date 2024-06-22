@@ -23,9 +23,9 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
     <div className="flex flex-col md:flex-row min-h-screen">
       <div className="flex-1 bg-gradient-to-r from-purple-600 to-[#020817] p-10 text-white flex flex-col justify-center items-start">
         <h1 className="text-4xl font-bold mb-4">Think Tomorrow With Arohi Software</h1>
-        <p className="mb-4">Is your digital roadmap adaptive to</p>
+        <p className="mb-4">Empowering Futures through Innovative Software Solutions</p>
         <p className="mb-4">
-          Generative AI, Hyper cloud, and Intelligent Automation?
+        Join us as we shape the future of software solutions, driving progress and success for businesses worldwide.
         </p>
         <div className="flex space-x-4 mt-4">
           <button className="bg-white text-purple-600 px-4 py-2 rounded-lg">
@@ -37,8 +37,7 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
         <AlertDialogHeader>
           <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
           <AlertDialogDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
+          Yes, I'm absolutely sure.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
@@ -57,8 +56,7 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
         <AlertDialogHeader>
           <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
           <AlertDialogDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
+          No, not now!
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
