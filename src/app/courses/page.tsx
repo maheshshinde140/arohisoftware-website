@@ -28,7 +28,7 @@ function Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
           <div className="flex flex-col  justify-around pb-8 px-8">
             <p className="text-black font-normal leading-6 tracking-wide pl-4">
-            "Innovation never stops" encapsulates the relentless pursuit of progress and improvement. It signifies a commitment to continuous learning, adaptation, and the constant quest for new ideas and solutions. This mindset drives individuals and organizations to push boundaries, explore uncharted territories, and embrace change. By fostering a culture of perpetual innovation, we ensure that we remain at the forefront of advancements, consistently delivering value and staying ahead in a rapidly evolving world. Whether through small incremental improvements or groundbreaking discoveries, the spirit of ongoing innovation fuels growth, resilience, and success. 
+            `&quot;`Innovation never stops`&quot;` encapsulates the relentless pursuit of progress and improvement. It signifies a commitment to continuous learning, adaptation, and the constant quest for new ideas and solutions. This mindset drives individuals and organizations to push boundaries, explore uncharted territories, and embrace change. By fostering a culture of perpetual innovation, we ensure that we remain at the forefront of advancements, consistently delivering value and staying ahead in a rapidly evolving world. Whether through small incremental improvements or groundbreaking discoveries, the spirit of ongoing innovation fuels growth, resilience, and success. 
               </p>
           </div>
         

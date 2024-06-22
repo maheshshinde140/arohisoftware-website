@@ -37,7 +37,7 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
         <AlertDialogHeader>
           <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
           <AlertDialogDescription>
-          Yes, I'm absolutely sure.
+          Yes, I`&apos;`m absolutely sure.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
