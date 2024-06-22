@@ -25,11 +25,14 @@ function Navbar({ className }: { className?: string }) {
           </div>
 
           <div className="hidden lg:flex items-center justify-center flex-grow">
-            <Menu setActive={setActive} className="flex space-x-4">
-
-              <MenuItem setActive={setActive}  active={active} item="What we do >">
-                <div className="flex justify-around space-y-6 ml-28 space-x-10 p-10 ">
-                  <div className="flex flex-col space-y-4 py-7">
+            <Menu setActive={setActive} className="flex lg:space-x-4 flex-row ">
+              <MenuItem
+                setActive={setActive}
+                active={active}
+                item="What we do >"
+              >
+                <div className="flex justify-around space-y-6 m-2 mx-10 lg:space-x-10 ">
+                  <div className="flex flex-col lg:space-y-4 py-7">
                     <p className="mb-2 text-xl text-slate-400 hover:text-yellow-400 hover:cursor-text">
                       What we do<span>➡️</span>
                     </p>
@@ -58,45 +61,64 @@ function Navbar({ className }: { className?: string }) {
                         Learning
                       </span>
                     </HoveredLink>
-                    <HoveredLink href="/marketing&experience">
+                    {/* <HoveredLink href="/marketing&experience">
                       <span className="hover:border-b-4 hover:text-blue-400">
                         Marketing and Experience
                       </span>
-                    </HoveredLink>
-                    
+                    </HoveredLink> */}
                   </div>
                 </div>
               </MenuItem>
 
-              <Link href="/whatweThink">
-                <MenuItem setActive={setActive} active={active} item="What we think" />
+              <Link href="/whatweThink" className="ml-2">
+                <MenuItem
+                  setActive={setActive}
+                  active={active}
+                  item="What we think"
+                />
               </Link>
 
-              <MenuItem setActive={setActive} active={active} item="What we are >">
-                <div className="flex justify-around space-y-6 space-x-10 p-10 rounded">
+              <MenuItem
+                setActive={setActive}
+                active={active}
+                item="What we are >"
+              >
+                <div className="flex justify-around space-y-6 lg:space-x-10 p-10 rounded">
                   <div className="flex flex-col space-y-4 ">
                     <p className="mb-2 text-xl text-slate-400 hover:text-yellow-400 hover:cursor-pointer">
                       About Arohi Software <span>➡️</span>
                     </p>
                     <HoveredLink href="/courses">
-                      <span className="text-sm text-slate-400">Our organization</span>
+                      <span className="text-sm text-slate-400">
+                        Our organization
+                      </span>
                     </HoveredLink>
                     <HoveredLink href="/leaders">
-                      <span className="hover:border-b-4 hover:text-blue-400">Leaders</span>
+                      <span className="hover:border-b-4 hover:text-blue-400">
+                        Leaders
+                      </span>
                     </HoveredLink>
                     <HoveredLink href="/location">
-                      <span className="hover:border-b-4 hover:text-blue-400">Locations</span>
+                      <span className="hover:border-b-4 hover:text-blue-400">
+                        Locations
+                      </span>
                     </HoveredLink>
                     <HoveredLink href="/gallery">
-                      <span className="hover:border-b-4 hover:text-blue-400">Gallery</span>
+                      <span className="hover:border-b-4 hover:text-blue-400">
+                        Gallery
+                      </span>
                     </HoveredLink>
                     <HoveredLink href="/events">
-                      <span className="hover:border-b-4 hover:text-blue-400">Events</span>
+                      <span className="hover:border-b-4 hover:text-blue-400">
+                        Events
+                      </span>
                     </HoveredLink>
                   </div>
                   <div className="flex flex-col space-y-4 pt-7">
                     <HoveredLink href="/courses">
-                      <span className="text-sm text-slate-400">Media & Investors</span>
+                      <span className="text-sm text-slate-400">
+                        Media & Investors
+                      </span>
                     </HoveredLink>
                     <HoveredLink href="/media">
                       <span className="hover:border-b-4 animate-in border-neutral-100 border-y-gray-400 hover:text-blue-400">
@@ -104,7 +126,9 @@ function Navbar({ className }: { className?: string }) {
                       </span>
                     </HoveredLink>
                     <HoveredLink href="/investor">
-                      <span className="hover:border-b-4 hover:text-blue-400">Investor Relations</span>
+                      <span className="hover:border-b-4 hover:text-blue-400">
+                        Investor Relations
+                      </span>
                     </HoveredLink>
                   </div>
                 </div>
@@ -117,13 +141,17 @@ function Navbar({ className }: { className?: string }) {
                       Careers home <span>➡️</span>
                     </p>
                     <HoveredLink href="/courses">
-                      <span className="text-sm text-slate-400 cursor-text">Find Jobs</span>
-                    </HoveredLink>
-                    <HoveredLink href="/jobs">
-                      <span className="hover:border-b-4 animate-in hover:text-blue-400 border-neutral-100 border-y-gray-400">
-                        Search all Jobs
+                      <span className="text-sm text-slate-400 cursor-text">
+                        Training & Internships
                       </span>
                     </HoveredLink>
+
+                    <HoveredLink href="/courses">
+                      <span className="hover:border-b-4 animate-in hover:text-blue-400 border-neutral-100 border-y-gray-400">
+                        Training & Development
+                      </span>
+                    </HoveredLink>
+
                     <HoveredLink href="/experienceProf">
                       <span className="hover:border-b-4 animate-in hover:text-blue-400 border-neutral-100 border-y-gray-400">
                         Experience Professionals
@@ -137,35 +165,36 @@ function Navbar({ className }: { className?: string }) {
                   </div>
                   <div className="flex flex-col space-y-4 pt-7">
                     <HoveredLink href="/courses">
-                      <span className="text-sm text-slate-400 cursor-text">Training & Internships</span>
-                    </HoveredLink>
-                    <HoveredLink href="/courses">
-                      <span className="hover:border-b-4 animate-in hover:text-blue-400 border-neutral-100 border-y-gray-400">
-                        Training & Development
+                      <span className="text-sm text-slate-400 cursor-text">
+                        Find Jobs
                       </span>
                     </HoveredLink>
+                    <HoveredLink href="/jobs">
+                      <span className="hover:border-b-4 animate-in hover:text-blue-400 border-neutral-100 border-y-gray-400">
+                        Search all Jobs
+                      </span>
+                    </HoveredLink>
+
                     <HoveredLink href="/contact">
-                      <span className="text-sm pt-2 text-slate-400 hover:text-yellow-500 cursor-pointer">Contact Us</span>
+                      <span className="text-sm pt-2 text-slate-400 hover:text-yellow-500 cursor-pointer">
+                        Contact Us
+                      </span>
                     </HoveredLink>
                     <HoveredLink href="/faq">
-                      <span className="text-sm text-slate-400 hover:text-yellow-500 cursor-pointer">FAQ</span>
+                      <span className="text-sm text-slate-400 hover:text-yellow-500 cursor-pointer">
+                        FAQ
+                      </span>
                     </HoveredLink>
                   </div>
                 </div>
               </MenuItem>
-
             </Menu>
           </div>
-
-
-
 
           {/* Login button */}
           <div className="hidden lg:block px-8">
             <Link href="/login">
-              <button className="text-white focus:outline-none">
-                Login
-              </button>
+              <button className="text-white focus:outline-none">Login</button>
             </Link>
           </div>
 
@@ -195,9 +224,7 @@ function Navbar({ className }: { className?: string }) {
 
             <div className="block lg:hidden space-x-4">
               <Link href="/login">
-                <button className="text-white focus:outline-none">
-                  Login
-                </button>
+                <button className="text-white focus:outline-none">Login</button>
               </Link>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -236,8 +263,15 @@ function Navbar({ className }: { className?: string }) {
         {isMenuOpen && (
           <div className="lg:hidden">
             <div className="flex flex-col items-start bg-black px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Menu setActive={setActive} className="flex flex-col items-end   rounded-none space-y-4">
-                <MenuItem  setActive={setActive} active={active} item="What we do >">
+              <Menu
+                setActive={setActive}
+                className="flex flex-col items-end   rounded-none space-y-4"
+              >
+                <MenuItem
+                  setActive={setActive}
+                  active={active}
+                  item="What we do >"
+                >
                   <div className="flex flex-col space-y-4 items-center pb-4">
                     <HoveredLink href="/service" onClick={handleLinkClick}>
                       <span className="text-white">Services</span>
@@ -251,15 +285,29 @@ function Navbar({ className }: { className?: string }) {
                     <HoveredLink href="/learning" onClick={handleLinkClick}>
                       <span className="text-white">Learning</span>
                     </HoveredLink>
-                    <HoveredLink href="/marketing&experience" onClick={handleLinkClick}>
-                      <span className="text-white">Marketing and Experience</span>
+                    <HoveredLink
+                      href="/marketing&experience"
+                      onClick={handleLinkClick}
+                    >
+                      <span className="text-white">
+                        Marketing and Experience
+                      </span>
                     </HoveredLink>
                   </div>
                 </MenuItem>
                 <Link href="/whatweThink">
-                  <MenuItem setActive={setActive} active={active} item="What we think" onClick={handleLinkClick} />
+                  <MenuItem
+                    setActive={setActive}
+                    active={active}
+                    item="What we think"
+                    // onClick={handleLinkClick}
+                  />
                 </Link>
-                <MenuItem setActive={setActive} active={active} item="What we are >">
+                <MenuItem
+                  setActive={setActive}
+                  active={active}
+                  item="What we are >"
+                >
                   <div className="flex flex-col space-y-4 items-center pb-4">
                     <HoveredLink href="/courses" onClick={handleLinkClick}>
                       <span className="text-white">Our organization</span>
@@ -284,20 +332,31 @@ function Navbar({ className }: { className?: string }) {
                     </HoveredLink>
                   </div>
                 </MenuItem>
-                <MenuItem setActive={setActive} active={active} item="Careers >">
+                <MenuItem
+                  setActive={setActive}
+                  active={active}
+                  item="Careers >"
+                >
                   <div className="flex flex-col space-y-4 items-center pb-4">
-                    <HoveredLink href="/jobs" onClick={handleLinkClick}>
-                      <span className="text-white">Search all Jobs</span>
+                    <HoveredLink href="/courses" onClick={handleLinkClick}>
+                      <span className="text-white">Training & Development</span>
                     </HoveredLink>
-                    <HoveredLink href="/experienceProf" onClick={handleLinkClick}>
-                      <span className="text-white">Experience Professionals</span>
+                    <HoveredLink
+                      href="/experienceProf"
+                      onClick={handleLinkClick}
+                    >
+                      <span className="text-white">
+                        Experience Professionals
+                      </span>
                     </HoveredLink>
                     <HoveredLink href="/worken" onClick={handleLinkClick}>
                       <span className="text-white">Work environment</span>
                     </HoveredLink>
-                    <HoveredLink href="/courses" onClick={handleLinkClick}>
-                      <span className="text-white">Training & Development</span>
+
+                    <HoveredLink href="/jobs" onClick={handleLinkClick}>
+                      <span className="text-white">Search all Jobs</span>
                     </HoveredLink>
+
                     <HoveredLink href="/contact" onClick={handleLinkClick}>
                       <span className="text-white">Contact Us</span>
                     </HoveredLink>

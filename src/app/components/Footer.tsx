@@ -10,10 +10,10 @@ function Footer() {
         <nav className="text-white ">
           <h6 className="footer-title text-white text-xl mb-4">Services</h6>
          <div className="font-thin ">
-              <Link href="/service" className="link hover:underline link-hover mt-2 block">Branding</Link>
+              <Link href="/service" className="link hover:underline  link-hover mt-2 block">Development</Link>
               <Link href="/service"className="link hover:underline link-hover mt-2 block">Design</Link>
               <Link href="/service" className="link hover:underline link-hover mt-2 block">Marketing</Link>
-              <Link href="/service" className="link hover:underline link-hover mt-2 block">Advertisement</Link>
+              <Link href="/service" className="link hover:underline link-hover mt-2 block">Security</Link>
          </div>
         </nav>
         <nav className="text-white">
@@ -22,15 +22,15 @@ function Footer() {
               <Link href="/leaders" className="link hover:underline link-hover mt-2 block">About us</Link>
               <Link href="/contact" className="link hover:underline link-hover mt-2 block">Contact</Link>
               <Link href="/jobs" className="link hover:underline link-hover mt-2 block">Jobs</Link>
-              <Link href={"/press"} className="link hover:underline link-hover mt-2 block">Press kit</Link>
+              {/* <Link href={"/press"} className="link hover:underline link-hover mt-2 block">Press kit</Link> */}
           </div>
         </nav>
         <nav className="text-white">
           <h6 className="footer-title text-white text-xl mb-4">Legal</h6>
           <div className="font-thin">
-              <Link href="/terms" className="link hover:underline link-hover mt-2 block">Terms of use</Link>
-              <Link href="/policy" className="link hover:underline link-hover mt-2 block">Privacy policy</Link>
-              <Link href="/policy" className="link hover:underline link-hover mt-2 block">Cookie policy</Link>
+              <Link href="/termsofuse" className="link hover:underline link-hover mt-2 block">Terms of use</Link>
+              <Link href="/CookiePolicy" className="link hover:underline link-hover mt-2 block">Cookie Policy/Settings</Link>
+              <Link href="/accesebility" className="link hover:underline link-hover mt-2 block">Cookie policy</Link>
           </div>
         </nav>
         <form className="lg:col-span-1 col-span-2">

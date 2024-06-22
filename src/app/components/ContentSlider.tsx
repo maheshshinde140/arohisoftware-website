@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 interface Content {
   title: string;
@@ -43,7 +44,7 @@ const ContentSlider: React.FC = () => {
         <p className={descriptionStyles}>{CONTENTS[index].description}</p>
       </div>
       <button className="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition">
-      Have A Look Over Services →
+     <Link href="/service" > Have A Look Over Services →</Link>
       </button>
     </div>
   );
