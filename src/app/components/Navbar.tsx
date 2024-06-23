@@ -32,7 +32,7 @@ function Navbar({ className }: { className?: string }) {
                 item="What we do >"
               >
                 <div className="flex justify-around space-y-6 m-2 mx-10 lg:space-x-10 ">
-                  <div className="flex flex-col lg:space-y-4 py-7">
+                  <div className="flex flex-col lg:space-y-4 py-7 ">
                     <p className="mb-2 text-xl text-slate-400 hover:text-yellow-400 hover:cursor-text">
                       What we do<span>➡️</span>
                     </p>
