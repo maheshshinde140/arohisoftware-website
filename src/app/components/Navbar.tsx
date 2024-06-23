@@ -25,14 +25,14 @@ function Navbar({ className }: { className?: string }) {
           </div>
 
           <div className="hidden lg:flex items-center justify-center flex-grow">
-            <Menu setActive={setActive} className="flex space-x-4">
+            <Menu setActive={setActive} className="flex lg:space-x-4 flex-row ">
               <MenuItem
                 setActive={setActive}
                 active={active}
                 item="What we do >"
               >
-                <div className="flex justify-around space-y-6 m-2 mx-10 space-x-10  ">
-                  <div className="flex flex-col space-y-4 py-7">
+                <div className="flex justify-around space-y-6 m-2 mx-10 lg:space-x-10 ">
+                  <div className="flex flex-col lg:space-y-4 py-7">
                     <p className="mb-2 text-xl text-slate-400 hover:text-yellow-400 hover:cursor-text">
                       What we do<span>➡️</span>
                     </p>
@@ -65,14 +65,14 @@ function Navbar({ className }: { className?: string }) {
                 </div>
               </MenuItem>
 
-              <Link href="/whatweThink">
-                <div onClick={handleLinkClick}>
-                  <MenuItem
-                    setActive={setActive}
-                    active={active}
-                    item="What we think"
-                  />
-                </div>
+
+              <Link href="/whatweThink" className="ml-2">
+                <MenuItem
+                  setActive={setActive}
+                  active={active}
+                  item="What we think"
+                />
+
               </Link>
 
               <MenuItem
@@ -80,7 +80,7 @@ function Navbar({ className }: { className?: string }) {
                 active={active}
                 item="What we are >"
               >
-                <div className="flex justify-around space-y-6 space-x-10 p-10 rounded">
+                <div className="flex justify-around space-y-6 lg:space-x-10 p-10 rounded">
                   <div className="flex flex-col space-y-4 ">
                     <p className="mb-2 text-xl text-slate-400 hover:text-yellow-400 hover:cursor-pointer">
                       About Arohi Software <span>➡️</span>
@@ -273,6 +273,7 @@ function Navbar({ className }: { className?: string }) {
                     setActive={setActive}
                     active={active}
                     item="What we think"
+
                   />
                 </div>
               </Link>

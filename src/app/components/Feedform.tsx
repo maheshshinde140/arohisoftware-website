@@ -12,8 +12,6 @@ import {
 } from "@/components/ui/alert-dialog"
 import { Button } from "@/components/ui/button"
 
-
-
 interface FeedformProps {
   title: string;
 }
@@ -28,7 +26,7 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
         Join us as we shape the future of software solutions, driving progress and success for businesses worldwide.
         </p>
         <div className="flex space-x-4 mt-4">
-          <button className="bg-white text-purple-600 px-4 py-2 rounded-lg">
+  
           <AlertDialog>
       <AlertDialogTrigger asChild>
         <Button className="bg-white text-lg text-purple-600 px-4 py-2 rounded-lg">Absolutely Yes</Button>
@@ -46,9 +44,7 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
-          </button>
-          <button className="bg-white text-purple-600 px-4 py-2 rounded-lg">
-          <AlertDialog>
+             <AlertDialog>
       <AlertDialogTrigger asChild>
         <Button className="bg-white text-lg text-purple-600 px-4 py-2 rounded-lg"> Not Completely</Button>
       </AlertDialogTrigger>
@@ -65,7 +61,7 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
-          </button>
+
         </div>
       </div>
       <div className="flex-1 bg-white p-10 flex flex-col justify-center">
@@ -73,18 +69,20 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
         <h1 className="text-2xl md:text-3xl text-start text-black lg:text-4xl font-bold mb-3">
           {title}
         </h1>
-        <p className="text-md mb-5 font-sans text-black text-start">Tell us your Industry Challenge</p>
-        <form className="space-y-4 mb-5">
+
+        <p className="text-md mb-5 font-sans text-black">business</p>
+        <form className="lg:space-y-4 mb-5">
+
           <div className="lg:flex lg:space-x-4">
             <input
               type="text"
               placeholder="Name"
-              className="flex-1 border-b-2 focus:border-purple-600 text-[#0a0a0a] border-gray-300 p-2 focus:outline-none"
+              className="lg:flex-1 w-full border-b-2 focus:border-purple-600 text-[#0a0a0a] border-gray-300 p-2 focus:outline-none"
             />
             <input
               type="email"
               placeholder="Email"
-              className="flex-1 border-b-2 focus:border-purple-600 text-[#0a0a0a]  border-gray-300 p-2 focus:outline-none"
+              className="lg:flex-1 border-b-2  w-full focus:border-purple-600 text-[#0a0a0a]  border-gray-300 p-2 focus:outline-none"
             />
           </div>
           <div className="lg:flex lg:space-x-4 ">
@@ -92,24 +90,24 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
               type="text"
               placeholder="Phone"
               maxLength={10}
-              className="flex-1 border-b-2 focus:border-purple-600 text-[#0a0a0a] p-2 border-gray-300 focus:outline-none"
+              className="lg:flex-1 border-b-2  w-full focus:border-purple-600 text-[#0a0a0a] p-2 border-gray-300 focus:outline-none"
             />
             <input
               type="text"
               placeholder="Company"
-              className="flex-1 border-b-2 focus:border-purple-600 text-[#0a0a0a] border-gray-300 p-2 focus:outline-none"
+              className="lg:flex-1 border-b-2 w-full focus:border-purple-600 text-[#0a0a0a] border-gray-300 p-2 focus:outline-none"
             />
           </div>
           <div className="lg:flex lg:space-x-4 ">
           <input
             type="text"
             placeholder="We are looking for"
-            className="flex-1 border-b-2 focus:border-purple-600 text-[#0a0a0a] border-gray-300 p-2 focus:outline-none"
+            className="lg:flex-1 w-full border-b-2 focus:border-purple-600 text-[#0a0a0a] border-gray-300 p-2 focus:outline-none"
           />
             <input
               type="text"
               placeholder="Message"
-              className="flex-1 border-b-2 focus:border-purple-600 text-[#0a0a0a] border-gray-300 p-2 focus:outline-none"
+              className="lg:flex-1  w-full border-b-2 focus:border-purple-600 text-[#0a0a0a] border-gray-300 p-2 focus:outline-none"
             />
           </div>
           <div className="flex items-center space-x-2 pt-10 pb-4">
@@ -130,7 +128,7 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
             <div className="bg-black text-white px-4 py-2">2 + 1 =</div>
             <input
               type="text"
-              className="flex-1 border-2 focus:border-purple-600 text-[#0a0a0a] p-2 focus:outline-none border-gray-300"
+              className="lg:flex-1 border-2 focus:border-purple-600 text-[#0a0a0a] p-2 focus:outline-none border-gray-300"
             />
           </div>
           <button

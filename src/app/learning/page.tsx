@@ -11,19 +11,21 @@ import Partners from '../components/Partners';
 import Leaders from '../components/Leaders';
 import Feedform from '../components/Feedform';
 import CareersComponent from '../components/CareersComponent';
+import Traning from '../components/Traning';
 
 const App: React.FC = () => {
   return (
     <div className="App bg-black ">
-      <Header />
+      {/* <Header /> */}
       <main className="pt-20">
         {/* <LearningNavbar /> */}
-        <div className="px-12 py-10">
+        <div className="lg:px-12 py-10">
            <LearningNavbar/>
          <Services />
           <ReinventLearning />
           <Partners />
           <Leaders />
+          <Traning/>
           <CareersComponent />
           <Feedform title="Contact Us" /> 
         </div>
