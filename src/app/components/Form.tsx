@@ -70,7 +70,7 @@ export function SignupForm() {
           Login to Arohi if you can because we don&apos;t have a login flow yet
         </p>
         <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
-        <h1>{loading ? "Processing" : "."}</h1>
+        <h1>{loading ? "Processing" : " "}</h1>
 
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
             <div className="flex-1">
