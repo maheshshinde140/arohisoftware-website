@@ -35,7 +35,7 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
         <AlertDialogHeader>
           <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
           <AlertDialogDescription>
-          Yes, I'm absolutely sure.
+          Yes, I&apos;am absolutely sure.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
@@ -65,12 +65,14 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
         </div>
       </div>
       <div className="flex-1 bg-white p-10 flex flex-col justify-center">
-        <h2 className="text-3xl font-black mb-4 text-gray-500">Get Started</h2>
-        <h1 className="text-2xl md:text-3xl text-black lg:text-4xl font-bold mb-3">
+        <h2 className="text-xl font-black mb-4 text-start text-gray-500">Get Started</h2>
+        <h1 className="text-2xl md:text-3xl text-start text-black lg:text-4xl font-bold mb-3">
           {title}
         </h1>
+
         <p className="text-md mb-5 font-sans text-black">business</p>
         <form className="lg:space-y-4 mb-5">
+
           <div className="lg:flex lg:space-x-4">
             <input
               type="text"

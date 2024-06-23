@@ -38,13 +38,13 @@ export const MenuItem = ({
           transition={transition}
         >
           {active === item && children && (
-            <div className="absolute top-5 z-[100] w-fit lg:top-[3rem] ml-12 transform -translate-x-1/2">
+            <div className="absolute top-5 z-[100] w-fit lg:top-[3rem] ml-20 transform -translate-x-1/2">
               <motion.div
                 transition={transition}
                 layoutId="active"
                 className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
               >
-                <motion.div layout className="w-max h-full p-4">
+                <motion.div layout className="w-max h-full p-4  ">
                   {children}
                 </motion.div>
               </motion.div>

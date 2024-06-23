@@ -148,8 +148,8 @@ const Event: React.FC<EventProps> = ({ title, date, time, address, description, 
       </div>
       
     </div>
-    <div className="bg-gradient-to-br absolute top-56 left-96  w-fit from-violet-400 rounded-lg to-orange-300 p-2">
-          <button className="self-start bg-black text-white px-8 py-6  rounded-md text-4xl">Upcomming</button>
+    <div className="bg-gradient-to-br absolute top-56 lg:left-96 left-20 w-fit from-violet-400 rounded-lg to-orange-300 p-2">
+          <button className="self-start bg-black text-white lg:px-8 py-6   rounded-md text-4xl">Upcomming</button>
         </div>
     
   </div>

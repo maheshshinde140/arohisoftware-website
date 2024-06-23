@@ -44,7 +44,7 @@ const page: React.FC = () => {
           <div className="lg:container mt-6 lg:flex justify-around items-center ">
             <div className="lg:w-[35vw] ">
               <p className="text-black font-midium">
-              "Innovating in a truly human way" emphasizes creating technological advancements that prioritize human needs, values, and experiences. It focuses on empathy-driven design, ethical considerations, and user-centric solutions. This approach ensures that innovation enhances human life, fosters inclusivity, and addresses real-world challenges.
+              `&quot;`Innovating in a truly human way`&quot;` emphasizes creating technological advancements that prioritize human needs, values, and experiences. It focuses on empathy-driven design, ethical considerations, and user-centric solutions. This approach ensures that innovation enhances human life, fosters inclusivity, and addresses real-world challenges.
                 <br />
                 <br />
                 By integrating technology with a deep understanding of human behavior and societal impacts, we create solutions that are not only groundbreaking but also meaningful and beneficial for people and communities

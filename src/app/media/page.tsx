@@ -1,6 +1,3 @@
-
-
-
 "use client";
 
 import { useState, Fragment } from "react";
@@ -50,8 +47,6 @@ const NewsroomPage = () => {
   ];
 
   return (
-
-
     <div className="min-h-screen bg-gray-100">
       <Head>
         <title>Newsroom - Arohi Softwares</title>
@@ -134,7 +129,7 @@ const NewsroomPage = () => {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-30" />
+              <div className="fixed inset-0 bg-black bg-opacity-30" />
             </Transition.Child>
 
             <span className="inline-block h-screen align-middle" aria-hidden="true">&#8203;</span>
@@ -174,8 +169,6 @@ const NewsroomPage = () => {
 
       <Footer/>
     </div>
-
-
   );
 };
 

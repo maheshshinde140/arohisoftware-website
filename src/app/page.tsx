@@ -36,7 +36,7 @@ export default function Home() {
       <OurPartners />
       <CareersComponent />
       <Feedform title="Business With Arohi Software " />
-      {/* <TestimonialCards /> */}
+      <TestimonialCards />
       <Footer />
     </div>
   );

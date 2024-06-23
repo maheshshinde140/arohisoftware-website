@@ -18,13 +18,13 @@ const Leadership = () => {
       <div className='relative flex justify-center items-center h-[75vh]'>
         <img className='w-96 object-cover' src='./leadreships.png' alt='Leadership Background Image' />
         <h1 className='absolute text-center lg:mt-[500px] text-4xl sm:text-6xl md:text-8xl lg:text-[50px] px-2 font-semibold border bg-gradient-to-br from-violet-400/20 to-purple-500/20 backdrop-blur-xl border-r-[6px] sm:border-r-[8px] md:border-r-[10px] lg:border-r-[12px] border-b-[6px] sm:border-b-[8px] md:border-b-[10px] lg:border-b-[12px] text-white'>
-          Guided by Our Leadership
+           Our Leaders
         </h1>
       </div>
 
       <div className="container max-w-full lg:max-w-[900px] text-center mt-12 mx-auto px-4 py-8">
         <header className="text-center mb-12">
-          <p className="text-lg text-gray-600">We believe in the strength of the team. Meet the leaders who inspire, empower, and guide us to make a difference for our clients, our partners, and one another.</p>
+          <p className="text-lg text-gray-600"></p>
         </header>
         <section>
           <div className="grid grid-cols-3 mt-12">
@@ -50,11 +50,9 @@ const Leadership = () => {
         </section>
       </div>
 
-      <section className="text-center my-12">
-        <p className="w-fit mx-auto text-white py-2 px-4 rounded-full my-12 text-4xl">Contact Us</p>
-        <Feedform title="" />
-      </section>
-      <Footer />
+
+        
+     <Footer/>
     </div>
   );
 };
