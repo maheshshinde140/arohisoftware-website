@@ -49,7 +49,7 @@ const jobDetails = [
   {
     location: "INDIA",
     title: "Application Lead",
-    role: "Software Engineering – Project Role: Application Lead",
+    role: "Software Engineering - Project Role: Application Lead",
     businessArea: "Technology",
     experience: "Open to Freshers",
     postedTime: "Posted within last 24 hours",
@@ -57,7 +57,7 @@ const jobDetails = [
   {
     location: "INDIA",
     title: "Senior Developer",
-    role: "Software Engineering – Project Role: Senior Developer",
+    role: "Software Engineering - Project Role: Senior Developer",
     businessArea: "Product Development",
     experience: "Open to Freshers",
     postedTime: "Posted 3 days ago",
@@ -65,7 +65,7 @@ const jobDetails = [
   {
     location: "INDIA",
     title: "Project Manager",
-    role: "Project Management – Project Role: Project Manager",
+    role: "Project Management - Project Role: Project Manager",
     businessArea: "Operations",
     experience: "Open to Freshers",
     postedTime: "Posted 1 week ago",
@@ -73,7 +73,7 @@ const jobDetails = [
   {
     location: "INDIA",
     title: "QA Engineer",
-    role: "Software Engineering – Project Role: QA Engineer",
+    role: "Software Engineering - Project Role: QA Engineer",
     businessArea: "Quality Assurance",
     experience: "Open to Freshers",
     postedTime: "Posted 2 days ago",
@@ -81,7 +81,7 @@ const jobDetails = [
   {
     location: "INDIA",
     title: "Product Owner",
-    role: "Product Management – Project Role: Product Owner",
+    role: "Product Management - Project Role: Product Owner",
     businessArea: "Product Development",
     experience: "Open to Freshers",
     postedTime: "Posted 5 days ago",
@@ -89,7 +89,7 @@ const jobDetails = [
   {
     location: "INDIA",
     title: "Data Scientist",
-    role: "Data Science – Project Role: Data Scientist",
+    role: "Data Science - Project Role: Data Scientist",
     businessArea: "Analytics",
     experience: "Open to Freshers",
     postedTime: "Posted 4 days ago",
@@ -97,7 +97,7 @@ const jobDetails = [
   {
     location: "INDIA",
     title: "UX Designer",
-    role: "Design – Project Role: UX Designer",
+    role: "Design - Project Role: UX Designer",
     businessArea: "Design",
     experience: "Open to Freshers",
     postedTime: "Posted 1 week ago",
@@ -105,7 +105,7 @@ const jobDetails = [
   {
     location: "INDIA",
     title: "Business Analyst",
-    role: "Business Analysis – Project Role: Business Analyst",
+    role: "Business Analysis - Project Role: Business Analyst",
     businessArea: "Business Intelligence",
     experience: "Open to Freshers",
     postedTime: "Posted 3 days ago",
@@ -113,7 +113,7 @@ const jobDetails = [
   {
     location: "INDIA",
     title: "DevOps Engineer",
-    role: "Software Engineering – Project Role: DevOps Engineer",
+    role: "Software Engineering - Project Role: DevOps Engineer",
     businessArea: "Technology",
     experience: "Open to Freshers",
     postedTime: "Posted 2 days ago",
@@ -121,7 +121,7 @@ const jobDetails = [
   {
     location: "INDIA",
     title: "IT Support Specialist",
-    role: "IT Support – Project Role: IT Support Specialist",
+    role: "IT Support - Project Role: IT Support Specialist",
     businessArea: "Support",
     experience: "Open to Freshers",
     postedTime: "Posted 5 days ago",
@@ -129,7 +129,7 @@ const jobDetails = [
   {
     location: "INDIA",
     title: "Network Engineer",
-    role: "Network Engineering – Project Role: Network Engineer",
+    role: "Network Engineering - Project Role: Network Engineer",
     businessArea: "Infrastructure",
     experience: "Open to Freshers",
     postedTime: "Posted 1 day ago",
@@ -137,7 +137,7 @@ const jobDetails = [
   {
     location: "INDIA",
     title: "Cybersecurity Analyst",
-    role: "Cybersecurity – Project Role: Cybersecurity Analyst",
+    role: "Cybersecurity - Project Role: Cybersecurity Analyst",
     businessArea: "Security",
     experience: "Open to Freshers",
     postedTime: "Posted 3 days ago",
@@ -460,6 +460,8 @@ const handleSubmit = (e: React.FormEvent) => {
           </div>
         )}
       </div>
+    
+     
     </div>
   );
 };

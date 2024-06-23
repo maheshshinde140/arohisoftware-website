@@ -28,6 +28,11 @@ function Page() {
         <h3 className="text-5xl font-semibold text-black px-10 py-8 ">Training and Development</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
           <div className="flex flex-col  justify-around pb-8 px-8">
+
+            <p className="text-black font-normal leading-6 tracking-wide pl-4">
+            `&quot;`Innovation never stops`&quot;` encapsulates the relentless pursuit of progress and improvement. It signifies a commitment to continuous learning, adaptation, and the constant quest for new ideas and solutions. This mindset drives individuals and organizations to push boundaries, explore uncharted territories, and embrace change. By fostering a culture of perpetual innovation, we ensure that we remain at the forefront of advancements, consistently delivering value and staying ahead in a rapidly evolving world. Whether through small incremental improvements or groundbreaking discoveries, the spirit of ongoing innovation fuels growth, resilience, and success. 
+              </p>
+
             <p className="text-black font-normal leading-6 tracking-wide mb-2 pl-4">
             At arohi software, we believe that continuous learning and skill enhancement are essential for staying ahead in the ever-evolving field of information technology. Our comprehensive training and development programs are designed to empower individuals and organizations with the knowledge and skills needed to thrive in the digital age.
             </p>
@@ -38,6 +43,7 @@ function Page() {
 
           <div className="p-5">
           <img src="https://www.sutisoft.com/blog/wp-content/uploads/2023/05/Employee-Training-Development.jpg" alt="developement"></img>
+
           </div>
         
         </div>

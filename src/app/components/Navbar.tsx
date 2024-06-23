@@ -61,14 +61,10 @@ function Navbar({ className }: { className?: string }) {
                         Learning
                       </span>
                     </HoveredLink>
-                    {/* <HoveredLink href="/marketing&experience">
-                      <span className="hover:border-b-4 hover:text-blue-400">
-                        Marketing and Experience
-                      </span>
-                    </HoveredLink> */}
                   </div>
                 </div>
               </MenuItem>
+
 
               <Link href="/whatweThink" className="ml-2">
                 <MenuItem
@@ -76,6 +72,7 @@ function Navbar({ className }: { className?: string }) {
                   active={active}
                   item="What we think"
                 />
+
               </Link>
 
               <MenuItem
@@ -238,21 +235,12 @@ function Navbar({ className }: { className?: string }) {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  {isMenuOpen ? (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  ) : (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4 6h16M4 12h16m-7 6h7"
-                    />
-                  )}
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
                 </svg>
               </button>
             </div>
@@ -262,111 +250,84 @@ function Navbar({ className }: { className?: string }) {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="lg:hidden">
-            <div className="flex flex-col items-start bg-black px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Menu
-                setActive={setActive}
-                className="flex flex-col items-end   rounded-none space-y-4"
-              >
-                <MenuItem
-                  setActive={setActive}
-                  active={active}
-                  item="What we do >"
-                >
-                  <div className="flex flex-col space-y-4 items-center pb-4">
-                    <HoveredLink href="/service" onClick={handleLinkClick}>
-                      <span className="text-white">Services</span>
-                    </HoveredLink>
-                    <HoveredLink href="/research" onClick={handleLinkClick}>
-                      <span className="text-white">Research & Innovations</span>
-                    </HoveredLink>
-                    <HoveredLink href="/security" onClick={handleLinkClick}>
-                      <span className="text-white">Security</span>
-                    </HoveredLink>
-                    <HoveredLink href="/learning" onClick={handleLinkClick}>
-                      <span className="text-white">Learning</span>
-                    </HoveredLink>
-                    <HoveredLink
-                      href="/marketing&experience"
-                      onClick={handleLinkClick}
-                    >
-                      <span className="text-white">
-                        Marketing and Experience
-                      </span>
-                    </HoveredLink>
-                  </div>
-                </MenuItem>
-                <Link href="/whatweThink">
+            <Menu setActive={setActive} className="flex flex-col space-y-4">
+              <MenuItem setActive={setActive} active={active} item="What we do">
+                <div className="flex flex-col space-y-4 py-4">
+                  <HoveredLink href="/service" onClick={handleLinkClick}>
+                    Services
+                  </HoveredLink>
+                  <HoveredLink href="/research" onClick={handleLinkClick}>
+                    Research & Innovations
+                  </HoveredLink>
+                  <HoveredLink href="/security" onClick={handleLinkClick}>
+                    Security
+                  </HoveredLink>
+                  <HoveredLink href="/learning" onClick={handleLinkClick}>
+                    Learning
+                  </HoveredLink>
+                </div>
+              </MenuItem>
+              <Link href="/whatweThink">
+                <div onClick={handleLinkClick}>
                   <MenuItem
                     setActive={setActive}
                     active={active}
                     item="What we think"
-                    // onClick={handleLinkClick}
+
                   />
-                </Link>
-                <MenuItem
-                  setActive={setActive}
-                  active={active}
-                  item="What we are >"
-                >
-                  <div className="flex flex-col space-y-4 items-center pb-4">
-                    <HoveredLink href="/courses" onClick={handleLinkClick}>
-                      <span className="text-white">Our organization</span>
-                    </HoveredLink>
-                    <HoveredLink href="/leaders" onClick={handleLinkClick}>
-                      <span className="text-white">Leaders</span>
-                    </HoveredLink>
-                    <HoveredLink href="/location" onClick={handleLinkClick}>
-                      <span className="text-white">Locations</span>
-                    </HoveredLink>
-                    <HoveredLink href="/gallery" onClick={handleLinkClick}>
-                      <span className="text-white">Gallery</span>
-                    </HoveredLink>
-                    <HoveredLink href="/events" onClick={handleLinkClick}>
-                      <span className="text-white">Events</span>
-                    </HoveredLink>
-                    <HoveredLink href="/media" onClick={handleLinkClick}>
-                      <span className="text-white">Media Relations</span>
-                    </HoveredLink>
-                    <HoveredLink href="/investor" onClick={handleLinkClick}>
-                      <span className="text-white">Investor Relations</span>
-                    </HoveredLink>
-                  </div>
-                </MenuItem>
-                <MenuItem
-                  setActive={setActive}
-                  active={active}
-                  item="Careers >"
-                >
-                  <div className="flex flex-col space-y-4 items-center pb-4">
-                    <HoveredLink href="/courses" onClick={handleLinkClick}>
-                      <span className="text-white">Training & Development</span>
-                    </HoveredLink>
-                    <HoveredLink
-                      href="/experienceProf"
-                      onClick={handleLinkClick}
-                    >
-                      <span className="text-white">
-                        Experience Professionals
-                      </span>
-                    </HoveredLink>
-                    <HoveredLink href="/worken" onClick={handleLinkClick}>
-                      <span className="text-white">Work environment</span>
-                    </HoveredLink>
-
-                    <HoveredLink href="/jobs" onClick={handleLinkClick}>
-                      <span className="text-white">Search all Jobs</span>
-                    </HoveredLink>
-
-                    <HoveredLink href="/contact" onClick={handleLinkClick}>
-                      <span className="text-white">Contact Us</span>
-                    </HoveredLink>
-                    <HoveredLink href="/faq" onClick={handleLinkClick}>
-                      <span className="text-white">FAQ</span>
-                    </HoveredLink>
-                  </div>
-                </MenuItem>
-              </Menu>
-            </div>
+                </div>
+              </Link>
+              <MenuItem setActive={setActive} active={active} item="What we are">
+                <div className="flex flex-col space-y-4 py-4">
+                  <HoveredLink href="/courses" onClick={handleLinkClick}>
+                    Our organization
+                  </HoveredLink>
+                  <HoveredLink href="/leaders" onClick={handleLinkClick}>
+                    Leaders
+                  </HoveredLink>
+                  <HoveredLink href="/location" onClick={handleLinkClick}>
+                    Locations
+                  </HoveredLink>
+                  <HoveredLink href="/gallery" onClick={handleLinkClick}>
+                    Gallery
+                  </HoveredLink>
+                  <HoveredLink href="/events" onClick={handleLinkClick}>
+                    Events
+                  </HoveredLink>
+                  <HoveredLink href="/media" onClick={handleLinkClick}>
+                    Media Relations
+                  </HoveredLink>
+                  <HoveredLink href="/investor" onClick={handleLinkClick}>
+                    Investor Relations
+                  </HoveredLink>
+                </div>
+              </MenuItem>
+              <MenuItem setActive={setActive} active={active} item="Careers">
+                <div className="flex flex-col space-y-4 py-4">
+                  <HoveredLink href="/courses" onClick={handleLinkClick}>
+                    Training & Internships
+                  </HoveredLink>
+                  <HoveredLink href="/courses" onClick={handleLinkClick}>
+                    Training & Development
+                  </HoveredLink>
+                  <HoveredLink href="/experienceProf" onClick={handleLinkClick}>
+                    Experience Professionals
+                  </HoveredLink>
+                  <HoveredLink href="/worken" onClick={handleLinkClick}>
+                    Work environment
+                  </HoveredLink>
+                  <HoveredLink href="/jobs" onClick={handleLinkClick}>
+                    Search all Jobs
+                  </HoveredLink>
+                  <HoveredLink href="/contact" onClick={handleLinkClick}>
+                    Contact Us
+                  </HoveredLink>
+                  <HoveredLink href="/faq" onClick={handleLinkClick}>
+                    FAQ
+                  </HoveredLink>
+                </div>
+              </MenuItem>
+            </Menu>
           </div>
         )}
       </nav>

@@ -1,4 +1,3 @@
-
 import Feedform from '@/app/components/Feedform';
 import React from 'react';
 
@@ -22,13 +21,9 @@ const Leadership = () => {
         </h1>
       </div>
 
-
-
-    
-
       <div className="container max-w-full lg:max-w-[900px] text-center mt-12 mx-auto px-4 py-8">
         <header className="text-center mb-12">
-          <p className="text-lg text-gray-600">Our executive leadership team averages 24 years of experience with ArohiSoftware.</p>
+          <p className="text-lg text-gray-600">Our executive leadership team averages 24 years of experience with Arohi Software.</p>
         </header>
         <section>
           <h2 className="text-3xl font-semibold mb-6">Our leaders</h2>
@@ -49,7 +44,7 @@ const Leadership = () => {
       <section >
         <section className="text-center my-12">
           <p className=" w-fit mx-auto  text-white  py-2 px-4 rounded-full my-12 text-4xl ">Contact Us</p>
-          <Feedform title="" />
+          <Feedform title='Chart Your Career Path with Arohi Software: Meet Our Visionary Leaders' />
         </section>
 
         <section className=''>
