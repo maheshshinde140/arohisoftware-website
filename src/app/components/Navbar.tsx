@@ -143,6 +143,11 @@ function Navbar({ className }: { className?: string }) {
                       </span>
                     </HoveredLink>
 
+                    <HoveredLink href="/careers">
+                      <span className="hover:border-b-4 animate-in hover:text-blue-400 border-neutral-100 border-y-gray-400">
+                        Careers
+                      </span>
+                    </HoveredLink>
                     <HoveredLink href="/courses">
                       <span className="hover:border-b-4 animate-in hover:text-blue-400 border-neutral-100 border-y-gray-400">
                         Training & Development
@@ -304,8 +309,12 @@ function Navbar({ className }: { className?: string }) {
               </MenuItem>
               <MenuItem setActive={setActive} active={active} item="Careers">
                 <div className="flex flex-col space-y-4 py-4">
-                  <HoveredLink href="/courses" onClick={handleLinkClick}>
+                
+                  <HoveredLink href="/" onClick={handleLinkClick}>
                     Training & Internships
+                  </HoveredLink>
+                  <HoveredLink href="/careers" onClick={handleLinkClick}>
+                    Careers
                   </HoveredLink>
                   <HoveredLink href="/courses" onClick={handleLinkClick}>
                     Training & Development

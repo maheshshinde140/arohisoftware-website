@@ -249,7 +249,7 @@ const handleSubmit = (e: React.FormEvent) => {
 
 
   return (
-    <div className="min-h-screen bg-white p-4 mt-20">
+    <div className="min-h-screen bg-white p-4 ">
       <div className="max-w-7xl mx-auto mb-10">
         <div className="text-center my-14">
           <h1 className="text-xl lg:text-4xl font-bold text-black">
