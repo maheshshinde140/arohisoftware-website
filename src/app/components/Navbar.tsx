@@ -50,7 +50,7 @@ function Navbar({ className }: { className?: string }) {
       <nav className="bg-black w-full">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         
-        <div className="lg:hidden sm:flex md:flex px-8">
+        <div className="lg:hidden sm:flex md:flex">
             {session?.user ? (
               <div className="relative">
                 <button
