@@ -119,7 +119,7 @@ function Navbar({ className }: { className?: string }) {
                     </HoveredLink>
                     <HoveredLink href="/media">
                       <span className="hover:border-b-4 animate-in border-neutral-100 border-y-gray-400 hover:text-blue-400">
-                        Media Relations
+                       News Room
                       </span>
                     </HoveredLink>
                     <HoveredLink href="/investor">
@@ -300,7 +300,7 @@ function Navbar({ className }: { className?: string }) {
                     Events
                   </HoveredLink>
                   <HoveredLink href="/media" onClick={handleLinkClick}>
-                    Media Relations
+                   News Room
                   </HoveredLink>
                   <HoveredLink href="/investor" onClick={handleLinkClick}>
                     Investor Relations
