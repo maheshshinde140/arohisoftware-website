@@ -108,6 +108,7 @@ const Page: React.FC = () => {
                   type="password"
                   placeholder="password"
                   autoComplete="current-password"
+                  placeholder="••••••••"
                   value={user.password}
                   onChange={(e) => setUser({ ...user, password: e.target.value })}
                   required

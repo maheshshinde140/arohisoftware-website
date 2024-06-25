@@ -59,7 +59,7 @@ const LocationPage = () => {
             <button className="group w-full text-left border rounded-md flex justify-between items-center p-5 bg-white text-black" onClick={() => handleLocationChange(19.0945, 74.7381)}>
               <div>
                 <h3 className="text-2xl">Arohi Software Development, near Sai hospital building, bhairavnath chawk, Shrigoanda, Maharashtra</h3>
-                <p>Full Address</p>
+                
               </div>
               <ArrowRightIcon className="scale-150 transition-all -translate-x-6 group-hover:-translate-x-2" />
             </button>
@@ -131,7 +131,7 @@ const LocationPage = () => {
           Send Message
         </button>
         <div className="text-center">
-          <p className="text-blue-900">or contact us via phone: <a href="tel:+1234567890" className="text-blue-900">+1 (234) 567-890</a></p>
+          <p className="text-blue-900">or contact us via phone: <a href="tel:+91 7517861332" className="text-blue-900">+91 7517861332</a></p>
         </div>
       </form>
       <Footer/>
