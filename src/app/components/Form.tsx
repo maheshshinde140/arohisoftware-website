@@ -10,6 +10,7 @@ import { cn } from "@/utils/cn";
 import { FcGoogle } from "react-icons/fc";
 import { FaGit, FaGithub } from "react-icons/fa";
 import { signIn } from "next-auth/react";
+import { Router } from "next/router";
 
 
 
@@ -33,6 +34,7 @@ export function SignupForm() {
           const response = await axios.post("/api/users/signup", user);
           console.log("Signup success", response.data);
           router.push("/login");
+          router.refresh();
           
       } catch (error:any) {
           console.log("Signup failed", error.message);

@@ -46,7 +46,8 @@ const Page: React.FC = () => {
         setLoading(false);
       } else {
         toast.success("Login successful");
-        router.push("/"); // Redirect after successful login
+        router.push("/");
+        router.refresh(); // Redirect after successful login
       }
     } catch (error) {
       console.error("Login error:", error);
