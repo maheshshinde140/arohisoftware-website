@@ -71,9 +71,11 @@ export function SignupForm() {
         <p className="text-neutral-400 text-sm text-center mt-2">
           Login to Arohi if you can because we don&apos;t have a login flow yet
         </p>
-        <div className=" mt-6 space-y-4">
-        <h1>{loading ? "Processing" : ""}</h1>
-          <form className=" space-y-4" onSubmit={handleSubmit} >
+
+
+        <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
+        <h1>{loading ? "Processing" : " "}</h1>
+
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
             <div className="flex-1">
               <Label htmlFor="firstname" className="text-white">Username</Label>

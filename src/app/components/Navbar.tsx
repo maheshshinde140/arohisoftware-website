@@ -108,7 +108,7 @@ function Navbar({ className }: { className?: string }) {
                 item="What we do >"
               >
                 <div className="flex justify-around space-y-6 m-2 mx-10 lg:space-x-10 ">
-                  <div className="flex flex-col lg:space-y-4 py-7">
+                  <div className="flex flex-col lg:space-y-4 py-7 ">
                     <p className="mb-2 text-xl text-slate-400 hover:text-yellow-400 hover:cursor-text">
                       What we do<span>➡️</span>
                     </p>
@@ -219,6 +219,11 @@ function Navbar({ className }: { className?: string }) {
                       </span>
                     </HoveredLink>
 
+                    <HoveredLink href="/careers">
+                      <span className="hover:border-b-4 animate-in hover:text-blue-400 border-neutral-100 border-y-gray-400">
+                        Careers
+                      </span>
+                    </HoveredLink>
                     <HoveredLink href="/courses">
                       <span className="hover:border-b-4 animate-in hover:text-blue-400 border-neutral-100 border-y-gray-400">
                         Training & Development
@@ -414,8 +419,12 @@ function Navbar({ className }: { className?: string }) {
               </MenuItem>
               <MenuItem setActive={setActive} active={active} item="Careers">
                 <div className="flex flex-col space-y-4 py-4">
-                  <HoveredLink href="/courses" onClick={handleLinkClick}>
+                
+                  <HoveredLink href="/" onClick={handleLinkClick}>
                     Training & Internships
+                  </HoveredLink>
+                  <HoveredLink href="/careers" onClick={handleLinkClick}>
+                    Careers
                   </HoveredLink>
                   <HoveredLink href="/courses" onClick={handleLinkClick}>
                     Training & Development
