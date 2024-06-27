@@ -4,6 +4,7 @@ import ServiceCard from "../components/ServicesCard";
 import IndustrySelection from "../components/IndustrySelectionCard";
 import Footer from "../components/Footer";
 import Feedform from "../components/Feedform";
+import Partners from "../components/Partners";
 
 
 function Service() {
@@ -83,6 +84,7 @@ function Service() {
       </div>
 
       <ServiceCard />
+      <Partners/>
       <Feedform title="business with Arohi Software" />
       <Footer />
     </div>

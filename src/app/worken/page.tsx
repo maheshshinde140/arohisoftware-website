@@ -67,11 +67,11 @@ const page: React.FC = () => {
       </div>
 
       <div className="workBalance">
-        <div className="workBalance-container">
-          <p className="text-3xl block font-bold lg:text-6xl p-5">
+        <div className="workBalance-container text-center">
+          <p className="text-3xl block font-bold text-center lg:text-6xl p-5">
             Work your way
           </p>
-          <span>
+          <span className='text-center'>
             Balance your work and personal life with a range of workplace
             options and innovative tools that <br /> help you stay connected
             globally.
@@ -142,7 +142,7 @@ const page: React.FC = () => {
          
          <div className='lg:w-1/2'>
            <img
-             src="/assets/worken/learning.png"
+             src="/assets/worken/Learning.png"
              alt="innovation"
              className="w-[80vh] lg:h-[40vh] h-[30vh] mx-auto rounded-lg shadow-lg"
            />
