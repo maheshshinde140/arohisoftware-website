@@ -22,12 +22,10 @@ const WorkCard: React.FC<WorkCardProps> = ({ images, altText, text, title }) => 
         backgroundPosition: "center",
       }}
     >
-      <div className="card-content h-[123%]">
+      <div className="card-content h-[200%]">
         <h2 className="card-title my-5">{title}</h2>
         <p className="card-body my-5">{text}</p>
-        <a href="#" className="button">
-          Learn More
-        </a>
+      
       </div>
     </div>
   );
