@@ -2,9 +2,6 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 
-<<<<<<< HEAD
-const AnyReactComponent = ({ text }:any) => <div>{text}</div>;
-=======
 interface AnyReactComponentProps {
   lat: number;
   lng: number;
@@ -16,7 +13,6 @@ const AnyReactComponent: React.FC<AnyReactComponentProps> = ({ lat, lng, text })
     <div>{text}</div>
   </div>
 );
->>>>>>> 7d7bfb32a05759734cc9514f1726bfcdb93cc6d2
 
 export default function SimpleMap() {
   const defaultProps = {

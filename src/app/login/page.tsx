@@ -106,7 +106,6 @@ const Page: React.FC = () => {
                   id="password"
                   name="password"
                   type="password"
-                  placeholder="password"
                   autoComplete="current-password"
                   placeholder="••••••••"
                   value={user.password}
