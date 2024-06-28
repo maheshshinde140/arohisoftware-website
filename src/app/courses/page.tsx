@@ -48,7 +48,7 @@ function Page() {
               continuous learning and skill enhancement in the ever-evolving
               field of IT. Our training programs cover a wide range of topics,
               from basic programming to advanced cloud computing, cybersecurity,
-              and data analytics. Whether you're a beginner or an experienced
+              and data analytics. Whether you`&apos;`re a beginner or an experienced
               professional, we have the right course for you. We offer flexible
               learning options, including online courses, in-person workshops,
               and customized corporate training. Our industry expert instructors
