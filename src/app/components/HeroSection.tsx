@@ -12,7 +12,7 @@ const words = ["INNOVATE", "INTEGRATE", "INSPIRE"];
 
 function HeroSection() {
   return (
-    <div className="bg-black relative text-purple flex items-center justify-center lg:min-h-[600px] min-h-[800px] w-screen">
+    <div className="bg-black relative text-purple-600 flex items-center justify-center lg:min-h-[600px] min-h-[800px] w-screen">
       <Vortex className="absolute inset-0 z-0" backgroundColor="black" />
       <div className="absolute inset-0 flex items-center justify-center z-10 text-center text-white px-4">
         <div className="w-full max-w-screen-xl">
