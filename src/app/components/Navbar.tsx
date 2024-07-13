@@ -31,8 +31,8 @@ function Navbar({ className }: { className?: string }) {
                 active={active}
                 item="What we do >"
               >
-                <div className="flex justify-around space-y-6 m-2 mx-10 lg:space-x-10 ">
-                  <div className="flex flex-col lg:space-y-4 py-7 ">
+                <div className="flex  justify-around space-y-6 m-2 mx-10 lg:space-x-10 ">
+                  <div className="flex flex-col lg:space-y-4 sm: py-7 ">
                     <p className="mb-2 text-xl text-slate-400 hover:text-yellow-400 hover:cursor-text">
                       What we do<span>➡️</span>
                     </p>
@@ -262,17 +262,17 @@ function Navbar({ className }: { className?: string }) {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="lg:hidden">
-            <div className="flex flex-col items-start bg-black px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div className="flex flex-col items-center w-[80vw] bg-black px-5 pt-4 pb-3 space-y-1 sm:px-3">
               <Menu
                 setActive={setActive}
-                className="flex flex-col items-end   rounded-none space-y-4"
+                className="flex flex-col px-8 items-start rounded-none space-y-4"
               >
                 <MenuItem
                   setActive={setActive}
                   active={active}
                   item="What we do >"
                 >
-                  <div className="flex flex-col space-y-4 items-center pb-4">
+                  <div className="flex flex-col px-4 space-y-4 items-center pb-4">
                     <HoveredLink href="/service" onClick={handleLinkClick}>
                       <span className="text-white">Services</span>
                     </HoveredLink>
@@ -290,7 +290,7 @@ function Navbar({ className }: { className?: string }) {
                       onClick={handleLinkClick}
                     >
                       <span className="text-white">
-                        Marketing and Experience
+                        Marketing $ Experience
                       </span>
                     </HoveredLink>
                   </div>
@@ -337,7 +337,7 @@ function Navbar({ className }: { className?: string }) {
                   active={active}
                   item="Careers >"
                 >
-                  <div className="flex flex-col space-y-4 items-center pb-4">
+                  <div className="flex flex-col space-y-2 items-center pb-4">
                     <HoveredLink href="/courses" onClick={handleLinkClick}>
                       <span className="text-white">Training & Development</span>
                     </HoveredLink>
