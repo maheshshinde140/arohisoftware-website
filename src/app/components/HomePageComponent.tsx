@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import home11 from "../../../public/assets/Homepage/image.png";
 
 const HomePageComponent: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const HomePageComponent: React.FC = () => {
 
         <div>
           <Image 
-            src="https://Image.freepik.com/premium-photo/futuristic-virtual-reality-concept-vr-ar-technologies-man-glasses-with-3d-illustration_717906-1286.jpg" 
+            src={home11} 
             alt="Accenture Image" 
             className="lg:h-[60vh] lg:w-[80vh]"
             width={800}  // Add appropriate width
