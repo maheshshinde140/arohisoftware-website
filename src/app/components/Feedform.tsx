@@ -45,7 +45,7 @@ const Feedform: React.FC<FeedformProps> = ({ title }) => {
     setResult("Sending....");
     const formData = new FormData(event.currentTarget);
 
-    formData.append("access_key", `fef839bc-9dce-445b-b477-cf6fb3274cf1`);
+    formData.append("access_key", `e5f59593-4cf3-468f-9e07-0a9bc14e4195`);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
