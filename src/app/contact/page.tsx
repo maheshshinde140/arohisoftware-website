@@ -95,7 +95,7 @@ const ContactForm: React.FC = () => {
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-4">Get in touch</h2>
             <p className="text-gray-400 text-xm mb-4">
-            We welcome your interest in Arohi Software. Whether you have questions, want to discuss potential projects, or simply wish to connect, we're here to assist you. Reach out to us using the contact details below, and let's start a conversation.
+            We welcome your interest in Arohi Software. Whether you have questions, want to discuss potential projects, or simply wish to connect, we`&apos;`re here to assist you. Reach out to us using the contact details below, and let`&apos;`s start a conversation.
             </p>
             <div className="mb-4">
               <div className="flex items-center mb-2">
