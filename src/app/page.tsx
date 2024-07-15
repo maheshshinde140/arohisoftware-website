@@ -25,6 +25,7 @@ import Feedform from "./components/Feedform";
 import OurPartners from "./components/OurPartners";
 import HomePageComponent from "./components/HomePageComponent";
 import { auth } from "@/auth";
+import CollegesPartners from "./components/colleges";
 
 export default function Home() {
 
@@ -42,6 +43,7 @@ export default function Home() {
       <WhyChooseUs />
       <Servicecard />
       <OurPartners />
+      <CollegesPartners/>
       <CareersComponent />
       <Feedform title="Business With Arohi Software " />
       <TestimonialCards />

@@ -23,6 +23,11 @@ const companies = [
     logo: 'https://media.licdn.com/dms/image/D560BAQHGYF5tCSi_uQ/company-logo_200_200/0/1695197584351?e=2147483647&v=beta&t=s2DN3cuT_ej1GYgKNRvHj4ttOXgHv3uAsLQ6hObjQm4',
   },
   {
+    id: 3,
+    name: 'GROWAZA',
+    logo: "/assets/partners/growaza.jpeg",
+  },
+  {
     id: 1,
     name: 'VS Tech Horizon',
     logo: 'https://yt3.googleusercontent.com/DhdYxWD2LwcnzHdPBIBtrKq8M2AHL39yekLoalqR09vX18rKX29GYfJaIW2FUaGjUbZ70sLxSg=s176-c-k-c0x00ffffff-no-rj',
@@ -36,6 +41,11 @@ const companies = [
     id: 1,
     name: 'VS Tech Horizon',
     logo: 'https://yt3.googleusercontent.com/DhdYxWD2LwcnzHdPBIBtrKq8M2AHL39yekLoalqR09vX18rKX29GYfJaIW2FUaGjUbZ70sLxSg=s176-c-k-c0x00ffffff-no-rj',
+  },
+  {
+    id: 3,
+    name: 'GROWAZA',
+    logo: "/assets/partners/growaza.jpeg",
   },
   {
     id: 4,
@@ -46,7 +56,7 @@ const companies = [
 
 function Companies() {
   return (
-    <div className="py-12 mt-12">
+    <div className="py-12 my-12">
       <div className="container mx-auto">
         <h1 className="text-white lg:text-6xl text-4xl text-center whitespace-nowrap font-bold mb-12">Our Partners</h1>
         <hr className='h-[2px] bg-purple-600'/>

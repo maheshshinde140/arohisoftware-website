@@ -6,7 +6,7 @@ const Leadership = () => {
   const leaders = [
     {
       name: 'Sanket Ghodake',
-      title: 'Chair & CEO',
+      title: 'Founder & CEO',
       image: '/assets/Leaders/sanketsir.jpg',
     },
     {
@@ -46,7 +46,7 @@ const Leadership = () => {
             <div className="group bg-white overflow-hidden transition-all mt-12 relative shadow-md p-0 text-center mx-auto">
               <img
                 src={ceo.image}
-                className="p-0  group-hover:grayscale-0 transition-all group-hover:scale-105 border-[3px] border-purple-600 h-[360px] w-full "
+                className="p-0 grayscale group-hover:grayscale-0  transition-all group-hover:scale-105 border-[3px] border-purple-600 h-[360px] w-full "
               />
               <div className="absolute hidden group-hover:transition-all group-hover:block pt-1 w-full h-24 pl-4 bottom-0 pb-6 bg-white/60 backdrop-blur-lg">
                 <h3 className="text-left text-black text-xl font-semibold">
@@ -65,7 +65,7 @@ const Leadership = () => {
               >
                 <img
                   src={leader.image}
-                  className="p-0  group-hover:grayscale-0 transition-all border-[3px] border-purple-600 group-hover:scale-105 h-[360px] w-full"
+                  className="p-0 grayscale  group-hover:grayscale-0 transition-all border-[3px] border-purple-600 group-hover:scale-105 h-[360px] w-full"
                 />
                 <div className="absolute hidden group-hover:transition-all group-hover:block pt-1 w-full h-24 pl-4 bottom-0 pb-6 bg-white/60 backdrop-blur-lg">
                   <h3 className="text-left text-black text-xl font-semibold">

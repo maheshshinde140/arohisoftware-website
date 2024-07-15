@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const leaders = [
   {
-    name: ' Sakshi pachpute',
-    title: 'Team leader',
+    name: ' Sakshi Pachpute',
+    title: 'Team Leader',
     imgSrc: '/assets/Leaders/sakshi.jpeg',
     linkedIn: 'https://www.linkedin.com/in/sakshi-pachpute-291b972b0/',
   },
@@ -23,7 +23,7 @@ const leaders = [
   },
   {
     name: 'Aniket Supekar',
-    title: 'Ui & ux developer',
+    title: 'UI & UX Developer',
     imgSrc: '/assets/Leaders/aniket.jpeg',
     linkedIn: 'https://www.linkedin.com/in/aniket-supekar-3545812b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ',
   },

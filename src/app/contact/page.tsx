@@ -3,6 +3,7 @@ import React, { useState, ChangeEvent, FormEvent } from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md";
 import Footer from "../components/Footer";
+import logo from "../../../public/logo.png";
 
 interface FormData {
   firstName: string;
@@ -41,7 +42,7 @@ const ContactForm: React.FC = () => {
     <div className="min-h-screen bg-gray-100">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold mb-6 text-center">Contact Arohi</h1>
-        <p className="text-lg text-center text-black mb-12">
+        <p className="text-2xl font-extrabold text-center text-black mb-12">
           We appreciate your interest in Arohi. Please select the method below to contact us.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -78,11 +79,11 @@ const ContactForm: React.FC = () => {
       </div>
 
       <div className="bg-gray-900 py-12 lg:py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto bg-zinc-800 rounded-lg p-8 md:flex items-center gap-8 shadow-lg">
+        <div className="max-w-4xl border-[2px] border-purple-600 mx-auto bg-zinc-800 rounded-lg p-8 md:flex items-center gap-8 shadow-lg">
           <div
             className="md:w-1/2 mb-8 md:mb-0"
             style={{
-              backgroundImage: "url('https://via.placeholder.com/800x600')",
+              backgroundImage: `url(${logo.src})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
@@ -93,8 +94,8 @@ const ContactForm: React.FC = () => {
           </div>
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-4">Get in touch</h2>
-            <p className="text-gray-600 mb-4">
-            We welcome your interest in Arohi Software. Whether you have questions, want to discuss potential projects, or simply wish to connect, we`&apos;`re here to assist you. Reach out to us using the contact details below, and let`&apos;`s start a conversation.
+            <p className="text-gray-400 text-xm mb-4">
+            We welcome your interest in Arohi Software. Whether you have questions, want to discuss potential projects, or simply wish to connect, we're here to assist you. Reach out to us using the contact details below, and let's start a conversation.
             </p>
             <div className="mb-4">
               <div className="flex items-center mb-2">
