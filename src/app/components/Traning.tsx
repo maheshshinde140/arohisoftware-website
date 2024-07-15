@@ -9,7 +9,7 @@ interface CardProps {
   level: string;
 }
 
-const imageContainerClasses = "relative";
+const imageContainerClasses = "relative lg:h-72 h-96";
 const overlayClasses ="absolute bottom-0 left-0 p-4 bg-black h-full bg-opacity-50 text-white";
 const titleClasses = "text-sm font-bold";
 const subtitleClasses = "text-xl font-bold my-4";

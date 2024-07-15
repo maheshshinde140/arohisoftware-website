@@ -48,9 +48,10 @@ function Companies() {
   return (
     <div className="py-12 mt-12">
       <div className="container mx-auto">
-        <h1 className="text-white ml-20 text-6xl font-bold mb-12">Our Partners</h1>
+        <h1 className="text-white lg:text-6xl text-4xl text-center whitespace-nowrap font-bold mb-12">Our Partners</h1>
+        <hr className='h-[2px] bg-purple-600'/>
         <div className="overflow-hidden">
-          <div className="animate-scroll flex gap-60">
+          <div className="flex gap-8 sm:gap-12 md:gap-24 lg:gap-36 animate-scroll">
             {companies.concat(companies).map((company, index) => (
               <div key={index} className="flex flex-col items-center w-64 mt-9">
                 <img src={company.logo} alt={company.name} className="h-20 w-20 object-contain mb-4" />

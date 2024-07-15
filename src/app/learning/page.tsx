@@ -10,8 +10,10 @@ import LearningNavbar from "../components/LearningNavbar";
 import Partners from "../components/Partners";
 import Leaders from "../components/Leaders";
 import Feedform from "../components/Feedform";
+import OurPartners from "../components/OurPartners"
 import CareersComponent from "../components/CareersComponent";
 import Traning from "../components/Traning";
+import CollegesPartners from "../components/colleges";
 
 const App: React.FC = () => {
   return (
@@ -26,7 +28,8 @@ const App: React.FC = () => {
           <Traning />
 
           <Leaders />
-          <Partners />
+          <OurPartners />
+          <CollegesPartners/>
           <CareersComponent />
           <Feedform title="Contact Us" />
         </div>
