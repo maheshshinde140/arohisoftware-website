@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import home11 from "../../../public/assets/Homepage/image.png";
 
 const HomePageComponent: React.FC = () => {
   return (
@@ -10,8 +11,8 @@ const HomePageComponent: React.FC = () => {
       <div className="flex flex-wrap lg:justify-evenly lg:my-20 mx-auto">
         <div>
           <Image 
-            src="/assets/homepage/Homepagethirdcomponent.avif" // Path to your local image file
-            alt="VR Image" 
+            src={home11} 
+            alt="Accenture Image" 
             className="lg:h-[60vh] lg:w-[80vh]"
             width={800}  // Add appropriate width
             height={600} // Add appropriate height
