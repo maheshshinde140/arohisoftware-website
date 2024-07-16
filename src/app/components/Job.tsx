@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import "./job.css";
 const sharedButtonClasses =
-  "py-2 bg-purple-800 text-white hover:bg-violet-800 rounded-lg transition duration-300";
+  "py-2 bg-gray-300 text-black hover:bg-gray-400  rounded-md transition duration-300";
 const sharedInputClasses =
   "w-full max-w-md p-2 border border-zinc-700 rounded-lg text-black";
 const sharedTextClasses = "text-black";
@@ -31,16 +31,16 @@ const JobCard: React.FC<JobCardProps> = ({
     <div
       id="jobs"
       onClick={onClick}
-      className="cursor-pointer bg-gray-100 p-4 rounded-lg shadow-lg job-card duration-300"
+      className="cursor-pointer bg-white p-4 rounded-lg shadow-lg job-card duration-300"
     >
-      <div className="flex justify-between items-center p-2 border-b-2 min-w">
+      <div className="flex justify-between items-center border-purple-600 p-2 border-b-2 min-w">
         <span className={sharedTextClasses}>{location}</span>
       </div>
       <h3 className="text-xl font-semibold text-black mt-2">{title}</h3>
-      <p className="text-black mt-2">{role}</p>
-      <p className="text-black mt-2">{businessArea}</p>
-      <p className="text-black mt-2">{experience}</p>
-      <p className="text-black mt-2">{postedTime}</p>
+      <p className="text-black mt-4">{role}</p>
+      <p className="text-gray-600 text-sm mt-2">{businessArea}</p>
+      <p className="text-gray-600 text-sm mt-2">{experience}</p>
+      <p className="text-black text-xs mt-2">{postedTime}</p>
     </div>
   );
 };
@@ -244,7 +244,7 @@ const Job: React.FC = () => {
             </button>
           </div>
         </div>
-        <div className="bg-gray-200 p-5 rounded-lg">
+        <div className="bg-zinc-100 p-5 rounded-lg">
           <div className="my-8 lg:container">
             <h2 className="text-2xl font-semibold text-black">
               Latest Jobs ({filteredJobs.length})
@@ -279,7 +279,7 @@ const Job: React.FC = () => {
                   Save this search
                 </button>
                 <button
-                  className={`${sharedButtonClasses} ml-2 mt-2 min-w-32 lg:mt-0`}
+                  className={`${sharedButtonClasses} text-red-600 font-semibold ml-2 mt-2 min-w-32 lg:mt-0`}
                 >
                   Clear filters
                 </button>
@@ -328,7 +328,7 @@ const Job: React.FC = () => {
           </button>
         </div>
         {isModalOpen && selectedJob && (
-          <div className="fixed inset-0 flex items-center justify-center h-70vh bg-black mt-5 bar overflow-y-scroll bg-opacity-50 z-50">
+          <div className="fixed inset-0 flex items-center justify-center p-4 bg-black mt-5 bar overflow-auto bg-opacity-50 z-50">
             <div className="p-6 rounded-lg shadow-lg bg-black mt-[80vh] lg:mt-[40vh] ">
               <form onSubmit={handleSubmit} className="">
                 <div className="grid gap-6 mb-6 md:grid-cols-2">

@@ -105,7 +105,7 @@ export default function Page() {
                   className="w-full h-40 object-cover mb-4 rounded-md group-hover:opacity-0 transition-opacity duration-300"
                 />
                 <div className="absolute inset-0 flex flex-col justify-center items-center bg-gray-900 bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-gray-400">
+                  <p className="text-gray-400 ">
                     To provide state-of-the-art technology solutions that add
                     real value to businesses.
                   </p>

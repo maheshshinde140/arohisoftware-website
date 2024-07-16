@@ -20,7 +20,7 @@ const SharedButton: React.FC<SharedButtonProps> = ({ className, children }) => (
 const StayConnected: React.FC = () => {
   return (
     <div className=" p-5 bg-gray-200">
-      <h2 className="text-2xl font-semibold text-black">Stay connected</h2>
+      <h2 className="text-3xl font-semibold text-center my-9 text-black">Stay connected</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         <div className="bg-gray-100 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
           <div className="w-[100%] flex justify-center">

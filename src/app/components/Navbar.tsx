@@ -12,6 +12,7 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
   const { data: session } = useSession();
 
   const handleLinkClick = () => {
@@ -20,6 +21,10 @@ function Navbar({ className }: { className?: string }) {
 
   const handleProfileClick = () => {
     setIsProfileMenuOpen(!isProfileMenuOpen);
+  };
+
+  const toggleSubmenu = (submenu: string) => {
+    setActiveSubmenu((prevSubmenu) => (prevSubmenu === submenu ? null : submenu));
   };
 
   function stringToColor(string: string): string {
@@ -34,7 +39,7 @@ function Navbar({ className }: { className?: string }) {
     }
     return color;
   }
-  
+
   function getInitials(name: string): string {
     const names = name.split(' ');
     const initials = names.map((n) => n[0]).join('');
@@ -44,13 +49,12 @@ function Navbar({ className }: { className?: string }) {
   const userInitials = session?.user?.name ? getInitials(session.user.name) : '';
   const bgColor = session?.user?.name ? stringToColor(session.user.name) : '#ccc';
 
-
   return (
     <div className={cn("fixed top-0 inset-x-0 z-50 w-full", className)}>
       <nav className="bg-black w-full">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         
-        <div className="lg:hidden sm:flex md:flex">
+          <div className="lg:hidden sm:flex md:flex">
             {session?.user ? (
               <div className="relative">
                 <button
@@ -60,30 +64,29 @@ function Navbar({ className }: { className?: string }) {
                   <FaUserCircle size={24} />
                 </button>
                 {isProfileMenuOpen && (
-                 <div className="absolute lg:right-0 mt-2 w-50 bg-[#282828] shadow-md rounded-md">
-                 <div className="flex space-x-3 p-4 pb-5">
-                   <div className="flex items-center space-x-4">
-                     <button className="flex items-center justify-center w-10 h-10 rounded-full"
-               style={{ backgroundColor: bgColor }}>
-                     <span className="text-white font-semibold">
-                 {userInitials}
-               </span>
-                     </button>
-                   </div>
-                   <div className=" space-y-1">
-                      <p className="text-sm font-semibold ">{session.user.name}</p>
-                   <p className="text-xs text-gray-500">{session.user.email}</p>
-                   </div>
-                 </div>
-                 <div className="border-lg border-gray-200">
-                   <button
-                     className="w-full text-left px-4 py-2 text-sm text-white bg-purple-600  hover:font-bold hover:bg-purple-800"
-                     onClick={() => signOut()}
-                   >
-                     Logout
-                   </button>
-                 </div>
-               </div>
+                  <div className="absolute lg:right-0 mt-2 w-50 bg-[#282828] shadow-md rounded-md">
+                    <div className="flex space-x-3 p-4 pb-5">
+                      <div className="flex items-center space-x-4">
+                        <button className="flex items-center justify-center w-10 h-10 rounded-full" style={{ backgroundColor: bgColor }}>
+                          <span className="text-white font-semibold">
+                            {userInitials}
+                          </span>
+                        </button>
+                      </div>
+                      <div className="space-y-1">
+                        <p className="text-sm font-semibold">{session.user.name}</p>
+                        <p className="text-xs text-gray-500">{session.user.email}</p>
+                      </div>
+                    </div>
+                    <div className="border-lg border-gray-200">
+                      <button
+                        className="w-full text-left px-4 py-2 text-sm text-white bg-purple-600 hover:font-bold hover:bg-purple-800"
+                        onClick={() => signOut()}
+                      >
+                        Logout
+                      </button>
+                    </div>
+                  </div>
                 )}
               </div>
             ) : (
@@ -93,7 +96,6 @@ function Navbar({ className }: { className?: string }) {
             )}
           </div>
 
-
           <div className="flex items-center">
             <Link href="/">
               <Image src={logo} alt="Logo" className="w-16 h-16" />
@@ -101,14 +103,10 @@ function Navbar({ className }: { className?: string }) {
           </div>
 
           <div className="hidden lg:flex items-center justify-center flex-grow">
-            <Menu setActive={setActive} className="flex lg:space-x-4 flex-row ">
-              <MenuItem
-                setActive={setActive}
-                active={active}
-                item="What we do >"
-              >
-                <div className="flex justify-around space-y-6 m-2 mx-10 lg:space-x-10 ">
-                  <div className="flex flex-col lg:space-y-4 py-7 ">
+            <Menu setActive={setActive} className="flex lg:space-x-4 flex-row">
+              <MenuItem setActive={setActive} active={active} item="What we do >">
+                <div className="flex justify-around space-y-6 m-2 mx-10 lg:space-x-10">
+                  <div className="flex flex-col lg:space-y-4 py-7">
                     <p className="mb-2 text-xl text-slate-400 hover:text-yellow-400 hover:cursor-text">
                       What we do<span>➡️</span>
                     </p>
@@ -140,24 +138,12 @@ function Navbar({ className }: { className?: string }) {
                   </div>
                 </div>
               </MenuItem>
-
-
               <Link href="/whatweThink" className="ml-2">
-                <MenuItem
-                  setActive={setActive}
-                  active={active}
-                  item="What we think"
-                />
-
+                <MenuItem setActive={setActive} active={active} item="What we think" />
               </Link>
-
-              <MenuItem
-                setActive={setActive}
-                active={active}
-                item="What we are >"
-              >
+              <MenuItem setActive={setActive} active={active} item="What we are >">
                 <div className="flex justify-around space-y-6 lg:space-x-10 p-10 rounded">
-                  <div className="flex flex-col space-y-4 ">
+                  <div className="flex flex-col space-y-4">
                     <p className="mb-2 text-xl text-slate-400 hover:text-yellow-400 hover:cursor-pointer">
                       About Arohi Software <span>➡️</span>
                     </p>
@@ -195,7 +181,7 @@ function Navbar({ className }: { className?: string }) {
                     </HoveredLink>
                     <HoveredLink href="/media">
                       <span className="hover:border-b-4 animate-in border-neutral-100 border-y-gray-400 hover:text-blue-400">
-                       News Room
+                        News Room
                       </span>
                     </HoveredLink>
                     <HoveredLink href="/investor">
@@ -206,7 +192,6 @@ function Navbar({ className }: { className?: string }) {
                   </div>
                 </div>
               </MenuItem>
-
               <MenuItem setActive={setActive} active={active} item="Careers >">
                 <div className="flex justify-around space-y-6 space-x-10 p-10 rounded">
                   <div className="flex flex-col space-y-4">
@@ -269,7 +254,7 @@ function Navbar({ className }: { className?: string }) {
             </Menu>
           </div>
 
-          {/* Login button or profile button */}
+             {/* Login button or profile button */}
           <div className="hidden lg:flex px-8">
             {session?.user ? (
               <div className="relative">
@@ -313,143 +298,116 @@ function Navbar({ className }: { className?: string }) {
             )}
           </div>
 
-          {/* Search Icon and Burger icon for small screens */}
-          <div className="flex items-center space-x-4">
-            <div className="hidden lg:block">
-              <button
-                className="text-white focus:outline-none"
-                aria-label="Search"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 4a6 6 0 100 12 6 6 0 000-12zM21 21l-4.35-4.35"
-                  />
-                </svg>
-              </button>
-            </div>
 
-            <div className="block lg:hidden space-x-4">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-white focus:outline-none"
-                aria-label="Toggle Menu"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                </svg>
-              </button>
-            </div>
+          <div className="lg:hidden">
+            <button
+              className="text-white focus:outline-none"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              ☰
+            </button>
           </div>
         </div>
-
-        {/* Mobile menu */}
-        {isMenuOpen && (
-          <div className="lg:hidden">
-            <Menu setActive={setActive} className="flex flex-col space-y-4">
-              <MenuItem setActive={setActive} active={active} item="What we do">
-                <div className="flex flex-col space-y-4 py-4">
-                  <HoveredLink href="/service" onClick={handleLinkClick}>
-                    Services
-                  </HoveredLink>
-                  <HoveredLink href="/research" onClick={handleLinkClick}>
-                    Research & Innovations
-                  </HoveredLink>
-                  <HoveredLink href="/security" onClick={handleLinkClick}>
-                    Security
-                  </HoveredLink>
-                  <HoveredLink href="/learning" onClick={handleLinkClick}>
-                    Learning
-                  </HoveredLink>
-                </div>
-              </MenuItem>
-              <Link href="/whatweThink">
-                <div onClick={handleLinkClick}>
-                  <MenuItem
-                    setActive={setActive}
-                    active={active}
-                    item="What we think"
-
-                  />
-                </div>
-              </Link>
-              <MenuItem setActive={setActive} active={active} item="What we are">
-                <div className="flex flex-col space-y-4 py-4">
-                  <HoveredLink href="/courses" onClick={handleLinkClick}>
-                    Our organization
-                  </HoveredLink>
-                  <HoveredLink href="/leaders" onClick={handleLinkClick}>
-                    Leaders
-                  </HoveredLink>
-                  <HoveredLink href="/location" onClick={handleLinkClick}>
-                    Locations
-                  </HoveredLink>
-                  <HoveredLink href="/gallery" onClick={handleLinkClick}>
-                    Gallery
-                  </HoveredLink>
-                  <HoveredLink href="/events" onClick={handleLinkClick}>
-                    Events
-                  </HoveredLink>
-                  <HoveredLink href="/media" onClick={handleLinkClick}>
-                   News Room
-                  </HoveredLink>
-                  <HoveredLink href="/investor" onClick={handleLinkClick}>
-                    Investor Relations
-                  </HoveredLink>
-                </div>
-              </MenuItem>
-              <MenuItem setActive={setActive} active={active} item="Careers">
-                <div className="flex flex-col space-y-4 py-4">
-                
-                  <HoveredLink href="/" onClick={handleLinkClick}>
-                    Training & Internships
-                  </HoveredLink>
-                  <HoveredLink href="/careers" onClick={handleLinkClick}>
-                    Careers
-                  </HoveredLink>
-                  <HoveredLink href="/courses" onClick={handleLinkClick}>
-                    Training & Development
-                  </HoveredLink>
-                  <HoveredLink href="/experienceProf" onClick={handleLinkClick}>
-                    Experience Professionals
-                  </HoveredLink>
-                  <HoveredLink href="/worken" onClick={handleLinkClick}>
-                    Work environment
-                  </HoveredLink>
-                  <HoveredLink href="/jobs" onClick={handleLinkClick}>
-                    Search all Jobs
-                  </HoveredLink>
-                  <HoveredLink href="/contact" onClick={handleLinkClick}>
-                    Contact Us
-                  </HoveredLink>
-                  <HoveredLink href="/faq" onClick={handleLinkClick}>
-                    FAQ
-                  </HoveredLink>
-                </div>
-              </MenuItem>
-            </Menu>
-          </div>
-        )}
       </nav>
+
+      {isMenuOpen && (
+        <div className="lg:hidden fixed inset-0 bg-gray-900  bg-opacity-95 z-50 flex flex-col p-4">
+          <div className="flex justify-end">
+            <button
+              className="text-white focus:outline-none"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              ✕
+            </button>
+          </div>
+          <div className="mt-8 space-y-10">
+            <div>
+              <button
+                className="text-white  text-left mb-4 w-full focus:outline-none"
+                onClick={() => toggleSubmenu('whatWeDo')}
+              >
+                What we do {activeSubmenu === 'whatWeDo' ? '▲' : '▼'}
+              </button>
+              {activeSubmenu === 'whatWeDo' && (
+                <div className="pl-4 mt-2 space-y-2 text-righ">
+                  <Link href="/service" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Services</p>
+                  </Link>
+                  <Link href="/research" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Research & Innovations</p>
+                  </Link>
+                  <Link href="/security" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Security</p>
+                  </Link>
+                  <Link href="/learning" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Learning</p>
+                  </Link>
+                </div>
+              )}
+            </div>
+            <Link href="/whatweThink" onClick={handleLinkClick}>
+              <p className="text-white text-left mt-4">What we think</p>
+            </Link>
+            <div>
+              <button
+                className="text-white text-left w-full focus:outline-none"
+                onClick={() => toggleSubmenu('whatWeAre')}
+              >
+                What we are {activeSubmenu === 'whatWeAre' ? '▲' : '▼'}
+              </button>
+              {activeSubmenu === 'whatWeAre' && (
+                <div className="pl-4 mt-2 space-y-2 text-left">
+                  <Link href="/leaders" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Leaders</p>
+                  </Link>
+                  <Link href="/location" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Locations</p>
+                  </Link>
+                  <Link href="/gallery" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Gallery</p>
+                  </Link>
+                  <Link href="/events" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Events</p>
+                  </Link>
+                  <Link href="/media" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Media & Investors</p>
+                  </Link>
+                  <Link href="/newsroom" onClick={handleLinkClick}>
+                    <p className="text-gray-400">News Room</p>
+                  </Link>
+                  <Link href="/investor" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Investor Relations</p>
+                  </Link>
+                </div>
+              )}
+            </div>
+            <div>
+              <button
+                className="text-white text-left w-full focus:outline-none"
+                onClick={() => toggleSubmenu('careers')}
+              >
+                Careers {activeSubmenu === 'careers' ? '▲' : '▼'}
+              </button>
+              {activeSubmenu === 'careers' && (
+                <div className="pl-4 mt-2 space-y-2 text-left">
+                  <Link href="/training" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Training & Internships</p>
+                  </Link>
+                  <Link href="/careers" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Careers</p>
+                  </Link>
+                  <Link href="/campus" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Campus Hiring</p>
+                  </Link>
+                  <Link href="/jobs" onClick={handleLinkClick}>
+                    <p className="text-gray-400">Jobs</p>
+                  </Link>
+                </div>
+              )}
+            </div>
+             </div>
+              </div>
+      )}
     </div>
   );
 }

@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const cardClasses = "relative group";
 const overlayClasses =
-  "absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300";
+  "absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-80 transition-opacity duration-300";
 const textClasses = "text-sm font-bold";
 const titleClasses = "text-lg font-semibold";
 
